@@ -149,7 +149,8 @@ export const initMenu = () => {
   const trigger = document.querySelector<HTMLButtonElement>('[data-menu-trigger]');
   const overlay = document.querySelector<HTMLElement>('[data-menu-overlay]');
   const closeBtn = document.querySelector<HTMLButtonElement>('[data-menu-close]');
-  if (!trigger || !overlay) return;
+  if (!trigger || !overlay || trigger.dataset.menuBound) return;
+  trigger.dataset.menuBound = '1';
 
   const setOpen = (v: boolean) => {
     overlay.classList.toggle('is-open', v);
