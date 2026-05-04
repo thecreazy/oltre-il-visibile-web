@@ -1,0 +1,274 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getCollection } from 'astro:content';
+import { STAFF, PARTNERS, pick } from '@utils/data';
+import RevealText from '@components/RevealText.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+import ArtistCard from '@components/ArtistCard.astro';
+import ModelCard from '@components/ModelCard.astro';
+import ExhibitionCard from '@components/ExhibitionCard.astro';
+import NewsletterForm from '@components/NewsletterForm.astro';
+import Marquee from '@components/Marquee.astro';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const dict = t(lang);
+
+const exhibitions = (await getCollection('exhibitions'))
+  .map((e) => e.data)
+  .sort((a, b) => Number(a.accent_no) - Number(b.accent_no));
+const photographers = (await getCollection('photographers'))
+  .map((e) => e.data)
+  .sort((a, b) => Number(a.accent_no) - Number(b.accent_no));
+const models = (await getCollection('models'))
+  .map((e) => e.data)
+  .sort((a, b) => Number(a.accent_no) - Number(b.accent_no));
+---
+
+<!-- ─────────────────────────────────────────────────────────────
+     HERO
+     ───────────────────────────────────────────────────────────── -->
+<section class="relative min-h-[75svh] md:min-h-[100svh] flex flex-col bg-paper text-ink">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-10 -left-20 w-[80vw] h-[80vw] rounded-full bg-bone blur-3xl opacity-60"></div>
+  </div>
+
+  <div class="relative z-10 flex-1 flex flex-col justify-end px-6 md:px-10 pt-32 pb-20 md:pb-24">
+    <p class="eyebrow text-smoke mb-10" data-reveal>{dict.home.eyebrow}</p>
+
+    <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight">
+      <RevealText as="span" class="block" text={dict.home.hero_line_1} />
+      <RevealText as="span" class="block pl-[10vw]" text={dict.home.hero_line_2} />
+    </h1>
+
+    <div class="mt-12 grid grid-cols-12 items-end gap-6">
+      <p class="col-span-12 md:col-span-5 font-display italic text-2xl md:text-3xl text-smoke max-w-[28ch]" data-reveal>
+        {dict.home.hero_subline}
+      </p>
+      <div class="col-span-12 md:col-span-3 md:col-start-7 font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke" data-reveal>
+        <p>Milano · Roma · Londra</p>
+        <p class="mt-2">2026 — 2027</p>
+      </div>
+      <div class="col-span-12 md:col-span-3 flex md:justify-end" data-reveal>
+        <MagneticButton href={path(lang, 'manifesto')}>
+          {dict.cta.discover}
+        </MagneticButton>
+      </div>
+    </div>
+  </div>
+
+  <!-- bottom rule -->
+  <div class="relative z-10 border-t border-ink/15 px-6 md:px-10 py-4 flex items-center justify-between font-mono text-[0.65rem] tracking-[0.22em] uppercase text-smoke">
+    <span>↓ {lang === 'it' ? 'scorri' : 'scroll'}</span>
+    <span>{dict.site_tagline}</span>
+    <span>EST. 2026</span>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     MARQUEE
+     ───────────────────────────────────────────────────────────── -->
+<section class="bg-paper py-16 md:py-24 border-b border-ink/15">
+  <Marquee items={[
+    'Body as landscape',
+    'Corpo come paesaggio',
+    'Intimacy without spectacle',
+    'Intimità senza spettacolo',
+    'What remains hidden',
+    'Ciò che resta nascosto',
+  ]} />
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     MANIFESTO PREVIEW
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 md:py-44 bg-paper">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-10">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.home.manifesto_eyebrow}</p>
+      <p class="mt-3 font-mono text-[0.7rem] tracking-[0.22em] uppercase text-mist">N° 01 / 07</p>
+    </div>
+    <div class="col-span-12 md:col-span-9 max-w-reading" data-reveal>
+      <p class="font-display italic font-light text-editorial leading-[1.05]">
+        {dict.home.manifesto_excerpt}
+      </p>
+      <a href={path(lang, 'manifesto')} class="alink mt-10 inline-block font-mono text-[0.75rem] tracking-[0.22em] uppercase">
+        {dict.home.manifesto_cta} →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     UPCOMING EXHIBITIONS
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-24 md:py-32 bg-bone">
+  <header class="grid grid-cols-12 gap-x-6 mb-12">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.home.upcoming_eyebrow}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02] max-w-[18ch]" data-reveal>
+      {dict.home.upcoming_title}
+    </h2>
+  </header>
+
+  <div>
+    {exhibitions.map((ex, i) => (
+      <ExhibitionCard
+        lang={lang}
+        slug_it={ex.slug_it}
+        slug_en={ex.slug_en}
+        city={ex.city}
+        country={ex.country}
+        venue={ex.venue}
+        venue_note={ex.venue_note}
+        short_text={ex.short_text}
+        dates={ex.dates}
+        season={ex.season}
+        accent_no={ex.accent_no}
+        map_url={ex.map_url}
+        index={i}
+      />
+    ))}
+  </div>
+
+  <div class="mt-12 flex justify-end">
+    <MagneticButton href={path(lang, 'exhibitions')}>{dict.cta.all_exhibitions}</MagneticButton>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     SELECTED MODELS
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 bg-paper">
+  <header class="grid grid-cols-12 gap-x-6 mb-16">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.home.models_eyebrow}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02] max-w-[18ch]" data-reveal>
+      {dict.home.models_title}
+    </h2>
+  </header>
+
+  <div class="grid grid-cols-12 gap-x-6 gap-y-16">
+    {models.map((m, i) => (
+      <div class={`col-span-12 md:col-span-6 ${i === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
+        <ModelCard
+          lang={lang}
+          slug={m.slug}
+          name={m.name}
+          pronouns={m.pronouns}
+          based={m.based}
+          cover_text={m.cover_text}
+          accent_no={m.accent_no}
+          align={i === 1 ? 'right' : 'left'}
+        />
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-16 flex justify-end">
+    <a href={path(lang, 'models')} class="alink font-mono text-[0.75rem] tracking-[0.22em] uppercase">
+      {dict.cta.all_models} →
+    </a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     SELECTED PHOTOGRAPHERS
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 bg-paper border-t border-ink/15">
+  <header class="grid grid-cols-12 gap-x-6 mb-16">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.home.photographers_eyebrow}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02] max-w-[18ch]" data-reveal>
+      {dict.home.photographers_title}
+    </h2>
+  </header>
+
+  <div class="grid grid-cols-12 gap-x-6 gap-y-16">
+    {photographers.map((p, i) => (
+      <div class={`col-span-12 md:col-span-6 ${i === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
+        <ArtistCard
+          lang={lang}
+          slug={p.slug}
+          name={p.name}
+          role={p.role}
+          based={p.based}
+          years={p.years}
+          cover_text={p.cover_text}
+          accent_no={p.accent_no}
+          align={i === 1 ? 'right' : 'left'}
+        />
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-16 flex justify-end">
+    <a href={path(lang, 'photographers')} class="alink font-mono text-[0.75rem] tracking-[0.22em] uppercase">
+      {dict.cta.all_photographers} →
+    </a>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     STAFF
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 bg-bone">
+  <header class="grid grid-cols-12 gap-x-6 mb-16">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.home.staff_eyebrow}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02] max-w-[18ch]" data-reveal>
+      {dict.home.staff_title}
+    </h2>
+  </header>
+
+  <div class="grid grid-cols-12 gap-x-6 gap-y-12">
+    {STAFF.map((s, i) => (
+      <article class="col-span-12 md:col-span-4 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
+        <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° 0{i+1} — {s.city}</p>
+        <h3 class="font-display italic text-3xl mt-4">{s.name}</h3>
+        <p class="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke mt-2">{pick(s.role, lang)}</p>
+        <p class="text-smoke leading-relaxed mt-6 max-w-[36ch]">{pick(s.bio, lang)}</p>
+      </article>
+    ))}
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     PARTNERS
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 bg-paper">
+  <header class="grid grid-cols-12 gap-x-6 mb-16">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.home.partners_eyebrow}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02] max-w-[18ch]" data-reveal>
+      {dict.home.partners_title}
+    </h2>
+  </header>
+
+  <ul>
+    {PARTNERS.map((p, i) => (
+      <li class="border-t border-ink/15 py-8 grid grid-cols-12 gap-x-6 items-center" data-reveal>
+        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° 0{i+1}</span>
+        <a href={p.href} target="_blank" rel="noopener" class="col-span-10 md:col-span-4 font-display italic font-light text-3xl md:text-4xl alink">{p.name}</a>
+        <span class="col-span-12 md:col-span-3 md:col-start-auto font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke">{pick(p.kind, lang)}</span>
+        <span class="col-span-12 md:col-span-4 text-smoke">{pick(p.note, lang)}</span>
+      </li>
+    ))}
+    <li class="border-t border-ink/15"></li>
+  </ul>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────────
+     NEWSLETTER
+     ───────────────────────────────────────────────────────────── -->
+<section class="px-6 md:px-10 py-32 bg-ink text-paper">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-10">
+    <p class="col-span-12 md:col-span-3 eyebrow text-paper/60">{dict.home.newsletter_eyebrow}</p>
+    <div class="col-span-12 md:col-span-9 max-w-[42ch]" data-reveal>
+      <h2 class="font-display italic font-light text-editorial leading-[1.02]">
+        {dict.home.newsletter_title}
+      </h2>
+      <p class="text-paper/70 mt-6 max-w-[40ch] leading-relaxed">{dict.home.newsletter_text}</p>
+    </div>
+
+    <div class="col-span-12 md:col-span-9 md:col-start-4 mt-10">
+      <NewsletterForm lang={lang} variant="dark" />
+    </div>
+  </div>
+</section>

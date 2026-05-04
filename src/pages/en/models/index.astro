@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ModelsListPage from '@components/ModelsListPage.astro';
+import { t } from '@i18n/index';
+const dict = t('en');
+---
+<BaseLayout
+  lang="en"
+  title={dict.seo.models_title}
+  description={dict.seo.models_desc}
+  keywords={['fine art nude models','art model London','contemporary nude photography']}
+>
+  <ModelsListPage lang="en" />
+</BaseLayout>

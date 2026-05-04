@@ -1,0 +1,14 @@
+---
+interface Props { items: string[]; class?: string; }
+const { items, class: className = '' } = Astro.props;
+const doubled = [...items, ...items];
+---
+<div class={`overflow-hidden ${className}`} aria-hidden="true">
+  <div class="marquee gap-12 whitespace-nowrap">
+    {doubled.map((it) => (
+      <span class="font-display italic font-light text-[clamp(3rem,7vw,8rem)] leading-none tracking-tight">
+        {it} <span class="text-smoke not-italic font-mono text-base align-middle mx-6">·</span>
+      </span>
+    ))}
+  </div>
+</div>

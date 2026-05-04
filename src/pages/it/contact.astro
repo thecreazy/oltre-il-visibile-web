@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ContactPage from '@components/ContactPage.astro';
+import { t } from '@i18n/index';
+const dict = t('it');
+---
+<BaseLayout
+  lang="it"
+  title={dict.seo.contact_title}
+  description={dict.seo.contact_desc}
+  keywords={['contatti mostra fotografica','contatto curatela','collaborare mostra fotografica']}
+>
+  <ContactPage lang="it" />
+</BaseLayout>

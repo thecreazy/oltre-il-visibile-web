@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ModelDetailPage from '@components/ModelDetailPage.astro';
+import { pick } from '@utils/data';
+
+export async function getStaticPaths() {
+  const items = await getCollection('models');
+  return items.map((it) => ({ params: { slug: it.data.slug }, props: { entry: it } }));
+}
+
+const { entry } = Astro.props as { entry: any };
+const m = entry.data;
+const title = `${m.name} — Oltre il Visibile`;
+const desc = pick(m.statement, 'it');
+---
+<BaseLayout
+  lang="it"
+  title={title}
+  description={desc}
+  type="article"
+  keywords={['modello nudo artistico', m.name, 'art model']}
+>
+  <ModelDetailPage lang="it" slug={m.slug} />
+</BaseLayout>

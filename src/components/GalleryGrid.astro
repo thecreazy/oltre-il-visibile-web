@@ -1,0 +1,24 @@
+---
+import ParallaxImage from '@components/ParallaxImage.astro';
+
+interface Props {
+  letters?: string[]; // typographic plates
+  startNo?: number;
+}
+const { letters = ['Ø', 'I', 'V'], startNo = 1 } = Astro.props;
+---
+
+<div class="grid grid-cols-12 gap-4 md:gap-6">
+  <div class="col-span-12 md:col-span-7" data-reveal>
+    <ParallaxImage label={letters[0]} no={String(startNo).padStart(2,'0')} ratio="aspect-[4/5]" tone="dark" />
+  </div>
+  <div class="col-span-12 md:col-span-5 md:mt-24" data-reveal>
+    <ParallaxImage label={letters[1]} no={String(startNo+1).padStart(2,'0')} ratio="aspect-[3/4]" tone="light" />
+  </div>
+  <div class="col-span-6 md:col-span-4 md:col-start-3 md:mt-12" data-reveal>
+    <ParallaxImage label={letters[2]} no={String(startNo+2).padStart(2,'0')} ratio="aspect-[1/1]" tone="dark" />
+  </div>
+  <div class="col-span-6 md:col-span-6 md:col-start-7" data-reveal>
+    <ParallaxImage label="—" no={String(startNo+3).padStart(2,'0')} ratio="aspect-[3/2]" tone="light" depth={0.3} />
+  </div>
+</div>

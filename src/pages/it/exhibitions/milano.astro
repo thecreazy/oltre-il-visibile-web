@@ -1,0 +1,19 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ExhibitionDetailPage from '@components/ExhibitionDetailPage.astro';
+import { getEntry } from 'astro:content';
+import { pick } from '@utils/data';
+
+const ex = (await getEntry('exhibitions', 'milan'))!.data;
+const title = `${pick(ex.city, 'it')} — ${ex.venue} · Oltre il Visibile`;
+const desc = pick(ex.short_text, 'it');
+---
+<BaseLayout
+  lang="it"
+  title={title}
+  description={desc}
+  type="article"
+  keywords={['mostra fotografica Milano','mostra fine art nude Milano','Spazio Maiocchi mostra']}
+>
+  <ExhibitionDetailPage lang="it" entryId="milan" />
+</BaseLayout>

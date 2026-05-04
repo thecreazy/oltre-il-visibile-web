@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ExhibitionsListPage from '@components/ExhibitionsListPage.astro';
+import { t } from '@i18n/index';
+const dict = t('en');
+---
+<BaseLayout
+  lang="en"
+  title={dict.seo.exhibitions_title}
+  description={dict.seo.exhibitions_desc}
+  keywords={['fine art nude exhibition','nude photography London','photography exhibition Milan','photography exhibition Rome']}
+>
+  <ExhibitionsListPage lang="en" />
+</BaseLayout>

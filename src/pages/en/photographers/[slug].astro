@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PhotographerDetailPage from '@components/PhotographerDetailPage.astro';
+import { pick } from '@utils/data';
+
+export async function getStaticPaths() {
+  const items = await getCollection('photographers');
+  return items.map((it) => ({ params: { slug: it.data.slug }, props: { entry: it } }));
+}
+
+const { entry } = Astro.props as { entry: any };
+const p = entry.data;
+const title = `${p.name} — ${pick(p.role, 'en')} · Oltre il Visibile`;
+const desc = pick(p.statement, 'en');
+---
+<BaseLayout
+  lang="en"
+  title={title}
+  description={desc}
+  type="article"
+  keywords={['fine art nude photographer', p.name, 'contemporary nude photography']}
+>
+  <PhotographerDetailPage lang="en" slug={p.slug} />
+</BaseLayout>

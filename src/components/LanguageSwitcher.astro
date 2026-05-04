@@ -1,0 +1,20 @@
+---
+import type { Lang } from '@i18n/index';
+import { altLangUrl } from '@i18n/index';
+
+interface Props { lang: Lang; class?: string; }
+const { lang, class: className = '' } = Astro.props;
+
+const otherLang: Lang = lang === 'it' ? 'en' : 'it';
+const otherUrl = altLangUrl(lang, Astro.url.pathname);
+---
+
+<div class={`font-mono text-[0.7rem] tracking-[0.28em] uppercase flex items-center gap-2 ${className}`}>
+  <span class={lang === 'it' ? 'text-ink' : 'text-mist'}>
+    {lang === 'it' ? 'IT' : <a href={altLangUrl('en', Astro.url.pathname)} class="alink">IT</a>}
+  </span>
+  <span class="text-mist">/</span>
+  <span class={lang === 'en' ? 'text-ink' : 'text-mist'}>
+    {lang === 'en' ? 'EN' : <a href={otherUrl} class="alink">EN</a>}
+  </span>
+</div>

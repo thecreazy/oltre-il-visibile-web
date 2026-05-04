@@ -1,0 +1,25 @@
+---
+/**
+ * Wraps each line in <span><span>line</span></span> for reveal animation.
+ * Pass `as` to control the element. Splits on \n.
+ */
+interface Props {
+  as?: keyof HTMLElementTagNameMap;
+  class?: string;
+  text?: string;
+}
+const { as = 'span', class: className = '', text } = Astro.props;
+const Tag = as as any;
+const raw = text ?? '';
+const lines = raw.split('\n').filter(Boolean);
+---
+<Tag class={className} data-reveal-line>
+  {lines.length > 0
+    ? lines.map((line) => (
+        <span><span>{line}</span></span>
+      ))
+    : (
+        <span><span><slot /></span></span>
+      )
+  }
+</Tag>

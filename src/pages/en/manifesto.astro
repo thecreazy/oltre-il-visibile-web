@@ -1,0 +1,15 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ManifestoPage from '@components/ManifestoPage.astro';
+import { t } from '@i18n/index';
+const dict = t('en');
+---
+<BaseLayout
+  lang="en"
+  title={dict.seo.manifesto_title}
+  description={dict.seo.manifesto_desc}
+  type="article"
+  keywords={['fine art nude manifesto','fine art photography exhibition','body photography']}
+>
+  <ManifestoPage lang="en" />
+</BaseLayout>

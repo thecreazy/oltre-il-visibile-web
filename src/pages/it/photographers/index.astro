@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PhotographersListPage from '@components/PhotographersListPage.astro';
+import { t } from '@i18n/index';
+const dict = t('it');
+---
+<BaseLayout
+  lang="it"
+  title={dict.seo.photographers_title}
+  description={dict.seo.photographers_desc}
+  keywords={['fotografi nudo artistico','fotografia artistica corpo','autori mostra fotografica']}
+>
+  <PhotographersListPage lang="it" />
+</BaseLayout>

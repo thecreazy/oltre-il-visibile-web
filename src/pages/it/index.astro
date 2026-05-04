@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import HomePage from '@components/HomePage.astro';
+import { t } from '@i18n/index';
+const dict = t('it');
+---
+<BaseLayout
+  lang="it"
+  title={dict.seo.home_title}
+  description={dict.seo.home_desc}
+  keywords={['mostra fine art nude','mostra fotografica Milano','fotografia artistica corpo','mostra fotografia Roma','nudo artistico itinerante']}
+>
+  <HomePage lang="it" />
+</BaseLayout>

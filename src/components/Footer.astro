@@ -1,0 +1,84 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path, home } from '@i18n/index';
+import { SOCIALS } from '@utils/data';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const dict = t(lang);
+const year = new Date().getFullYear();
+
+const explore = [
+  { label: dict.nav.manifesto, href: path(lang, 'manifesto') },
+  { label: dict.nav.exhibitions, href: path(lang, 'exhibitions') },
+  { label: dict.nav.photographers, href: path(lang, 'photographers') },
+  { label: dict.nav.models, href: path(lang, 'models') },
+];
+const info = [
+  { label: dict.nav.partners, href: path(lang, 'partners') },
+  { label: dict.nav.press, href: path(lang, 'press') },
+  { label: dict.nav.contact, href: path(lang, 'contact') },
+];
+---
+
+<footer class="relative bg-ink text-paper">
+  <div class="px-6 md:px-10 pt-24 pb-10">
+    <!-- Mega title -->
+    <div class="grid grid-cols-12 gap-y-12 mb-16 md:mb-24">
+      <div class="col-span-12">
+        <a href={home(lang)} class="block font-display italic font-light text-mega leading-none break-words">
+          oltre il visibile.
+        </a>
+      </div>
+    </div>
+
+    <!-- Columns -->
+    <div class="grid grid-cols-12 gap-x-6 gap-y-12 border-t border-paper/15 pt-12">
+      <div class="col-span-12 md:col-span-3">
+        <p class="eyebrow text-paper/60 mb-5">{dict.footer.column_explore}</p>
+        <ul class="space-y-2 font-display text-2xl">
+          {explore.map(it => <li><a href={it.href} class="alink">{it.label}</a></li>)}
+        </ul>
+      </div>
+
+      <div class="col-span-12 md:col-span-3">
+        <p class="eyebrow text-paper/60 mb-5">{dict.footer.column_info}</p>
+        <ul class="space-y-2 font-display text-2xl">
+          {info.map(it => <li><a href={it.href} class="alink">{it.label}</a></li>)}
+        </ul>
+      </div>
+
+      <div class="col-span-12 md:col-span-3">
+        <p class="eyebrow text-paper/60 mb-5">{dict.footer.column_follow}</p>
+        <ul class="space-y-2 font-display text-2xl">
+          {SOCIALS.map(s => <li><a href={s.href} target="_blank" rel="noopener" class="alink">{s.label} ↗</a></li>)}
+        </ul>
+      </div>
+
+      <div class="col-span-12 md:col-span-3 flex flex-col justify-between">
+        <p class="eyebrow text-paper/60 mb-5">2026 — 2027</p>
+        <p class="font-display text-xl text-paper/80 max-w-[24ch]">Milano · Roma · Londra</p>
+        <button data-back-to-top class="mt-10 self-start magnetic" data-magnetic="0.25" type="button">
+          <span>{dict.footer.back_to_top}</span>
+          <span class="arrow">↑</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-20 border-t border-paper/15 pt-6 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <p class="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-paper/60 max-w-[60ch]">
+        © {year} Oltre il Visibile. {dict.footer.legal}
+      </p>
+      <p class="font-mono text-[0.7rem] tracking-[0.18em] uppercase text-paper/60">
+        {dict.footer.credit} <a href="https://canellariccardo.it" target="_blank" rel="noopener" class="text-paper alink">Riccardo&nbsp;Canella</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script is:inline>
+  document.querySelectorAll('[data-back-to-top]').forEach((b) => {
+    b.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  });
+</script>

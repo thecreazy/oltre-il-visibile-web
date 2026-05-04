@@ -1,0 +1,50 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { MANIFESTO } from '@utils/data';
+import ManifestoBlock from '@components/ManifestoBlock.astro';
+import RevealText from '@components/RevealText.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const dict = t(lang);
+---
+
+<section class="px-6 md:px-10 pt-40 md:pt-48 pb-24">
+  <p class="eyebrow text-smoke" data-reveal>{dict.manifesto.eyebrow}</p>
+  <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+    <RevealText as="span" class="block" text={dict.manifesto.title.split(' ')[0]} />
+    {dict.manifesto.title.split(' ').slice(1).length > 0 && (
+      <RevealText as="span" class="block pl-[10vw]" text={dict.manifesto.title.split(' ').slice(1).join(' ')} />
+    )}
+  </h1>
+  <p class="font-display italic text-2xl md:text-3xl text-smoke max-w-[40ch] mt-12" data-reveal>
+    {dict.manifesto.subtitle}
+  </p>
+</section>
+
+<section class="px-6 md:px-10">
+  {MANIFESTO.map((m, i) => {
+    const block = lang === 'it' ? m.it : m.en;
+    return (
+      <ManifestoBlock no={block.eyebrow} title={block.title} body={block.body} flip={i % 2 === 1} />
+    );
+  })}
+</section>
+
+<section class="px-6 md:px-10 py-32 border-t border-ink/15">
+  <div class="grid grid-cols-12 gap-x-6 items-end">
+    <div class="col-span-12 md:col-span-6">
+      <p class="eyebrow text-smoke">— FIN.</p>
+      <p class="font-display italic font-light text-editorial leading-[1.05] mt-6 max-w-[26ch]" data-reveal>
+        {lang === 'it' ? 'Adesso, le mostre.' : 'Now, the exhibitions.'}
+      </p>
+    </div>
+    <div class="col-span-12 md:col-span-6 flex md:justify-end mt-10 md:mt-0">
+      <MagneticButton href={path(lang, 'exhibitions')}>
+        {dict.cta.all_exhibitions}
+      </MagneticButton>
+    </div>
+  </div>
+</section>

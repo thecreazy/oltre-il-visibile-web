@@ -1,0 +1,19 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ExhibitionDetailPage from '@components/ExhibitionDetailPage.astro';
+import { getEntry } from 'astro:content';
+import { pick } from '@utils/data';
+
+const ex = (await getEntry('exhibitions', 'rome'))!.data;
+const title = `${pick(ex.city, 'en')} — ${ex.venue} · Oltre il Visibile`;
+const desc = pick(ex.short_text, 'en');
+---
+<BaseLayout
+  lang="en"
+  title={title}
+  description={desc}
+  type="article"
+  keywords={['fine art nude Rome','Palazzo Velli exhibition','photography exhibition Rome']}
+>
+  <ExhibitionDetailPage lang="en" entryId="rome" />
+</BaseLayout>

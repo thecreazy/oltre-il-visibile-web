@@ -1,0 +1,62 @@
+{
+  "slug": "thomas-keller",
+  "name": "Thomas Keller",
+  "based": "Berlin · London",
+  "years": "b. 1979",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Cerco la geografia di una persona, non la sua immagine.",
+    "en": "I look for a person's geography, not their image."
+  },
+  "bio": {
+    "it": [
+      "Thomas Keller è cresciuto tra i ritratti severi del nord europeo e i paesaggi appenninici della famiglia materna. Studia architettura a Zurigo, lavora dieci anni nello studio di Gerhard Richter come assistente di stampa, poi si dedica esclusivamente alla fotografia.",
+      "Le sue immagini sono lavori lunghi: stessi soggetti ritratti per anni, anche per dieci. Ne emergono atlanti privati di volti e corpi che mutano lentamente, come paesaggi.",
+      "Pubblicato da Hatje Cantz e Mack. Mostre personali a Vienna, Parigi, Tokyo, Londra. Insegna alla Royal College of Art di Londra dal 2019."
+    ],
+    "en": [
+      "Thomas Keller grew up between the severe portraits of northern Europe and the Apennine landscapes of his mother's family. He studied architecture in Zurich, worked ten years in Gerhard Richter's studio as a print assistant, then turned to photography full time.",
+      "His images are long works: the same subjects portrayed across years, sometimes ten. From them emerge private atlases of faces and bodies that change slowly, like landscapes.",
+      "Published by Hatje Cantz and Mack. Solo shows in Vienna, Paris, Tokyo, London. He has taught at the Royal College of Art in London since 2019."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Grande formato 4x5, luce naturale, esposizioni lunghe.",
+      "Lavora con i suoi modelli per stagioni intere: nessuno scatto è isolato.",
+      "Stampa personalmente in camera oscura, su carta baritata, in tirature di tre."
+    ],
+    "en": [
+      "Large format 4×5, natural light, long exposures.",
+      "He works with his models across full seasons: no frame is isolated.",
+      "He prints personally in the darkroom, on baryta paper, in editions of three."
+    ]
+  },
+  "works": [
+    {
+      "title": { "it": "Atlante privato", "en": "Private Atlas" },
+      "year": "2019",
+      "place": "Berlin · Galerie Eigen + Art"
+    },
+    {
+      "title": { "it": "Soglia (I–VII)", "en": "Threshold (I–VII)" },
+      "year": "2022",
+      "place": "Vienna · Albertina"
+    },
+    {
+      "title": { "it": "Un anno di luce", "en": "A Year of Light" },
+      "year": "2024",
+      "place": "London · The Photographers' Gallery"
+    },
+    {
+      "title": { "it": "Pelle paese", "en": "Skin Country" },
+      "year": "2025",
+      "place": "Tokyo · IMA Concept Store"
+    }
+  ],
+  "cover_text": "TK",
+  "accent_no": "02"
+}

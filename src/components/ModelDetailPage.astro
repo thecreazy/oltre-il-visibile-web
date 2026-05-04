@@ -1,0 +1,71 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getEntry } from 'astro:content';
+import { pick } from '@utils/data';
+import RevealText from '@components/RevealText.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+
+interface Props { lang: Lang; slug: string; }
+const { lang, slug } = Astro.props;
+const dict = t(lang);
+
+const entry = await getEntry('models', slug);
+if (!entry) throw new Error(`Model not found: ${slug}`);
+const m = entry.data;
+---
+
+<section class="relative px-6 md:px-10 pt-40 md:pt-48 pb-24 bg-paper">
+  <p class="eyebrow text-smoke" data-reveal>
+    N° {m.accent_no} — {m.based} · {m.pronouns}
+  </p>
+  <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+    <RevealText as="span" class="block" text={m.name.split(' ')[0]} />
+    <RevealText as="span" class="block pl-[10vw]" text={m.name.split(' ').slice(1).join(' ')} />
+  </h1>
+
+  <p class="font-display italic text-2xl md:text-3xl text-smoke max-w-[44ch] mt-12" data-reveal>
+    “{pick(m.statement, lang)}”
+  </p>
+</section>
+
+<!-- BIO -->
+<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15">
+  <div class="col-span-12 md:col-span-3">
+    <p class="eyebrow text-smoke">{dict.models.statement}</p>
+  </div>
+  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
+    {pick(m.bio, lang).map((para, i) => (
+      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i*0.08).toString()}>{para}</p>
+    ))}
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-bone">
+  <div class="col-span-12 md:col-span-3">
+    <p class="eyebrow text-smoke">{dict.models.practice}</p>
+  </div>
+  <ul class="col-span-12 md:col-span-9 space-y-2">
+    {pick(m.practice, lang).map((line, i) => (
+      <li class="grid grid-cols-12 items-baseline gap-4 py-4 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
+        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">·{(i+1).toString().padStart(2,'0')}</span>
+        <span class="col-span-10 md:col-span-11 font-display italic text-2xl md:text-3xl">{line}</span>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<!-- GALLERY -->
+<section class="px-6 md:px-10 py-24 bg-paper">
+  <GalleryGrid letters={[m.cover_text, '·', '—']} startNo={Number(m.accent_no) * 4 - 3} />
+</section>
+
+<!-- BACK -->
+<section class="px-6 md:px-10 py-32 border-t border-ink/15">
+  <div class="flex items-center justify-between">
+    <a href={path(lang, 'models')} class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase">← {dict.cta.all_models}</a>
+    <MagneticButton href={path(lang, 'exhibitions')}>{dict.cta.all_exhibitions}</MagneticButton>
+  </div>
+</section>

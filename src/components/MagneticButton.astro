@@ -1,0 +1,35 @@
+---
+interface Props {
+  href?: string;
+  type?: 'button' | 'submit';
+  class?: string;
+  strength?: number;
+  arrow?: boolean;
+  target?: string;
+  rel?: string;
+}
+
+const {
+  href,
+  type = 'button',
+  class: className = '',
+  strength = 0.3,
+  arrow = true,
+  target,
+  rel,
+} = Astro.props;
+
+const Tag = href ? 'a' : 'button';
+const props: Record<string, unknown> = href
+  ? { href, target, rel }
+  : { type };
+---
+
+<Tag
+  {...props}
+  data-magnetic={strength}
+  class={`magnetic ${className}`}
+>
+  <span><slot /></span>
+  {arrow && <span class="arrow">→</span>}
+</Tag>

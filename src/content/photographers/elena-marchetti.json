@@ -1,0 +1,62 @@
+{
+  "slug": "elena-marchetti",
+  "name": "Elena Marchetti",
+  "based": "Bologna · Lisbon",
+  "years": "b. 1988",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Fotografo il momento in cui un corpo smette di posare e ricomincia ad abitarsi.",
+    "en": "I photograph the moment a body stops posing and begins to inhabit itself again."
+  },
+  "bio": {
+    "it": [
+      "Elena Marchetti lavora con la fotografia da quindici anni come si lavora con la lingua: sapendo che ogni gesto è una traduzione e che le traduzioni perfette non esistono.",
+      "La sua pratica nasce nello studio di scenografia teatrale a Bologna, dove ha imparato a pensare la luce come una grammatica e il corpo come uno spazio. Da quel momento la fotografia è diventata, per lei, un esercizio di prossimità: rimanere accanto a una persona finché la posa cade.",
+      "Le sue immagini sono pubblicate su Aperture, IL Magazine, Numéro Berlin e fanno parte di collezioni private a Milano, Parigi, Tokyo. Insegna ritratto e nudo in studio al MAST di Bologna."
+    ],
+    "en": [
+      "Elena Marchetti has worked with photography for fifteen years the way one works with a language: aware that every gesture is a translation, and that perfect translations do not exist.",
+      "Her practice was shaped in the theatre scenography department in Bologna, where she learned to think of light as grammar and of the body as space. Since then, photography has become an exercise in proximity for her: staying next to a person until the pose falls.",
+      "Her images have appeared in Aperture, IL Magazine, Numéro Berlin and live in private collections in Milan, Paris, Tokyo. She teaches portrait and nude studio practice at MAST, Bologna."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Lavora quasi esclusivamente in studio, con luce continua, su pellicola medio formato.",
+      "Nessuna direzione plastica del corpo: il modello sceglie come stare. La macchina arriva dopo.",
+      "Ogni shooting comincia con un'ora di conversazione e termina con la stampa di prova consegnata in mano."
+    ],
+    "en": [
+      "She works almost exclusively in the studio, with continuous light, on medium-format film.",
+      "No plastic direction of the body: the model chooses how to stand. The camera arrives after.",
+      "Every session begins with an hour of conversation and ends with a printed proof handed over in person."
+    ]
+  },
+  "works": [
+    {
+      "title": { "it": "Stanze ferme", "en": "Still Rooms" },
+      "year": "2021",
+      "place": "Bologna · Galleria P420"
+    },
+    {
+      "title": { "it": "Lingua madre", "en": "Mother Tongue" },
+      "year": "2023",
+      "place": "Lisbon · Carpintarias de São Lázaro"
+    },
+    {
+      "title": { "it": "Il corpo lento", "en": "The Slow Body" },
+      "year": "2024",
+      "place": "Milano · Triennale (gruppo)"
+    },
+    {
+      "title": { "it": "Senza posa", "en": "Without Posing" },
+      "year": "2025",
+      "place": "London · Hannah Barry Gallery"
+    }
+  ],
+  "cover_text": "EM",
+  "accent_no": "01"
+}

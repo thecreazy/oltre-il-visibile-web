@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PartnersPage from '@components/PartnersPage.astro';
+import { t } from '@i18n/index';
+const dict = t('it');
+---
+<BaseLayout
+  lang="it"
+  title={dict.seo.partners_title}
+  description={dict.seo.partners_desc}
+  keywords={['partner mostra fotografica','gallerie ospitanti','sponsor mostra fine art']}
+>
+  <PartnersPage lang="it" />
+</BaseLayout>

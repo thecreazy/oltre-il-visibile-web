@@ -1,0 +1,72 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path, home } from '@i18n/index';
+import LanguageSwitcher from '@components/LanguageSwitcher.astro';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const dict = t(lang);
+
+const navItems = [
+  { label: dict.nav.manifesto, href: path(lang, 'manifesto') },
+  { label: dict.nav.exhibitions, href: path(lang, 'exhibitions') },
+  { label: dict.nav.photographers, href: path(lang, 'photographers') },
+  { label: dict.nav.models, href: path(lang, 'models') },
+  { label: dict.nav.partners, href: path(lang, 'partners') },
+  { label: dict.nav.press, href: path(lang, 'press') },
+  { label: dict.nav.contact, href: path(lang, 'contact') },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 mix-blend-difference text-paper">
+  <div class="px-6 md:px-10 py-5 flex items-center justify-between">
+    <a href={home(lang)} class="font-mono text-[0.7rem] tracking-[0.28em] uppercase" aria-label={dict.a11y.to_home}>
+      Oltre&nbsp;il&nbsp;Visibile
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 font-mono text-[0.7rem] tracking-[0.22em] uppercase" aria-label="primary">
+      {navItems.map(it => (
+        <a href={it.href} class="alink">{it.label}</a>
+      ))}
+    </nav>
+
+    <div class="flex items-center gap-6">
+      <LanguageSwitcher lang={lang} class="hidden sm:flex" />
+      <button
+        type="button"
+        data-menu-trigger
+        aria-expanded="false"
+        aria-controls="primary-menu"
+        aria-label={dict.a11y.open_menu}
+        class="lg:hidden font-mono text-[0.7rem] tracking-[0.28em] uppercase border border-current px-3 py-2"
+      >
+        {dict.cta.menu}
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu overlay (also visible to screen readers) -->
+<div id="primary-menu" class="menu-overlay" data-menu-overlay aria-hidden="true">
+  <div class="px-6 md:px-10 py-5 flex items-center justify-between">
+    <a href={home(lang)} class="font-mono text-[0.7rem] tracking-[0.28em] uppercase">Oltre il Visibile</a>
+    <button type="button" data-menu-close aria-label={dict.a11y.close_menu}
+      class="font-mono text-[0.7rem] tracking-[0.28em] uppercase border border-current px-3 py-2">
+      {dict.cta.close}
+    </button>
+  </div>
+
+  <nav class="flex-1 px-6 md:px-10 flex flex-col justify-center gap-3 md:gap-5" aria-label="mobile">
+    {navItems.map((it, i) => (
+      <a href={it.href} class="font-display italic font-light text-[clamp(2.5rem,7vw,5rem)] leading-none tracking-tight">
+        <span class="font-mono not-italic text-mist text-[0.7rem] tracking-[0.28em] mr-4 align-middle">0{i+1}</span>
+        {it.label}
+      </a>
+    ))}
+  </nav>
+
+  <div class="px-6 md:px-10 py-6 flex items-center justify-between text-paper/70 font-mono text-[0.7rem] tracking-[0.22em] uppercase">
+    <LanguageSwitcher lang={lang} />
+    <span>2026 — 2027</span>
+  </div>
+</div>

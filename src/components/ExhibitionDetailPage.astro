@@ -1,0 +1,154 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getCollection, getEntry } from 'astro:content';
+import { pick } from '@utils/data';
+import RevealText from '@components/RevealText.astro';
+import GalleryGrid from '@components/GalleryGrid.astro';
+import NewsletterForm from '@components/NewsletterForm.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+import AnimatedLink from '@components/AnimatedLink.astro';
+
+interface Props {
+  lang: Lang;
+  /** filename of the exhibition entry (without .json), e.g. 'milan' */
+  entryId: string;
+}
+
+const { lang, entryId } = Astro.props;
+const dict = t(lang);
+
+const entry = await getEntry('exhibitions', entryId);
+if (!entry) throw new Error(`Exhibition not found: ${entryId}`);
+const ex = entry.data;
+
+const photographers = await Promise.all(
+  ex.photographers.map(async (s) => (await getEntry('photographers', s))!.data)
+);
+const models = await Promise.all(
+  ex.models.map(async (s) => (await getEntry('models', s))!.data)
+);
+---
+
+<!-- HERO -->
+<section class="relative px-6 md:px-10 pt-40 md:pt-48 pb-24 bg-paper text-ink">
+  <p class="eyebrow text-smoke" data-reveal>
+    N° {ex.accent_no} — {ex.season}
+  </p>
+  <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+    <RevealText as="span" class="block" text={pick(ex.city, lang)} />
+  </h1>
+  <div class="mt-12 grid grid-cols-12 gap-x-6 items-end">
+    <p class="col-span-12 md:col-span-6 font-display italic text-2xl md:text-3xl text-smoke max-w-[34ch]" data-reveal>
+      {pick(ex.short_text, lang)}
+    </p>
+    <div class="col-span-12 md:col-span-3 md:col-start-9 mt-10 md:mt-0 font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke" data-reveal>
+      <p>{ex.venue}</p>
+      <p class="mt-1">{ex.address}</p>
+      <p class="mt-3">{pick(ex.dates, lang)}</p>
+      <p class="text-mist mt-1">— {dict.exhibitions.coming_soon}</p>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE / DATES / MAP STRIP -->
+<section class="px-6 md:px-10 py-12 border-y border-ink/15 bg-bone">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-6 items-center">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.exhibitions.venue}</p>
+      <p class="font-display italic text-2xl mt-2">{ex.venue}</p>
+    </div>
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.exhibitions.city}</p>
+      <p class="font-display italic text-2xl mt-2">{pick(ex.city, lang)}, {pick(ex.country, lang)}</p>
+    </div>
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.exhibitions.date}</p>
+      <p class="font-mono text-sm mt-2 tracking-[0.12em] uppercase">{pick(ex.dates, lang)}</p>
+    </div>
+    <div class="col-span-12 md:col-span-3 md:flex md:justify-end">
+      <MagneticButton href={ex.map_url} target="_blank" rel="noopener">
+        {dict.cta.open_map}
+      </MagneticButton>
+    </div>
+  </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="px-6 md:px-10 py-32 grid grid-cols-12 gap-x-6 gap-y-6 bg-paper">
+  <div class="col-span-12 md:col-span-3">
+    <p class="eyebrow text-smoke">{lang === 'it' ? 'Sulla tappa' : 'On this stop'}</p>
+  </div>
+  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
+    {pick(ex.description, lang).map((p, i) => (
+      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i*0.08).toString()}>{p}</p>
+    ))}
+    <p class="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-mist mt-6">— {pick(ex.venue_note, lang)}</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="px-6 md:px-10 pb-32 bg-paper">
+  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} />
+</section>
+
+<!-- ARTISTS -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15 bg-bone">
+  <header class="grid grid-cols-12 gap-x-6 mb-10">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.exhibitions.artists_involved}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02]" data-reveal>
+      {lang === 'it' ? 'Sguardi presenti in città' : 'Gazes present in this city'}
+    </h2>
+  </header>
+  <ul class="grid grid-cols-12 gap-x-6 gap-y-8">
+    {photographers.map((p, i) => (
+      <li class="col-span-12 md:col-span-6 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
+        <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° {p.accent_no} · {p.based}</p>
+        <h3 class="font-display italic text-4xl mt-3">{p.name}</h3>
+        <p class="text-smoke mt-3 max-w-[40ch]">{pick(p.statement, lang)}</p>
+        <AnimatedLink href={`${path(lang, 'photographers')}/${p.slug}`} class="mt-5 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase">
+          {dict.cta.view_profile} →
+        </AnimatedLink>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<!-- MODELS -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15 bg-paper">
+  <header class="grid grid-cols-12 gap-x-6 mb-10">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.exhibitions.models_involved}</p>
+    <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02]" data-reveal>
+      {lang === 'it' ? 'Presenze in città' : 'Presences in this city'}
+    </h2>
+  </header>
+  <ul class="grid grid-cols-12 gap-x-6 gap-y-8">
+    {models.map((m, i) => (
+      <li class="col-span-12 md:col-span-6 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
+        <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° {m.accent_no} · {m.based}</p>
+        <h3 class="font-display italic text-4xl mt-3">{m.name}</h3>
+        <p class="text-smoke mt-3 max-w-[40ch]">{pick(m.statement, lang)}</p>
+        <AnimatedLink href={`${path(lang, 'models')}/${m.slug}`} class="mt-5 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase">
+          {dict.cta.view_profile} →
+        </AnimatedLink>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="px-6 md:px-10 py-32 bg-ink text-paper">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-10">
+    <p class="col-span-12 md:col-span-3 eyebrow text-paper/60">{dict.home.newsletter_eyebrow}</p>
+    <div class="col-span-12 md:col-span-9 max-w-[42ch]" data-reveal>
+      <h2 class="font-display italic font-light text-editorial leading-[1.02]">
+        {dict.exhibitions.city_newsletter} {pick(ex.city, lang)}
+      </h2>
+      <p class="text-paper/70 mt-6 max-w-[40ch] leading-relaxed">{dict.home.newsletter_text}</p>
+    </div>
+    <div class="col-span-12 md:col-span-9 md:col-start-4 mt-10">
+      <NewsletterForm lang={lang} variant="dark" context={pick(ex.city, lang).toLowerCase()} />
+    </div>
+  </div>
+</section>
+---

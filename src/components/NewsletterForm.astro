@@ -1,0 +1,71 @@
+---
+import type { Lang } from '@i18n/index';
+import { t } from '@i18n/index';
+import MagneticButton from '@components/MagneticButton.astro';
+
+interface Props {
+  lang: Lang;
+  variant?: 'light' | 'dark';
+  context?: string; // e.g. city name for tracking, optional
+  class?: string;
+}
+const { lang, variant = 'light', context = '', class: className = '' } = Astro.props;
+const dict = t(lang);
+const id = `nl-${Math.random().toString(36).slice(2, 8)}`;
+const dark = variant === 'dark';
+---
+
+<form
+  data-newsletter
+  data-context={context}
+  class={`grid grid-cols-1 md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-end ${className} ${dark ? 'text-paper' : 'text-ink'}`}
+  novalidate
+>
+  <label class="block w-full">
+    <span class="eyebrow block mb-3 opacity-70">{dict.contact.email}</span>
+    <input
+      id={id}
+      type="email"
+      required
+      placeholder={dict.home.newsletter_placeholder}
+      class="field"
+      autocomplete="email"
+      name="email"
+    />
+  </label>
+
+  <MagneticButton type="submit" class={dark ? 'border-paper' : ''}>
+    {dict.cta.subscribe}
+  </MagneticButton>
+
+  <p class={`md:col-span-2 font-mono text-[0.65rem] tracking-[0.18em] uppercase ${dark ? 'opacity-60' : 'opacity-50'}`}>
+    {dict.home.newsletter_consent}
+  </p>
+
+  <p data-newsletter-feedback role="status"
+     class={`md:col-span-2 hidden font-mono text-[0.7rem] tracking-[0.18em] uppercase ${dark ? 'text-paper' : 'text-ink'}`}>
+  </p>
+</form>
+
+<script is:inline define:vars={{ langCode: lang }}>
+  document.querySelectorAll('form[data-newsletter]').forEach((form) => {
+    if (form.dataset.bound) return;
+    form.dataset.bound = 'true';
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fb = form.querySelector('[data-newsletter-feedback]');
+      const input = form.querySelector('input[type="email"]');
+      if (!input || !fb) return;
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
+        fb.textContent = langCode === 'it' ? '— controlla l\'email' : '— check your email';
+        fb.classList.remove('hidden');
+        return;
+      }
+      input.value = '';
+      fb.textContent = langCode === 'it'
+        ? '— grazie. presto nella tua casella.'
+        : '— thank you. soon in your inbox.';
+      fb.classList.remove('hidden');
+    });
+  });
+</script>

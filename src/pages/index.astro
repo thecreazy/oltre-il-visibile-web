@@ -1,0 +1,24 @@
+---
+// Static-friendly soft redirect to default language.
+// We use a meta refresh (works without JS) + a JS fallback that respects the browser language.
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>Oltre il Visibile</title>
+    <meta http-equiv="refresh" content="0; url=/it" />
+    <link rel="canonical" href="/it" />
+    <link rel="alternate" hreflang="it-IT" href="/it" />
+    <link rel="alternate" hreflang="en-GB" href="/en" />
+    <link rel="alternate" hreflang="x-default" href="/it" />
+  </head>
+  <body>
+    <p>
+      <a href="/it">Italiano</a> · <a href="/en">English</a>
+    </p>
+    <script is:inline>
+      location.replace('/it');
+    </script>
+  </body>
+</html>

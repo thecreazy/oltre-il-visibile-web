@@ -1,0 +1,73 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { pick, type Bilingual } from '@utils/data';
+
+interface Props {
+  lang: Lang;
+  slug_it: string;
+  slug_en: string;
+  city: Bilingual;
+  country: Bilingual;
+  venue: string;
+  venue_note: Bilingual;
+  short_text: Bilingual;
+  dates: Bilingual;
+  season: string;
+  accent_no: string;
+  map_url: string;
+  index: number;
+}
+
+const {
+  lang, slug_it, slug_en, city, country, venue, venue_note, short_text,
+  dates, season, accent_no, map_url, index,
+} = Astro.props;
+const dict = t(lang);
+const slug = lang === 'it' ? slug_it : slug_en;
+const href = `${path(lang, 'exhibitions')}/${slug}`;
+---
+
+<article class="grid grid-cols-12 gap-x-6 py-12 border-t border-ink/15" data-reveal>
+  <!-- # -->
+  <div class="col-span-2 md:col-span-1">
+    <span class="font-mono text-[0.7rem] tracking-[0.28em] uppercase text-smoke">N° {accent_no}</span>
+  </div>
+
+  <!-- city -->
+  <div class="col-span-10 md:col-span-5">
+    <a href={href} class="block group">
+      <h3 class="font-display italic font-light text-[clamp(3rem,9vw,7rem)] leading-[0.9] tracking-tight">
+        {pick(city, lang)}<span class="not-italic font-mono text-base align-top text-smoke ml-2">/{(index+1).toString().padStart(2,'0')}</span>
+      </h3>
+      <p class="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke mt-2">{pick(country, lang)} — {season}</p>
+    </a>
+  </div>
+
+  <!-- meta -->
+  <div class="col-span-12 md:col-span-3 mt-6 md:mt-0 space-y-4">
+    <div>
+      <p class="eyebrow text-smoke">{dict.exhibitions.venue}</p>
+      <p class="mt-1 font-display text-xl">{venue}</p>
+      <p class="font-mono text-[0.65rem] tracking-[0.18em] uppercase text-smoke mt-1">{pick(venue_note, lang)}</p>
+    </div>
+    <div>
+      <p class="eyebrow text-smoke">{dict.exhibitions.date}</p>
+      <p class="mt-1 font-mono text-[0.85rem] tracking-[0.12em] uppercase">{pick(dates, lang)}</p>
+      <p class="font-mono text-[0.65rem] tracking-[0.22em] uppercase text-mist mt-1">— {dict.exhibitions.coming_soon}</p>
+    </div>
+  </div>
+
+  <!-- text + cta -->
+  <div class="col-span-12 md:col-span-3 mt-6 md:mt-0 flex flex-col justify-between">
+    <p class="text-smoke leading-relaxed max-w-[34ch]">{pick(short_text, lang)}</p>
+    <div class="flex items-center gap-6 mt-6">
+      <a href={href} class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase">
+        {dict.cta.view_exhibition} →
+      </a>
+      <a href={map_url} target="_blank" rel="noopener" class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke">
+        ↗ {dict.cta.open_map}
+      </a>
+    </div>
+  </div>
+</article>

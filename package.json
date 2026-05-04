@@ -1,0 +1,31 @@
+{
+  "name": "oltre-il-visibile-web",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Oltre il Visibile — travelling fine art nude exhibition website",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "format": "prettier --write \"**/*.{astro,ts,tsx,js,jsx,md,mdx,json,css}\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/tailwind": "^5.1.2",
+    "astro": "^4.16.13",
+    "gsap": "^3.12.5",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}

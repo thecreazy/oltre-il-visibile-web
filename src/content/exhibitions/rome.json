@@ -1,0 +1,38 @@
+{
+  "slug_it": "roma",
+  "slug_en": "rome",
+  "city": { "it": "Roma", "en": "Rome" },
+  "country": { "it": "Italia", "en": "Italy" },
+  "venue": "Palazzo Velli Expo",
+  "venue_note": {
+    "it": "Trastevere, palazzo cinquecentesco. Un'unica sala lunga, alta, di travertino chiaro.",
+    "en": "Trastevere, sixteenth-century palace. A single long, high room in pale travertine."
+  },
+  "address": "Piazza Sant'Egidio 10, 00153 Roma",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Palazzo+Velli+Expo+Roma",
+  "dates": {
+    "it": "febbraio — aprile 2027",
+    "en": "February — April 2027"
+  },
+  "season": "WINTER · SPRING 2027",
+  "short_text": {
+    "it": "Seconda tappa. Una sala unica e una sequenza ininterrotta: la mostra fine art nude come itinerario fisico in un palazzo storico di Trastevere.",
+    "en": "Second stop. A single room and an uninterrupted sequence: the fine art nude exhibition as a physical itinerary inside a historic Trastevere palace."
+  },
+  "description": {
+    "it": [
+      "Roma è la stanza lunga. Una sola sala, lunga venticinque metri, in cui le immagini sono installate a parete singola — un solo livello, una sola altezza, una sola direzione.",
+      "L'allestimento qui rinuncia alla progressione tematica: si entra e si attraversa, come si attraversa una galleria di sculture in marmo. Le immagini diventano corpi tra altri corpi.",
+      "Il programma include una visita silenziosa alle prime ore del mattino, due dialoghi pubblici con i fotografi presenti, e una pubblicazione bilingue stampata a Roma in cinquecento copie numerate."
+    ],
+    "en": [
+      "Rome is the long room. A single hall, twenty-five metres long, in which images hang on a single wall — one level, one height, one direction.",
+      "The installation here gives up thematic progression: you enter and walk through, the way you walk through a gallery of marble sculptures. The images become bodies among other bodies.",
+      "The programme includes a silent early-morning visit, two public dialogues with the participating photographers, and a bilingual publication printed in Rome in five hundred numbered copies."
+    ]
+  },
+  "photographers": ["thomas-keller", "elena-marchetti"],
+  "models": ["aria-fontana", "nikolas-veit"],
+  "accent_no": "02",
+  "coordinates": [12.467, 41.892]
+}

@@ -1,0 +1,38 @@
+{
+  "slug_it": "milano",
+  "slug_en": "milan",
+  "city": { "it": "Milano", "en": "Milan" },
+  "country": { "it": "Italia", "en": "Italy" },
+  "venue": "Spazio Maiocchi",
+  "venue_note": {
+    "it": "Tre piani, luce zenitale, mura grezze. Una stanza per ogni soglia.",
+    "en": "Three floors, zenithal light, raw walls. One room per threshold."
+  },
+  "address": "Via Achille Maiocchi 5/7, 20129 Milano",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Spazio+Maiocchi+Milano",
+  "dates": {
+    "it": "ottobre — novembre 2026",
+    "en": "October — November 2026"
+  },
+  "season": "AUTUMN 2026",
+  "short_text": {
+    "it": "Prima tappa. Un percorso allestito su tre livelli che apre la mostra fine art nude itinerante in dialogo con la scena editoriale milanese.",
+    "en": "First stop. A three-level installation opening the travelling fine art nude exhibition in dialogue with Milan's editorial scene."
+  },
+  "description": {
+    "it": [
+      "Milano è la prima soglia. La città in cui la mostra incontra il proprio pubblico più editoriale: lettori di fotografia, curatori, scuole di stampa, librerie indipendenti.",
+      "L'allestimento di Spazio Maiocchi attraversa tre stanze, ognuna costruita intorno a una domanda: cosa resta del corpo quando smettiamo di guardarlo come immagine? cosa significa intimità in uno spazio pubblico? cosa fa, lo sguardo, alla persona guardata?",
+      "Il programma collaterale prevede tre conversazioni curate con autori e modelli, una serata di sola lettura del manifesto, e una stampa fine art a tiratura limitata distribuita esclusivamente in mostra."
+    ],
+    "en": [
+      "Milan is the first threshold. The city where the show meets its most editorial audience: photography readers, curators, print schools, independent bookshops.",
+      "The Spazio Maiocchi installation moves through three rooms, each built around a question: what remains of the body when we stop looking at it as image? what does intimacy mean in public space? what does the gaze do to the person seen?",
+      "The collateral programme includes three curated conversations with authors and models, an evening dedicated to a public reading of the manifesto, and a limited-edition fine-art print distributed exclusively at the show."
+    ]
+  },
+  "photographers": ["elena-marchetti", "thomas-keller"],
+  "models": ["aria-fontana", "nikolas-veit"],
+  "accent_no": "01",
+  "coordinates": [9.215, 45.476]
+}
