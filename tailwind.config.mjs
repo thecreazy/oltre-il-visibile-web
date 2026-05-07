@@ -12,6 +12,7 @@ export default {
         smoke: '#5A5752',
         mist: '#9A968E',
         veil: 'rgba(10, 10, 10, 0.04)',
+        gold: '#BF9930',
       },
       fontFamily: {
         display: ['"Cormorant Garamond"', 'Garamond', 'Georgia', 'serif'],
