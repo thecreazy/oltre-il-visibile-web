@@ -55,7 +55,7 @@ const dictionaries = {
         "Oltre il Visibile non è una mostra sulla fotografia. È una mostra su ciò che la fotografia rivela di noi — le emozioni che proiettiamo sulle immagini, le percezioni che costruiamo inconsapevolmente, i paesaggi interiori che uno scatto riesce a portare in superficie.",
       manifesto_cta: 'Leggi il manifesto integrale',
       upcoming_eyebrow: 'Tappe',
-      upcoming_title: 'Tre città, una stessa domanda',
+      upcoming_title: 'Quattro tappe, una stessa domanda',
       models_eyebrow: 'Voci',
       models_title: 'Esperienze che hanno scelto di essere raccontate',
       photographers_eyebrow: 'Fotografi',
@@ -80,7 +80,7 @@ const dictionaries = {
     exhibitions: {
       eyebrow: 'Tappe',
       title: 'Mostre',
-      lead: 'Tre città. Tre contesti. Una sola domanda sulla percezione.',
+      lead: 'Quattro tappe. Quattro contesti. Una sola domanda sulla percezione.',
       coming_soon: 'Prossimamente',
       venue: 'Sede',
       date: 'Date',
@@ -131,13 +131,13 @@ const dictionaries = {
     seo: {
       home_title: 'Oltre il Visibile — Fotografia, psicologia e percezione',
       home_desc:
-        'Oltre il Visibile esplora il confine tra fotografia e psicologia. Milano, Roma, Londra. Come la mente percepisce la realtà, come le emozioni si riflettono negli scatti.',
+        'Oltre il Visibile esplora il confine tra fotografia e psicologia. Roma, Piacenza, Milano, Londra. Come la mente percepisce la realtà, come le emozioni si riflettono negli scatti.',
       manifesto_title: 'Manifesto — Oltre il Visibile',
       manifesto_desc:
         'Sette note sulla mente che vede. Il manifesto della mostra fotografica itinerante Oltre il Visibile.',
-      exhibitions_title: 'Mostre — Milano, Roma, Londra',
+      exhibitions_title: 'Mostre — Roma, Piacenza, Milano, Londra',
       exhibitions_desc:
-        'Le tre tappe della mostra fotografica Oltre il Visibile: Milano, Roma, Londra. Fotografia, psicologia e percezione.',
+        'Le quattro tappe della mostra fotografica Oltre il Visibile: Roma, Piacenza, Milano, Londra. Fotografia, psicologia e percezione.',
       photographers_title: 'Fotografi — Oltre il Visibile',
       photographers_desc:
         'I fotografi selezionati per la mostra Oltre il Visibile, un percorso tra immagine e psicologia.',
@@ -185,7 +185,7 @@ const dictionaries = {
         "Oltre il Visibile is not an exhibition about photography. It is an exhibition about what photography reveals of us — the emotions we project onto images, the perceptions we build unconsciously, the inner landscapes that a photograph can bring to the surface.",
       manifesto_cta: 'Read the full manifesto',
       upcoming_eyebrow: 'Stops',
-      upcoming_title: 'Three cities, one same question',
+      upcoming_title: 'Four stops, one same question',
       models_eyebrow: 'Voices',
       models_title: 'Experiences that chose to be told',
       photographers_eyebrow: 'Photographers',
@@ -210,7 +210,7 @@ const dictionaries = {
     exhibitions: {
       eyebrow: 'Stops',
       title: 'Exhibitions',
-      lead: 'Three cities. Three contexts. One question about perception.',
+      lead: 'Four stops. Four contexts. One question about perception.',
       coming_soon: 'Coming soon',
       venue: 'Venue',
       date: 'Dates',
@@ -261,13 +261,13 @@ const dictionaries = {
     seo: {
       home_title: 'Oltre il Visibile — Photography, psychology and perception',
       home_desc:
-        'Oltre il Visibile explores the boundary between photography and psychology. Milan, Rome, London. How the mind perceives reality, how emotions reflect in photographs.',
+        'Oltre il Visibile explores the boundary between photography and psychology. Rome, Piacenza, Milan, London. How the mind perceives reality, how emotions reflect in photographs.',
       manifesto_title: 'Manifesto — Oltre il Visibile',
       manifesto_desc:
         'Seven notes on the mind that sees. The manifesto of the travelling photography exhibition Oltre il Visibile.',
-      exhibitions_title: 'Exhibitions — Milan, Rome, London',
+      exhibitions_title: 'Exhibitions — Rome, Piacenza, Milan, London',
       exhibitions_desc:
-        'The three stops of the photography exhibition Oltre il Visibile: Milan, Rome, London. Photography, psychology and perception.',
+        'The four stops of the photography exhibition Oltre il Visibile: Rome, Piacenza, Milan, London. Photography, psychology and perception.',
       photographers_title: 'Photographers — Oltre il Visibile',
       photographers_desc:
         'The photographers selected for Oltre il Visibile, a journey between image and psychology.',

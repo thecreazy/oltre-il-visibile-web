@@ -3,36 +3,36 @@
   "slug_en": "london",
   "city": { "it": "Londra", "en": "London" },
   "country": { "it": "Regno Unito", "en": "United Kingdom" },
-  "venue": "Cromwell Place — Gallery 4",
+  "venue": "University of London",
   "venue_note": {
-    "it": "South Kensington, white cube classico, soffitti alti, parete cieca di sei metri.",
-    "en": "South Kensington, classic white cube, high ceilings, a six-metre blind wall."
+    "it": "Mostra fotografica e stage sulla psicologia dell'immagine. Date in corso di definizione.",
+    "en": "Photography exhibition and workshop on the psychology of image. Dates to be announced."
   },
-  "address": "4 Cromwell Place, London SW7 2JE",
-  "map_url": "https://www.google.com/maps/search/?api=1&query=Cromwell+Place+London",
+  "address": "University of London, London",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=University+of+London",
   "dates": {
-    "it": "settembre — ottobre 2027",
-    "en": "September — October 2027"
+    "it": "Prossimamente",
+    "en": "Coming soon"
   },
-  "season": "AUTUMN 2027",
+  "season": "TBD",
   "short_text": {
-    "it": "Terza e ultima tappa. La mostra approda a Londra in un white cube di South Kensington, con nuove opere realizzate appositamente e gli stage conclusivi del progetto.",
-    "en": "Third and final stop. The exhibition arrives in London in a South Kensington white cube, with new works made specifically for this stage and the project's final workshops."
+    "it": "Quarta tappa. University of London: mostra fotografica e stage di fotografia sulla psicologia dell'immagine, diretto dallo stage master Marco Piemonte.",
+    "en": "Fourth stop. University of London: photography exhibition and workshop on the psychology of image, directed by stage master Marco Piemonte."
   },
   "description": {
     "it": [
-      "Londra è la chiusura. Un white cube nel cuore di South Kensington, scelto per la sua neutralità totale: niente architettura che parli al posto delle immagini.",
-      "La tappa londinese aggiunge tre opere realizzate appositamente — non presenti nelle tappe precedenti — e raccoglie i materiali dell'intero progetto in una pubblicazione finale con testi critici e contributi dei partecipanti agli stage.",
-      "Il programma include gli stage conclusivi del ciclo, aperti anche a chi ha già partecipato nelle tappe precedenti, e una serata finale per l'intera comunità del progetto."
+      "Londra è la quarta e ultima tappa di Oltre il Visibile, e la più articolata: alla mostra fotografica si affianca uno stage dedicato alla psicologia dell'immagine, aperto a fotografi e a chiunque voglia approfondire il rapporto tra mente e fotografia.",
+      "Lo stage è diretto da Marco Piemonte, stage master con esperienza nella formazione fotografica e nella relazione tra immagine e processi psicologici.",
+      "Le date saranno comunicate non appena definite. Iscriviti alla newsletter per essere aggiornato."
     ],
     "en": [
-      "London is the closing chapter. A white cube in the heart of South Kensington, chosen for its absolute neutrality: no architecture speaking in place of the images.",
-      "The London stop adds three works made specifically for this exhibition — not shown at previous stops — and gathers the whole project into a final publication with critical texts and contributions from workshop participants.",
-      "The programme includes the final workshops of the series, open also to those who attended in previous cities, and a closing evening for the entire project community."
+      "London is the fourth and final stop of Oltre il Visibile, and the most structured: alongside the photography exhibition, a workshop on the psychology of image is open to photographers and anyone interested in exploring the relationship between mind and photography.",
+      "The workshop is directed by Marco Piemonte, stage master with experience in photography education and the relationship between image and psychological processes.",
+      "Dates will be announced as soon as confirmed. Subscribe to the newsletter to stay updated."
     ]
   },
   "photographers": ["elena-marchetti", "thomas-keller"],
   "models": ["aria-fontana", "nikolas-veit"],
-  "accent_no": "03",
-  "coordinates": [-0.176, 51.494]
+  "accent_no": "04",
+  "coordinates": [51.522, -0.129]
 }

@@ -3,36 +3,34 @@
   "slug_en": "milan",
   "city": { "it": "Milano", "en": "Milan" },
   "country": { "it": "Italia", "en": "Italy" },
-  "venue": "Spazio Maiocchi",
+  "venue": "Da annunciare",
   "venue_note": {
-    "it": "Tre piani, luce zenitale, mura grezze. Una stanza per ogni soglia.",
-    "en": "Three floors, zenithal light, raw walls. One room per threshold."
+    "it": "La sede milanese è in corso di definizione. Aggiornamenti in arrivo.",
+    "en": "The Milan venue is being finalised. Updates coming soon."
   },
-  "address": "Via Achille Maiocchi 5/7, 20129 Milano",
-  "map_url": "https://www.google.com/maps/search/?api=1&query=Spazio+Maiocchi+Milano",
+  "address": "Milano",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Milano",
   "dates": {
-    "it": "ottobre — novembre 2026",
-    "en": "October — November 2026"
+    "it": "19 — 20 settembre 2026",
+    "en": "19 — 20 September 2026"
   },
   "season": "AUTUMN 2026",
   "short_text": {
-    "it": "Prima tappa. Un percorso allestito su tre livelli che apre la mostra in dialogo con la scena culturale milanese e ospita i primi stage di fotografia psicologica.",
-    "en": "First stop. A three-level installation opening the exhibition in dialogue with Milan's cultural scene, hosting the first workshops on psychological photography."
+    "it": "Terza tappa. Milano, 19 e 20 settembre 2026. La sede sarà comunicata nei prossimi mesi.",
+    "en": "Third stop. Milan, 19 and 20 September 2026. The venue will be announced in the coming months."
   },
   "description": {
     "it": [
-      "Milano è la prima soglia. La città in cui la mostra incontra il suo pubblico più curioso: ricercatori, professionisti della salute mentale, fotografi, lettori.",
-      "L'allestimento di Spazio Maiocchi attraversa tre stanze, ognuna costruita intorno a una domanda: come cambiano le stesse immagini quando le guardiamo in stati emotivi diversi? cosa rivela la nostra interpretazione di uno scatto? come si costruisce il significato visivo?",
-      "Il programma collaterale prevede tre stage di fotografia psicologica, due conversazioni pubbliche con i fotografi presenti, e una pubblicazione a tiratura limitata distribuita esclusivamente in mostra."
+      "Milano è la terza tappa di Oltre il Visibile. Le date sono confermate: 19 e 20 settembre 2026. La sede è in corso di definizione e sarà comunicata non appena disponibile.",
+      "Iscriviti alla newsletter per ricevere l'aggiornamento direttamente."
     ],
     "en": [
-      "Milan is the first threshold. The city where the show meets its most curious audience: researchers, mental health professionals, photographers, readers.",
-      "The Spazio Maiocchi installation moves through three rooms, each built around a question: how do the same images change when we look at them in different emotional states? what does our interpretation of a photograph reveal? how is visual meaning constructed?",
-      "The collateral programme includes three psychological photography workshops, two public conversations with the participating photographers, and a limited-edition publication distributed exclusively at the show."
+      "Milan is the third stop of Oltre il Visibile. The dates are confirmed: 19 and 20 September 2026. The venue is being finalised and will be announced as soon as available.",
+      "Subscribe to the newsletter to receive the update directly."
     ]
   },
   "photographers": ["elena-marchetti", "thomas-keller"],
   "models": ["aria-fontana", "nikolas-veit"],
-  "accent_no": "01",
-  "coordinates": [9.215, 45.476]
+  "accent_no": "03",
+  "coordinates": [45.464, 9.189]
 }

@@ -4,7 +4,7 @@ import ExhibitionDetailPage from '@components/ExhibitionDetailPage.astro';
 import { getEntry } from 'astro:content';
 import { pick } from '@utils/data';
 
-const ex = (await getEntry('exhibitions', 'rome'))!.data;
+const ex = (await getEntry('exhibitions', 'piacenza'))!.data;
 const title = `${pick(ex.city, 'it')} — ${ex.venue} · Oltre il Visibile`;
 const desc = pick(ex.short_text, 'it');
 ---
@@ -13,7 +13,7 @@ const desc = pick(ex.short_text, 'it');
   title={title}
   description={desc}
   type="article"
-  keywords={['mostra fotografica psicologia Roma','fotografia e percezione Roma','Aurelia Gallery Roma']}
+  keywords={['mostra fotografica Piacenza','Palazzo Gotico mostra','fotografia e psicologia Piacenza']}
 >
-  <ExhibitionDetailPage lang="it" entryId="rome" />
+  <ExhibitionDetailPage lang="it" entryId="piacenza" />
 </BaseLayout>

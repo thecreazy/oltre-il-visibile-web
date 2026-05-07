@@ -4,7 +4,7 @@ import ExhibitionDetailPage from '@components/ExhibitionDetailPage.astro';
 import { getEntry } from 'astro:content';
 import { pick } from '@utils/data';
 
-const ex = (await getEntry('exhibitions', 'milan'))!.data;
+const ex = (await getEntry('exhibitions', 'piacenza'))!.data;
 const title = `${pick(ex.city, 'en')} — ${ex.venue} · Oltre il Visibile`;
 const desc = pick(ex.short_text, 'en');
 ---
@@ -13,7 +13,7 @@ const desc = pick(ex.short_text, 'en');
   title={title}
   description={desc}
   type="article"
-  keywords={['psychology photography Milan','photography exhibition Milan 2026','photography and psychology Milan']}
+  keywords={['photography exhibition Piacenza','Palazzo Gotico exhibition','photography and psychology Piacenza']}
 >
-  <ExhibitionDetailPage lang="en" entryId="milan" />
+  <ExhibitionDetailPage lang="en" entryId="piacenza" />
 </BaseLayout>

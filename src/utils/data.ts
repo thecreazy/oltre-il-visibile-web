@@ -47,6 +47,15 @@ export const STAFF: {
     },
     city: 'Roma',
   },
+  {
+    name: 'Marco Piemonte',
+    role: { it: 'Stage Master — Londra', en: 'Stage Master — London' },
+    bio: {
+      it: "Stage master con esperienza nella formazione fotografica e nella relazione tra immagine e processi psicologici. Dirige lo stage di Londra presso la University of London: un percorso pratico e riflessivo aperto a fotografi e a chiunque voglia esplorare il rapporto tra mente e fotografia.",
+      en: "Stage master with experience in photography education and the relationship between image and psychological processes. He directs the London workshop at the University of London: a practical and reflective programme open to photographers and anyone interested in exploring the relationship between mind and photography.",
+    },
+    city: 'London',
+  },
 ];
 
 export const PARTNERS: {
@@ -57,33 +66,43 @@ export const PARTNERS: {
   note: Bilingual;
 }[] = [
   {
-    name: 'Spazio Maiocchi',
-    kind: { it: 'Sede ospitante — Milano', en: 'Host venue — Milan' },
-    city: 'Milano',
-    href: 'https://www.spaziomaiocchi.com',
-    note: {
-      it: 'Spazio indipendente di Kaleidoscope per la cultura contemporanea, in zona Buenos Aires.',
-      en: "Kaleidoscope's independent space for contemporary culture, in the Buenos Aires district.",
-    },
-  },
-  {
-    name: 'Palazzo Velli Expo',
+    name: 'Aurelia Gallery',
     kind: { it: 'Sede ospitante — Roma', en: 'Host venue — Rome' },
     city: 'Roma',
-    href: 'https://www.palazzovelli.it',
+    href: 'https://www.google.com/maps/search/?api=1&query=Via+Aurelia+477+Roma',
     note: {
-      it: 'Palazzo cinquecentesco a Trastevere, oggi spazio espositivo per fotografia e arti contemporanee.',
-      en: 'Sixteenth-century palace in Trastevere, today an exhibition space for photography and contemporary arts.',
+      it: 'Galleria fotografica in Via Aurelia 477, vicino alla metro Cornelia. Prima tappa di Oltre il Visibile, 6 — 7 giugno 2026.',
+      en: 'Photography gallery at Via Aurelia 477, near Cornelia metro. First stop of Oltre il Visibile, 6 — 7 June 2026.',
     },
   },
   {
-    name: 'Cromwell Place',
+    name: 'Salone Monumentale — Palazzo Gotico',
+    kind: { it: 'Sede ospitante — Piacenza', en: 'Host venue — Piacenza' },
+    city: 'Piacenza',
+    href: 'https://www.google.com/maps/search/?api=1&query=Palazzo+Gotico+Piacenza',
+    note: {
+      it: 'Sala storica in Piazza dei Cavalli, nel cuore del centro storico di Piacenza. Seconda tappa, 11 — 12 luglio 2026.',
+      en: 'Historic hall in Piazza dei Cavalli, in the heart of Piacenza\'s old town. Second stop, 11 — 12 July 2026.',
+    },
+  },
+  {
+    name: 'Sede in definizione',
+    kind: { it: 'Sede ospitante — Milano', en: 'Host venue — Milan' },
+    city: 'Milano',
+    href: 'https://www.google.com/maps/search/?api=1&query=Milano',
+    note: {
+      it: 'La sede milanese è in corso di definizione. Aggiornamenti in arrivo. Terza tappa, 19 — 20 settembre 2026.',
+      en: 'The Milan venue is being finalised. Updates coming soon. Third stop, 19 — 20 September 2026.',
+    },
+  },
+  {
+    name: 'University of London',
     kind: { it: 'Sede ospitante — Londra', en: 'Host venue — London' },
     city: 'London',
-    href: 'https://www.cromwellplace.com',
+    href: 'https://www.google.com/maps/search/?api=1&query=University+of+London',
     note: {
-      it: 'Casa per gallerie e artisti indipendenti nel cuore di South Kensington.',
-      en: 'Home for galleries and independent artists in the heart of South Kensington.',
+      it: 'Quarta e ultima tappa. Mostra fotografica e stage sulla psicologia dell\'immagine. Date in corso di definizione.',
+      en: 'Fourth and final stop. Photography exhibition and workshop on the psychology of image. Dates to be announced.',
     },
   },
 ];
@@ -191,16 +210,16 @@ export const MANIFESTO: { it: { eyebrow: string; title: string; body: string[] }
   {
     it: {
       eyebrow: 'VII.',
-      title: 'Tre città, una stessa domanda',
+      title: 'Quattro tappe, una stessa domanda',
       body: [
-        "Milano, Roma, Londra. Tre architetture, tre pubblici, tre stagioni. Una sola domanda, ripetuta: cosa stiamo davvero guardando, quando guardiamo un'immagine?",
+        "Roma, Piacenza, Milano, Londra. Quattro architetture, quattro pubblici, quattro stagioni. Una sola domanda, ripetuta: cosa stiamo davvero guardando, quando guardiamo un'immagine?",
       ],
     },
     en: {
       eyebrow: 'VII.',
-      title: 'Three cities, one same question',
+      title: 'Four stops, one same question',
       body: [
-        "Milan, Rome, London. Three architectures, three audiences, three seasons. One single question, repeated: what are we really looking at, when we look at an image?",
+        "Rome, Piacenza, Milan, London. Four architectures, four audiences, four seasons. One single question, repeated: what are we really looking at, when we look at an image?",
       ],
     },
   },

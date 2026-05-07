@@ -3,36 +3,36 @@
   "slug_en": "rome",
   "city": { "it": "Roma", "en": "Rome" },
   "country": { "it": "Italia", "en": "Italy" },
-  "venue": "Palazzo Velli Expo",
+  "venue": "Aurelia Gallery",
   "venue_note": {
-    "it": "Trastevere, palazzo cinquecentesco. Un'unica sala lunga, alta, di travertino chiaro.",
-    "en": "Trastevere, sixteenth-century palace. A single long, high room in pale travertine."
+    "it": "Via Aurelia 477, zona Cornelia — raggiungibile con la metro A, fermata Cornelia.",
+    "en": "Via Aurelia 477, Cornelia district — Metro A, Cornelia stop."
   },
-  "address": "Piazza Sant'Egidio 10, 00153 Roma",
-  "map_url": "https://www.google.com/maps/search/?api=1&query=Palazzo+Velli+Expo+Roma",
+  "address": "Via Aurelia 477, 00165 Roma",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Via+Aurelia+477+Roma",
   "dates": {
-    "it": "febbraio — aprile 2027",
-    "en": "February — April 2027"
+    "it": "6 — 7 giugno 2026",
+    "en": "6 — 7 June 2026"
   },
-  "season": "WINTER · SPRING 2027",
+  "season": "SUMMER 2026",
   "short_text": {
-    "it": "Seconda tappa. Una sala unica e una sequenza ininterrotta: la mostra come itinerario fisico in un palazzo storico di Trastevere, con stage aperti al pubblico.",
-    "en": "Second stop. A single room and an uninterrupted sequence: the exhibition as a physical itinerary inside a historic Trastevere palace, with workshops open to the public."
+    "it": "Prima tappa. Due giorni all'Aurelia Gallery, nella zona Cornelia di Roma: mostra fotografica e incontri con gli autori.",
+    "en": "First stop. Two days at Aurelia Gallery, in Rome's Cornelia district: photography exhibition and meetings with the authors."
   },
   "description": {
     "it": [
-      "Roma è la stanza lunga. Una sola sala, venticinque metri, in cui le immagini si succedono senza interruzione — un solo livello, una sola altezza, una sola direzione.",
-      "L'allestimento rinuncia alla progressione tematica: si entra e si attraversa, portando con sé il proprio stato d'animo. La stessa sequenza di immagini diventa un'esperienza diversa per ognuno.",
-      "Il programma comprende due stage intensivi su fotografia e psicologia della percezione, una visita silenziosa guidata al mattino presto, e una pubblicazione bilingue stampata a Roma in cinquecento copie numerate."
+      "Roma apre il percorso. L'Aurelia Gallery, in zona Cornelia, ospita la prima tappa di Oltre il Visibile: due giornate dedicate alla fotografia come strumento di esplorazione psicologica.",
+      "Lo spazio accoglie le opere dei fotografi partecipanti e offre un ambiente raccolto dove il rapporto tra immagine e osservatore può svilupparsi con attenzione. La scelta di un quartiere decentrato, lontano dai circuiti espositivi abituali, è parte del progetto.",
+      "L'ingresso è libero. Sono previsti momenti di incontro con i fotografi presenti."
     ],
     "en": [
-      "Rome is the long room. A single hall, twenty-five metres, where images follow one after another without interruption — one level, one height, one direction.",
-      "The installation gives up thematic progression: you enter and walk through, carrying your own state of mind. The same sequence of images becomes a different experience for each person.",
-      "The programme includes two intensive workshops on photography and perceptual psychology, a guided silent visit in the early morning, and a bilingual publication printed in Rome in five hundred numbered copies."
+      "Rome opens the journey. Aurelia Gallery, in the Cornelia district, hosts the first stop of Oltre il Visibile: two days dedicated to photography as a tool for psychological exploration.",
+      "The space presents the works of the participating photographers and provides an intimate setting where the relationship between image and observer can unfold with attention. The choice of a neighbourhood away from the usual exhibition circuits is part of the project.",
+      "Entrance is free. Meetings with the participating photographers are planned."
     ]
   },
-  "photographers": ["thomas-keller", "elena-marchetti"],
+  "photographers": ["elena-marchetti", "thomas-keller"],
   "models": ["aria-fontana", "nikolas-veit"],
-  "accent_no": "02",
-  "coordinates": [12.467, 41.892]
+  "accent_no": "01",
+  "coordinates": [41.897, 12.418]
 }

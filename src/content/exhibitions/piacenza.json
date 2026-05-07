@@ -1,0 +1,38 @@
+{
+  "slug_it": "piacenza",
+  "slug_en": "piacenza",
+  "city": { "it": "Piacenza", "en": "Piacenza" },
+  "country": { "it": "Italia", "en": "Italy" },
+  "venue": "Salone Monumentale — Palazzo Gotico",
+  "venue_note": {
+    "it": "Palazzo Gotico, Piazza dei Cavalli — nel cuore del centro storico di Piacenza.",
+    "en": "Palazzo Gotico, Piazza dei Cavalli — in the heart of Piacenza's historic centre."
+  },
+  "address": "Piazza dei Cavalli 2, 29121 Piacenza",
+  "map_url": "https://www.google.com/maps/search/?api=1&query=Palazzo+Gotico+Piacenza",
+  "dates": {
+    "it": "11 — 12 luglio 2026",
+    "en": "11 — 12 July 2026"
+  },
+  "season": "SUMMER 2026",
+  "short_text": {
+    "it": "Seconda tappa. Il Salone Monumentale del Palazzo Gotico, in Piazza dei Cavalli, accoglie la mostra per due giorni nel cuore di Piacenza.",
+    "en": "Second stop. The Salone Monumentale of Palazzo Gotico, in Piazza dei Cavalli, hosts the exhibition for two days in the heart of Piacenza."
+  },
+  "description": {
+    "it": [
+      "Piacenza è la seconda tappa. Il Salone Monumentale del Palazzo Gotico è uno degli spazi storici più significativi della città: una sala ampia, con soffitti affrescati e una luce che cambia nel corso della giornata.",
+      "Portare Oltre il Visibile in un contesto come questo significa mettere in dialogo la fotografia contemporanea con un ambiente che ha la propria storia sedimentata. Le immagini non cercano di dominare lo spazio: lo abitano.",
+      "L'ingresso è libero nei giorni dell'evento."
+    ],
+    "en": [
+      "Piacenza is the second stop. The Salone Monumentale of Palazzo Gotico is one of the city's most significant historic spaces: a wide hall with frescoed ceilings and light that changes through the day.",
+      "Bringing Oltre il Visibile into a context like this means setting contemporary photography in dialogue with a space that carries its own layered history. The images do not try to dominate the space: they inhabit it.",
+      "Entrance is free during the event days."
+    ]
+  },
+  "photographers": ["elena-marchetti", "thomas-keller"],
+  "models": ["aria-fontana", "nikolas-veit"],
+  "accent_no": "02",
+  "coordinates": [44.999, 9.323]
+}
