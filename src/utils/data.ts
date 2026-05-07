@@ -24,8 +24,8 @@ export const STAFF: {
     name: 'Sara Lamberti',
     role: { it: 'Direzione artistica · Curatela', en: 'Artistic direction · Curation' },
     bio: {
-      it: "Curatrice indipendente, dieci anni tra editoria fotografica e mostre istituzionali. Ha curato il programma fotografico di Triennale Milano 2022 — 2024.",
-      en: "Independent curator, ten years between photography publishing and institutional exhibitions. She curated Triennale Milano's photography programme 2022 — 2024.",
+      it: "Curatrice indipendente, dieci anni tra editoria fotografica e mostre istituzionali. Ha curato il programma fotografico di Triennale Milano 2022 — 2024 e si occupa di ricerca sui rapporti tra immagine e psicologia dell'osservazione. Lavora con fotografi, psicologi e ricercatori per costruire contesti espositivi che siano anche spazi di riflessione.",
+      en: "Independent curator, ten years across photography publishing and institutional exhibitions. She curated Triennale Milano's photography programme 2022 — 2024 and researches the relationships between image and the psychology of observation. She works with photographers, psychologists and researchers to build exhibition contexts that are also spaces for reflection.",
     },
     city: 'Milano',
   },
@@ -42,8 +42,8 @@ export const STAFF: {
     name: 'Marco Iervolino',
     role: { it: 'Editoria · Stampe', en: 'Publishing · Prints' },
     bio: {
-      it: 'Stampatore fine art e editore di libri d\'artista. Si occupa della stampa di mostra, dell\'edizione limitata e del libro finale del progetto.',
-      en: 'Fine-art printer and artist-book publisher. Handles the exhibition prints, the limited edition, and the final project book.',
+      it: "Stampatore fine art e editore di libri d'artista. Si occupa della stampa di mostra, dell'edizione limitata e del libro finale del progetto. Collabora con archivi fotografici e istituzioni culturali per preservare e valorizzare opere fotografiche contemporanee.",
+      en: "Fine-art printer and artist-book publisher. Handles the exhibition prints, the limited edition, and the final project book. He collaborates with photography archives and cultural institutions to preserve and promote contemporary photographic works.",
     },
     city: 'Roma',
   },
@@ -93,98 +93,98 @@ export const MANIFESTO: { it: { eyebrow: string; title: string; body: string[] }
   {
     it: {
       eyebrow: 'I.',
-      title: 'Il corpo come paesaggio',
+      title: 'La mente come specchio',
       body: [
-        "Il corpo che fotografiamo non è un oggetto: è un territorio. Si attraversa lentamente, si rispetta come si rispetta una linea di confine. Ogni grano di pelle è un'altitudine, ogni ombra una valle.",
-        'Da qui parte tutto: il corpo non è cosa da mostrare, è terra da abitare con cautela.',
+        "La fotografia non ritrae solo ciò che sta fuori. Ritrae — se ci ascoltiamo — ciò che lo sguardo porta dentro: le aspettative, i ricordi, le zone d'ombra che non sappiamo di avere. Inizia da qui: ogni scatto è anche un autoritratto di chi guarda.",
+        "Da qui parte tutto: la fotografia non è una finestra sulla realtà. È uno specchio.",
       ],
     },
     en: {
       eyebrow: 'I.',
-      title: 'The body as landscape',
+      title: 'The mind as mirror',
       body: [
-        "The body we photograph is not an object: it is a territory. You cross it slowly, you respect it the way you respect a border. Every grain of skin is an altitude, every shadow a valley.",
-        'Everything starts here: the body is not a thing to be displayed, it is land to be inhabited with care.',
+        "Photography does not only depict what lies outside. It depicts — if we listen — what the gaze carries within: expectations, memories, the shadowed zones we do not know we have. It begins here: every photograph is also a self-portrait of those who look.",
+        "Everything starts here: photography is not a window onto reality. It is a mirror.",
       ],
     },
   },
   {
     it: {
       eyebrow: 'II.',
-      title: 'Intimità senza spettacolo',
+      title: 'Lo sguardo come atto psicologico',
       body: [
-        "Tutto ciò che si vede in mostra è intimo. Niente di ciò che si vede è spettacolare. La differenza è una scelta di linguaggio e una scelta etica: lo spettacolo richiede uno sguardo che divora, l'intimità richiede uno sguardo che resta.",
+        "Vedere non è neutro. È un atto filtrato da memorie, emozioni, strutture mentali costruite negli anni. Quando guardiamo una fotografia non registriamo: interpretiamo. E quell'interpretazione dice qualcosa di noi prima ancora che dell'immagine.",
       ],
     },
     en: {
       eyebrow: 'II.',
-      title: 'Intimacy without spectacle',
+      title: 'The gaze as psychological act',
       body: [
-        "Everything you see in the show is intimate. Nothing you see is spectacular. The difference is a choice of language and a choice of ethics: spectacle requires a gaze that devours, intimacy requires a gaze that stays.",
+        "Seeing is not neutral. It is an act filtered by memories, emotions, mental structures built over years. When we look at a photograph we do not register: we interpret. And that interpretation says something about us before it says anything about the image.",
       ],
     },
   },
   {
     it: {
       eyebrow: 'III.',
-      title: 'Identità e trasformazione',
+      title: 'Emozione e fotogramma',
       body: [
-        "Il nudo non è un'identità: è una trasformazione. Le persone che hanno scelto di posare per questa mostra non hanno tolto qualcosa, hanno aggiunto un livello di responsabilità verso se stesse e verso chi guarda.",
+        "Le emozioni si inscrivono nell'inquadratura prima di essere cercate. Un'angolatura, una distanza, il momento esatto in cui si preme — tutto questo è già emozione che si fa forma. Il fotografo decide con il corpo prima che con la mente. Poi guarda la stampa e si sorprende.",
       ],
     },
     en: {
       eyebrow: 'III.',
-      title: 'Identity and transformation',
+      title: 'Emotion and the frame',
       body: [
-        "Nudity is not an identity: it is a transformation. The people who chose to model for this show did not take something away, they added a layer of responsibility toward themselves and toward those who look.",
+        "Emotions inscribe themselves in the frame before they are sought. An angle, a distance, the exact moment of the shutter — all of this is already emotion becoming form. The photographer decides with the body before the mind. Then looks at the print and is surprised.",
       ],
     },
   },
   {
     it: {
       eyebrow: 'IV.',
-      title: 'Ciò che resta nascosto',
+      title: "L'inconscio si rivela",
       body: [
-        "Anche quando tutto appare visibile, qualcosa resta. Restano le scelte fatte fuori dall'inquadratura: con chi parlare, quando dire no, quando ricominciare. La mostra si chiama Oltre il Visibile perché crediamo che la fotografia non riveli mai una persona per intero. La protegge.",
+        "Nelle fotografie appaiono cose che non sono state cercate. Un'ombra sul muro, uno spazio vuoto, la postura che il soggetto ha assunto senza accorgersene. L'inconscio non si nasconde: aspetta solo di essere guardato con attenzione. La mostra nasce proprio da questa convinzione.",
       ],
     },
     en: {
       eyebrow: 'IV.',
-      title: 'What remains hidden',
+      title: 'The unconscious reveals itself',
       body: [
-        "Even when everything appears visible, something remains. The choices made outside the frame remain: who to speak with, when to say no, when to begin again. The show is called Beyond the Visible because we believe photography never fully reveals a person. It protects them.",
+        "Photographs show things that were not looked for. A shadow on the wall, an empty space, the posture the subject assumed without noticing. The unconscious does not hide: it simply waits to be looked at with attention. The exhibition is built on this conviction.",
       ],
     },
   },
   {
     it: {
       eyebrow: 'V.',
-      title: 'Lo sguardo come responsabilità',
+      title: 'Percezione e realtà',
       body: [
-        "Chi guarda è dentro l'opera quanto chi è guardato. Per questo abbiamo costruito uno spazio espositivo che non chiede silenzio per imporre rispetto, ma che chiede attenzione. L'attenzione è la prima forma di consenso che possiamo dare alle immagini.",
+        "La realtà che la fotografia cattura e la realtà che vediamo nella fotografia sono due cose diverse. In mezzo c'è la psicologia: i filtri interni con cui trasformiamo il dato visivo in significato. La mostra è costruita intorno a questo spazio di mezzo — quello in cui la realtà diventa esperienza.",
       ],
     },
     en: {
       eyebrow: 'V.',
-      title: 'The gaze as responsibility',
+      title: 'Perception and reality',
       body: [
-        "The viewer is inside the work as much as the sitter. That is why we built an exhibition space that does not demand silence to impose respect, but that asks for attention. Attention is the first form of consent we can give to an image.",
+        "The reality photography captures and the reality we see in the photograph are two different things. In between stands psychology: the inner filters through which we transform visual data into meaning. The exhibition is built around this in-between space — the one in which reality becomes experience.",
       ],
     },
   },
   {
     it: {
       eyebrow: 'VI.',
-      title: 'Vulnerabilità e silenzio',
+      title: 'Vulnerabilità come metodo',
       body: [
-        "Le immagini in mostra non gridano. Sono lavorate per resistere al consumo veloce. Le abbiamo stampate grandi perché chiedano tempo, e le abbiamo distanziate perché chiedano camminata.",
+        "Essere fotografati è un atto di fiducia. Richiede di accettare che qualcuno veda — e fermi — un momento di sé. Gli stage che accompagnano la mostra nascono da questa consapevolezza: la macchina fotografica come strumento di esplorazione interiore, non di esposizione esteriore.",
       ],
     },
     en: {
       eyebrow: 'VI.',
-      title: 'Vulnerability and silence',
+      title: 'Vulnerability as method',
       body: [
-        "The images in the show do not shout. They are crafted to resist quick consumption. We have printed them large so they ask for time, and spaced them apart so they ask you to walk.",
+        "Being photographed is an act of trust. It requires accepting that someone will see — and stop — a moment of yourself. The workshops that accompany the exhibition are built on this awareness: the camera as a tool for inner exploration, not outer exposure.",
       ],
     },
   },
@@ -193,52 +193,18 @@ export const MANIFESTO: { it: { eyebrow: string; title: string; body: string[] }
       eyebrow: 'VII.',
       title: 'Tre città, una stessa domanda',
       body: [
-        "Milano, Roma, Londra. Tre architetture, tre pubblici, tre stagioni. Una sola domanda, ripetuta: cosa stiamo davvero guardando, quando guardiamo un corpo?",
+        "Milano, Roma, Londra. Tre architetture, tre pubblici, tre stagioni. Una sola domanda, ripetuta: cosa stiamo davvero guardando, quando guardiamo un'immagine?",
       ],
     },
     en: {
       eyebrow: 'VII.',
       title: 'Three cities, one same question',
       body: [
-        "Milan, Rome, London. Three architectures, three audiences, three seasons. One single question, repeated: what are we really looking at, when we look at a body?",
+        "Milan, Rome, London. Three architectures, three audiences, three seasons. One single question, repeated: what are we really looking at, when we look at an image?",
       ],
     },
   },
 ];
-
-/* ── Press kit (UI only) ─────────────────────────────────────── */
-export const PRESS_KIT_BLOCKS: { title: Bilingual; body: Bilingual; size: string }[] = [
-  {
-    title: { it: 'Cartella stampa', en: 'Press pack' },
-    body: {
-      it: 'Comunicato stampa, biografie, scheda della mostra, immagini di anteprima.',
-      en: 'Press release, biographies, exhibition fact sheet, preview images.',
-    },
-    size: 'PDF · 18 MB',
-  },
-  {
-    title: { it: 'Immagini ad alta risoluzione', en: 'High-resolution images' },
-    body: {
-      it: 'Selezione di otto immagini per uso editoriale, con crediti.',
-      en: 'Selection of eight images for editorial use, with credits.',
-    },
-    size: 'ZIP · 240 MB',
-  },
-  {
-    title: { it: 'Logo e identità', en: 'Logo and identity' },
-    body: {
-      it: 'Logotipo, simbolo, palette, regole di applicazione.',
-      en: 'Logotype, symbol, palette, application rules.',
-    },
-    size: 'ZIP · 6 MB',
-  },
-];
-
-export const PRESS_CONTACT = {
-  name: 'Sara Lamberti',
-  role: { it: 'Ufficio stampa', en: 'Press office' } as Bilingual,
-  email: 'press@oltreilvisibile.art',
-};
 
 export const CONTACT_EMAIL = 'oltreilvisibileart@gmail.com';
 

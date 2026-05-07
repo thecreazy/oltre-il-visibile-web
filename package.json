@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "Oltre il Visibile — travelling fine art nude exhibition website",
+  "description": "Oltre il Visibile — fotografia, psicologia e percezione",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

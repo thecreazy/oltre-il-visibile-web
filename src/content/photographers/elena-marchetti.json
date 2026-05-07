@@ -8,31 +8,31 @@
     "en": "Photographer"
   },
   "statement": {
-    "it": "Fotografo il momento in cui un corpo smette di posare e ricomincia ad abitarsi.",
-    "en": "I photograph the moment a body stops posing and begins to inhabit itself again."
+    "it": "Fotografo il momento in cui una persona smette di recitare e ricomincia ad abitare se stessa.",
+    "en": "I photograph the moment a person stops performing and begins to inhabit themselves again."
   },
   "bio": {
     "it": [
-      "Elena Marchetti lavora con la fotografia da quindici anni come si lavora con la lingua: sapendo che ogni gesto è una traduzione e che le traduzioni perfette non esistono.",
-      "La sua pratica nasce nello studio di scenografia teatrale a Bologna, dove ha imparato a pensare la luce come una grammatica e il corpo come uno spazio. Da quel momento la fotografia è diventata, per lei, un esercizio di prossimità: rimanere accanto a una persona finché la posa cade.",
-      "Le sue immagini sono pubblicate su Aperture, IL Magazine, Numéro Berlin e fanno parte di collezioni private a Milano, Parigi, Tokyo. Insegna ritratto e nudo in studio al MAST di Bologna."
+      "Elena Marchetti lavora con la fotografia da quindici anni come si lavora con una lingua straniera: sapendo che ogni gesto è una traduzione, che alcune cose non si possono dire direttamente, che il senso abita negli spazi vuoti.",
+      "La sua pratica nasce tra la psicologia clinica e la scenografia teatrale, dove ha imparato a leggere la postura, lo sguardo, la distanza tra le persone come testi da interpretare. Da quel momento la fotografia è diventata, per lei, uno strumento per rendere visibili i processi interiori.",
+      "Le sue immagini sono pubblicate su Aperture, IL Magazine, Numéro Berlin e fanno parte di collezioni private. Conduce workshop di ritratto psicologico in tutta Europa e collabora con istituti di ricerca in psicoterapia a Bologna e Lisbona."
     ],
     "en": [
-      "Elena Marchetti has worked with photography for fifteen years the way one works with a language: aware that every gesture is a translation, and that perfect translations do not exist.",
-      "Her practice was shaped in the theatre scenography department in Bologna, where she learned to think of light as grammar and of the body as space. Since then, photography has become an exercise in proximity for her: staying next to a person until the pose falls.",
-      "Her images have appeared in Aperture, IL Magazine, Numéro Berlin and live in private collections in Milan, Paris, Tokyo. She teaches portrait and nude studio practice at MAST, Bologna."
+      "Elena Marchetti has worked with photography for fifteen years the way one works in a foreign language: aware that every gesture is a translation, that some things cannot be said directly, that meaning lives in the spaces between.",
+      "Her practice was shaped between clinical psychology and theatre scenography, where she learned to read posture, gaze, and the distance between people as texts to interpret. Since then, photography has become a way for her to make inner processes visible.",
+      "Her images appear in Aperture, IL Magazine, Numéro Berlin and live in private collections. She leads psychological portrait workshops across Europe and collaborates with psychotherapy research institutes in Bologna and Lisbon."
     ]
   },
   "practice": {
     "it": [
-      "Lavora quasi esclusivamente in studio, con luce continua, su pellicola medio formato.",
-      "Nessuna direzione plastica del corpo: il modello sceglie come stare. La macchina arriva dopo.",
-      "Ogni shooting comincia con un'ora di conversazione e termina con la stampa di prova consegnata in mano."
+      "Ogni sessione inizia con un'ora di conversazione libera: non un'intervista, ma uno spazio per abbassare le difese.",
+      "Nessuna direzione plastica: il soggetto sceglie come stare, dove guardare. La macchina arriva quando qualcosa cambia nell'aria.",
+      "Ogni sessione termina con la stampa di prova consegnata in mano al soggetto — un atto di restituzione, non di archivio."
     ],
     "en": [
-      "She works almost exclusively in the studio, with continuous light, on medium-format film.",
-      "No plastic direction of the body: the model chooses how to stand. The camera arrives after.",
-      "Every session begins with an hour of conversation and ends with a printed proof handed over in person."
+      "Every session begins with an hour of open conversation: not an interview, but a space to lower defences.",
+      "No direction is given: the subject chooses how to stand, where to look. The camera comes when something shifts in the air.",
+      "Every session ends with a proof print handed directly to the subject — an act of restitution, not of archiving."
     ]
   },
   "works": [
@@ -47,7 +47,7 @@
       "place": "Lisbon · Carpintarias de São Lázaro"
     },
     {
-      "title": { "it": "Il corpo lento", "en": "The Slow Body" },
+      "title": { "it": "Il tempo lento", "en": "The Slow Time" },
       "year": "2024",
       "place": "Milano · Triennale (gruppo)"
     },

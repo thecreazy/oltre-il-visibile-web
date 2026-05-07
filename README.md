@@ -1,6 +1,6 @@
 # Oltre il Visibile
 
-A static, SEO-first, award-level website for the travelling fine art nude exhibition **Oltre il Visibile** (Milan · Rome · London, 2026 — 2027).
+A static, SEO-first, award-level website for the travelling exhibition **Oltre il Visibile** — fotografia, psicologia e percezione (Milan · Rome · London, 2026 — 2027).
 
 White gallery × brutalist editorial. Static-first. Bilingual (Italian / English). Designed and engineered as a piece in itself.
 
@@ -50,7 +50,6 @@ Default route is `/` which redirects to `/it`. The two language roots are `/it` 
 /it/models                      /en/models
 /it/models/[slug]               /en/models/[slug]
 /it/partners                    /en/partners
-/it/press                       /en/press
 /it/contact                     /en/contact
 ```
 
@@ -76,7 +75,7 @@ src/
 │   └── en/             english routes
 ├── styles/             global.css (design system + animations)
 └── utils/
-    ├── data.ts         partners, staff, manifesto, press kit
+    ├── data.ts         partners, staff, manifesto
     ├── seo.ts          SEO builder with hreflang
     └── animations.client.ts  GSAP boot
 ```
@@ -85,7 +84,7 @@ src/
 
 ## Reusable components
 
-`BaseLayout`, `Seo`, `Header`, `Footer`, `LanguageSwitcher`, `PageTransition`, `AnimatedLink`, `MagneticButton`, `RevealText`, `ParallaxImage`, `NewsletterForm`, `ArtistCard`, `ModelCard`, `ExhibitionCard`, `GalleryGrid`, `ManifestoBlock`, `PressKitBlock`, `Marquee`.
+`BaseLayout`, `Seo`, `Header`, `Footer`, `LanguageSwitcher`, `PageTransition`, `AnimatedLink`, `MagneticButton`, `RevealText`, `ParallaxImage`, `NewsletterForm`, `ArtistCard`, `ModelCard`, `ExhibitionCard`, `GalleryGrid`, `ManifestoBlock`, `Marquee`.
 
 Page-level components live next to the small route files that import them, so each language pair stays a thin shell:
 
@@ -157,8 +156,8 @@ All animations are gated on `prefers-reduced-motion: reduce`. With JS disabled, 
 - Semantic HTML, alt text on imagery, proper heading order
 - Clean, trailing-slash-free URLs
 
-Italian keywords: *mostra fine art nude, mostra fotografica Milano, fotografia artistica corpo*.
-English keywords: *fine art nude exhibition, fine art photography exhibition, nude photography London*.
+Italian keywords: *mostra fotografica psicologia, mostra fotografica Milano, fotografia e percezione*.
+English keywords: *photography psychology exhibition, travelling photography exhibition, perception and photography*.
 
 ---
 
