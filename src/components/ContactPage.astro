@@ -1,15 +1,29 @@
 ---
 import type { Lang } from '@i18n/index';
 import { t } from '@i18n/index';
-import { CONTACT_EMAIL, SOCIALS } from '@utils/data';
+import { CONTACT_EMAIL, SOCIALS, STAFF } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
-import MagneticButton from '@components/MagneticButton.astro';
 
 interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const dict = t(lang);
+
+const reasons = lang === 'it'
+  ? [
+      { label: 'Partecipare come fotografo', desc: 'Sei un fotografo interessato a esporre. Raccontaci il tuo lavoro e il tuo approccio al corpo.' },
+      { label: 'Ospitare la mostra', desc: 'Hai uno spazio o rappresenti un\'istituzione. Esploriamo insieme una possibile tappa.' },
+      { label: 'Collaborare', desc: 'Progetto editoriale, istituzionale o creativo. Siamo aperti a proposte di collaborazione.' },
+      { label: 'Media e rassegna stampa', desc: 'Giornalisti, redazioni, podcast. Siamo disponibili per interviste e materiali.' },
+    ]
+  : [
+      { label: 'Participate as a photographer', desc: 'You\'re a photographer interested in exhibiting. Tell us about your work and approach to the body.' },
+      { label: 'Host the exhibition', desc: 'You have a venue or represent an institution. Let\'s explore a possible stop together.' },
+      { label: 'Collaborate', desc: 'Editorial, institutional or creative project. We are open to collaboration proposals.' },
+      { label: 'Media and press', desc: 'Journalists, editorial teams, podcasts. We are available for interviews and materials.' },
+    ];
 ---
 
+<!-- Hero -->
 <section class="px-6 md:px-10 pt-40 md:pt-48 pb-24">
   <div class="grid grid-cols-12 gap-x-6 items-end">
     <div class="col-span-12 md:col-span-7">
@@ -26,73 +40,70 @@ const dict = t(lang);
   </div>
 </section>
 
-<section class="px-6 md:px-10 pb-32">
-  <div class="grid grid-cols-12 gap-x-6 gap-y-16 border-t border-ink/15 pt-12">
-    <!-- Form -->
-    <form class="col-span-12 md:col-span-7 space-y-10" data-contact novalidate>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
-        <label class="block">
-          <span class="eyebrow text-smoke block mb-2">{dict.contact.name}</span>
-          <input class="field" type="text" name="name" required autocomplete="name" />
-        </label>
-        <label class="block">
-          <span class="eyebrow text-smoke block mb-2">{dict.contact.email}</span>
-          <input class="field" type="email" name="email" required autocomplete="email" />
-        </label>
-        <label class="block md:col-span-2">
-          <span class="eyebrow text-smoke block mb-2">{dict.contact.subject}</span>
-          <input class="field" type="text" name="subject" />
-        </label>
-        <label class="block md:col-span-2">
-          <span class="eyebrow text-smoke block mb-2">{dict.contact.message}</span>
-          <textarea class="field h-40 resize-none" name="message" required></textarea>
-        </label>
-      </div>
-
-      <div class="flex items-center justify-between gap-6">
-        <p data-contact-feedback role="status" class="hidden font-mono text-[0.7rem] tracking-[0.18em] uppercase text-smoke"></p>
-        <MagneticButton type="submit">{dict.contact.send}</MagneticButton>
-      </div>
-    </form>
-
-    <!-- Direct -->
-    <aside class="col-span-12 md:col-span-4 md:col-start-9 space-y-10">
-      <div>
-        <p class="eyebrow text-smoke">{dict.contact.direct_email}</p>
-        <a href={`mailto:${CONTACT_EMAIL}`} class="block mt-4 font-display italic text-3xl alink">{CONTACT_EMAIL}</a>
-      </div>
-      <div>
-        <p class="eyebrow text-smoke">{dict.footer.column_follow}</p>
-        <ul class="mt-4 space-y-2 font-display text-2xl">
-          {SOCIALS.map(s => <li><a href={s.href} target="_blank" rel="noopener" class="alink">{s.label} ↗</a></li>)}
-        </ul>
-      </div>
-    </aside>
+<!-- Email -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15">
+  <div class="grid grid-cols-12 gap-x-6 items-center gap-y-6">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">
+      {lang === 'it' ? 'Scrivi direttamente' : 'Write directly'}
+    </p>
+    <div class="col-span-12 md:col-span-9">
+      <a
+        href={`mailto:${CONTACT_EMAIL}`}
+        class="font-display italic font-extralight text-[clamp(1.6rem,4vw,4rem)] leading-none tracking-tight alink break-all"
+      >
+        {CONTACT_EMAIL}
+      </a>
+    </div>
   </div>
 </section>
 
-<script is:inline define:vars={{ langCode: lang, mailto: CONTACT_EMAIL }}>
-  document.querySelectorAll('form[data-contact]').forEach((form) => {
-    if (form.dataset.bound) return;
-    form.dataset.bound = 'true';
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const fb = form.querySelector('[data-contact-feedback]');
-      const data = Object.fromEntries(new FormData(form).entries());
-      if (!data.name || !data.email || !data.message) {
-        if (fb) {
-          fb.textContent = langCode === 'it' ? '— compila i campi richiesti' : '— please fill the required fields';
-          fb.classList.remove('hidden');
-        }
-        return;
-      }
-      const subject = encodeURIComponent(String(data.subject || (langCode === 'it' ? 'Messaggio dal sito' : 'Website message')));
-      const body = encodeURIComponent(`${data.name} <${data.email}>\n\n${data.message}`);
-      window.location.href = `mailto:${mailto}?subject=${subject}&body=${body}`;
-      if (fb) {
-        fb.textContent = langCode === 'it' ? '— grazie. apriamo il tuo client di posta.' : '— thank you. opening your mail client.';
-        fb.classList.remove('hidden');
-      }
-    });
-  });
-</script>
+<!-- Reasons -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15">
+  <p class="eyebrow text-smoke mb-14">
+    {lang === 'it' ? 'Di cosa vuoi parlarci?' : 'What do you want to talk about?'}
+  </p>
+  <div class="grid grid-cols-12 gap-x-6 gap-y-12">
+    {reasons.map((r, i) => (
+      <div class="col-span-12 md:col-span-6 flex gap-8">
+        <span class="eyebrow text-smoke/35 mt-1 shrink-0 tabular-nums">0{i + 1}</span>
+        <div>
+          <p class="font-display italic text-2xl md:text-3xl mb-3 leading-tight">{r.label}</p>
+          <p class="font-mono text-[0.75rem] tracking-[0.14em] text-smoke/75 leading-relaxed max-w-[38ch]">{r.desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<!-- Team -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15">
+  <p class="eyebrow text-smoke mb-14">
+    {lang === 'it' ? 'A chi scrivere' : 'Who to write to'}
+  </p>
+  <div class="grid grid-cols-12 gap-x-6 gap-y-12">
+    {STAFF.map(s => (
+      <div class="col-span-12 md:col-span-4">
+        <p class="font-display italic text-2xl leading-tight mb-1">{s.name}</p>
+        <p class="eyebrow text-smoke mb-5">{s.role[lang]}</p>
+        <a
+          href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(s.name)}`}
+          class="font-mono text-[0.75rem] tracking-[0.22em] uppercase alink"
+        >
+          {lang === 'it' ? 'Scrivi' : 'Write'} →
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
+<!-- Socials -->
+<section class="px-6 md:px-10 py-16 border-t border-ink/15">
+  <div class="grid grid-cols-12 gap-x-6 items-start gap-y-6">
+    <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.footer.column_follow}</p>
+    <ul class="col-span-12 md:col-span-9 flex flex-wrap gap-x-10 gap-y-3 font-display text-2xl">
+      {SOCIALS.map(s => (
+        <li><a href={s.href} target="_blank" rel="noopener" class="alink">{s.label} ↗</a></li>
+      ))}
+    </ul>
+  </div>
+</section>

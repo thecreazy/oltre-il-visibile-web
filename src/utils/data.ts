@@ -240,7 +240,7 @@ export const PRESS_CONTACT = {
   email: 'press@oltreilvisibile.art',
 };
 
-export const CONTACT_EMAIL = 'hello@oltreilvisibile.art';
+export const CONTACT_EMAIL = 'oltreilvisibileart@gmail.com';
 
 /* ── small helpers ───────────────────────────────────────────── */
 export const pick = <T>(b: { it: T; en: T }, lang: Lang): T => b[lang];
