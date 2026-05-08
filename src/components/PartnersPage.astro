@@ -30,7 +30,7 @@ const dict = t(lang);
     <li class="border-t border-ink/15"></li>
     {PARTNERS.map((p, i) => (
       <li class="border-b border-ink/15 py-12 grid grid-cols-12 gap-x-6 items-start" data-reveal data-reveal-delay={(i*0.08).toString()}>
-        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° 0{i+1}</span>
+        <span class="col-span-2 md:col-span-1"></span>
         <a href={p.href} target="_blank" rel="noopener" class="col-span-10 md:col-span-5 font-display italic font-light text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] alink">
           {p.name}<span class="not-italic font-mono text-base align-top text-smoke ml-3">↗</span>
         </a>
