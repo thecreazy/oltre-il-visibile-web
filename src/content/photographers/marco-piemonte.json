@@ -1,0 +1,49 @@
+{
+  "slug": "marco-piemonte",
+  "name": "Marco Piemonte",
+  "based": "Londra",
+  "years": "b. 1964",
+  "role": {
+    "it": "Fotografo · Docente di Psicologia dell'Immagine",
+    "en": "Photographer · Lecturer in Psychology of the Image"
+  },
+  "statement": {
+    "it": "Ogni volto è un testo che la macchina fotografica impara a leggere: il mio lavoro è creare le condizioni perché quella lettura diventi rivelazione.",
+    "en": "Every face is a text that the camera learns to read: my work is to create the conditions for that reading to become revelation."
+  },
+  "bio": {
+    "it": [
+      "Nato a Roma nel 1964, Marco Piemonte vive e lavora a Londra. Nel corso della sua carriera ha collaborato con alcune delle più importanti testate internazionali: LIFE, Discovery Travel, National Geographic, People, Elle e Cosmopolitan. È stato il fotografo personale di Maria Sharapova.",
+      "Ha curato lo sviluppo marketing e pubblicitario di brand come Burberry's, Expensive Jeans, Americanino, Balenciaga, Issey Miyake, GF Ferré e Gloss, unendo la sensibilità del ritratto alle esigenze della comunicazione commerciale di alto livello.",
+      "Il suo lavoro è stato esposto all'Art Gallery of Chicago, all'Artist and Culture Gallery di Londra, all'Albert Gallery di Londra, e in Italia durante il Trastevere Festival e presso La Vaccheria a Roma. Ha vinto il The Best Photos of the Year Contest di Las Vegas.",
+      "Tra i suoi soggetti figurano alcune delle personalità più note del cinema e dello spettacolo internazionale: Jennifer Aniston, Jennifer Connelly, Anthony Hopkins, Chaz Palminteri, Tom Hanks, Emma Watson, Ashley Judd, Chloe Bennet, Ron Howard, Penelope Cruz, Woody Allen, Rebecca Newton.",
+      "Docente di Psicologia dell'Immagine all'Università di Londra, porta nella sua pratica fotografica la stessa domanda che guida la ricerca accademica: cosa vediamo davvero quando guardiamo un volto, e cosa proiettiamo su di esso?"
+    ],
+    "en": [
+      "Born in Rome in 1964, Marco Piemonte lives and works in London. Throughout his career he has collaborated with some of the world's most important publications: LIFE, Discovery Travel, National Geographic, People, Elle and Cosmopolitan. He has been the personal photographer of Maria Sharapova.",
+      "He has directed the marketing and advertising development of brands including Burberry's, Expensive Jeans, Americanino, Balenciaga, Issey Miyake, GF Ferré and Gloss, combining portrait sensitivity with the demands of high-level commercial communication.",
+      "His work has been exhibited at the Art Gallery of Chicago, the Artist and Culture Gallery of London, the Albert Gallery in London, and in Italy during the Trastevere Festival and at La Vaccheria in Rome. He won the Best Photos of the Year Contest in Las Vegas.",
+      "Among his subjects are some of the most recognised personalities in international cinema and entertainment: Jennifer Aniston, Jennifer Connelly, Anthony Hopkins, Chaz Palminteri, Tom Hanks, Emma Watson, Ashley Judd, Chloe Bennet, Ron Howard, Penelope Cruz, Woody Allen, Rebecca Newton.",
+      "Lecturer in Psychology of the Image at the University of London, he brings to his photographic practice the same question that drives his academic research: what do we really see when we look at a face, and what do we project onto it?"
+    ]
+  },
+  "practice": {
+    "it": [
+      "Vent'anni di ritratti a celebrities e teste di stato hanno insegnato una cosa sola: nessun volto famoso è diverso da qualsiasi altro volto — la maschera pubblica è più spessa, ma sotto c'è la stessa fragilità.",
+      "La psicologia dell'immagine non è una teoria accademica: è lo strumento con cui leggo ogni soggetto prima ancora di sollevare la macchina. Cosa proietta su di sé? Cosa nasconde? Da lì parte lo scatto.",
+      "Il confine tra reportage e ritratto per me non esiste. Ogni volto è già un documento, ogni ambiente già un ritratto. Il mio compito è trovare il momento in cui i due si toccano."
+    ],
+    "en": [
+      "Twenty years of portraits of celebrities and heads of state have taught one thing: no famous face is different from any other — the public mask is thicker, but beneath it is the same fragility.",
+      "The psychology of the image is not an academic theory: it is the tool with which I read every subject before even raising the camera. What do they project onto themselves? What do they conceal? That is where the shot begins.",
+      "For me the boundary between reportage and portrait does not exist. Every face is already a document, every environment already a portrait. My task is to find the moment when the two touch."
+    ]
+  },
+  "works": [],
+  "cover_text": "MP",
+  "accent_no": "02",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Sito web", "href": "https://www.marcopiemonte.it" }
+  ]
+}
