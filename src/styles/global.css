@@ -262,6 +262,7 @@ html.has-js [data-parallax] {
   transition: transform .8s var(--easing-editorial);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .menu-overlay.is-open { transform: translateY(0); }
 .menu-overlay a { display: inline-block; }
