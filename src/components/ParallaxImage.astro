@@ -1,9 +1,6 @@
 ---
-/**
- * Image-like frame: uses a CSS-only typographic placeholder that mimics a
- * fine-art print plate. Accepts a label, a number and a parallax depth.
- */
 interface Props {
+  src?: string;       // real photo path, e.g. /photographers/ermes-mazzali/1.jpg
   label?: string;
   caption?: string;
   no?: string;
@@ -13,6 +10,7 @@ interface Props {
   class?: string;
 }
 const {
+  src = '',
   label = '',
   caption = '',
   no = '',
@@ -25,22 +23,33 @@ const {
 const bg = tone === 'dark' ? 'bg-graphite text-paper' : 'bg-bone text-ink';
 ---
 <figure class={`frame group ${ratio} ${bg} relative overflow-hidden ${className}`}>
-  <!-- "Image" — a typographic plate that parallaxes -->
-  <div class="absolute inset-0 flex items-center justify-center">
-    <span
-      class="font-display italic font-extralight text-[min(48vw,28rem)] leading-none opacity-60 select-none"
+  {src ? (
+    <!-- Real photo -->
+    <img
+      src={src}
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover"
       data-parallax={depth}
-    >
-      {label}
-    </span>
-  </div>
+      loading="lazy"
+      decoding="async"
+    />
+  ) : (
+    <!-- Typographic placeholder -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <span
+        class="font-display italic font-extralight text-[min(48vw,28rem)] leading-none opacity-60 select-none"
+        data-parallax={depth}
+      >
+        {label}
+      </span>
+    </div>
+  )}
 
-  <!-- corner marks -->
-  <span class="absolute top-3 left-3 font-mono text-[0.65rem] tracking-[0.28em] uppercase opacity-70">PLATE&nbsp;{no}</span>
-  <span class="absolute bottom-3 right-3 font-mono text-[0.65rem] tracking-[0.28em] uppercase opacity-70">SILVER&nbsp;GELATIN</span>
+  <!-- corner marks — always visible, overlay on photo or placeholder -->
+  <span class="absolute top-3 left-3 font-mono text-[0.65rem] tracking-[0.28em] uppercase opacity-70 mix-blend-difference text-paper">PLATE&nbsp;{no}</span>
 
   {caption && (
-    <figcaption class="absolute bottom-3 left-3 font-mono text-[0.65rem] tracking-[0.18em] uppercase opacity-80 max-w-[60%]">
+    <figcaption class="absolute bottom-3 left-3 font-mono text-[0.65rem] tracking-[0.18em] uppercase opacity-80 max-w-[60%] mix-blend-difference text-paper">
       {caption}
     </figcaption>
   )}

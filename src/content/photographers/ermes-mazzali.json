@@ -1,0 +1,55 @@
+{
+  "slug": "ermes-mazzali",
+  "name": "Ermes Mazzali",
+  "based": "Motteggiana · Mantova",
+  "years": "b. 1975",
+  "role": {
+    "it": "Fotografo di ritratto",
+    "en": "Portrait photographer"
+  },
+  "statement": {
+    "it": "Cerco in ogni persona qualcosa di autentico che si nasconde in uno sguardo, in un gesto, in un silenzio: è lì che la fotografia smette di essere un'immagine e diventa un ricordo.",
+    "en": "I look in every person for something authentic that hides in a gaze, a gesture, a silence: it is there that photography stops being an image and becomes a memory."
+  },
+  "bio": {
+    "it": [
+      "Mi chiamo Ermes Mazzali, sono un fotografo cinquantenne di Motteggiana in provincia di Mantova (Lombardia) e da sempre vivo la fotografia come un modo per raccontare emozioni, volti e storie.",
+      "Ho iniziato a scattare fotografie a dieci anni, quasi per gioco, con quella curiosità che ancora oggi mi accompagna ogni volta che prendo in mano la macchina fotografica. Con il tempo, quella passione profonda è diventata il mio lavoro, ma soprattutto il mio modo di osservare le persone, cercando in ognuna qualcosa di autentico.",
+      "Sono specializzato nella fotografia di ritratto, glamour e boudoir, credo che in uno sguardo, in un gesto o persino in un silenzio si nasconda qualcosa di unico e irripetibile da raccontare.",
+      "Gli scatti proposti ritraggono ragazze alla loro prima esperienza fotografica: giovani donne che, attraverso un percorso formativo che offro nel mio studio, imparano a conoscersi, ad esprimersi e a vivere la fotografia con spontaneità ed emozione.",
+      "Molte di loro, una volta ultimato il percorso, partecipano come modelle agli eventi, corsi e workshop che organizzo per fotografi appassionati e fotografi professionisti desiderosi di approfondire il proprio linguaggio fotografico.",
+      "Prediligo il bianco e nero perché elimina il superfluo e lascia spazio all'essenza: la luce, l'anima, l'emozione. È lì che, secondo me, una fotografia smette di essere soltanto un'immagine e diventa un ricordo, un'emozione, capace di lasciare un segno nel tempo.",
+      "Ringrazio di cuore l'amico e collega Massimiliano per questa splendida opportunità e per aver creduto nel mio modo di vivere e raccontare la fotografia."
+    ],
+    "en": [
+      "My name is Ermes Mazzali. I am a photographer in my fifties from Motteggiana, in the province of Mantua (Lombardy), and I have always experienced photography as a way to tell emotions, faces and stories.",
+      "I began taking photographs at ten years old, almost as play, with a curiosity that still accompanies me every time I pick up a camera. Over time, that deep passion became my work — but above all my way of observing people, looking in each of them for something authentic.",
+      "I specialise in portrait, glamour and boudoir photography. I believe that in a gaze, a gesture, or even a silence there hides something unique and unrepeatable to be told.",
+      "The photographs presented portray young women at their first photographic experience: women who, through a formative journey I offer in my studio, learn to know themselves, to express themselves, and to experience photography with spontaneity and emotion.",
+      "Many of them, once the journey is complete, go on to take part as models in the events, courses and workshops I organise for photography enthusiasts and professionals who wish to deepen their visual language.",
+      "I prefer black and white because it eliminates the superfluous and makes space for essence: light, soul, emotion. It is there, in my view, that a photograph stops being merely an image and becomes a memory, an emotion — something capable of leaving a mark across time.",
+      "I warmly thank my friend and colleague Massimiliano for this wonderful opportunity and for believing in my way of living and telling photography."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Prima di alzare la macchina, una conversazione. Capire chi c'è davanti: cosa cerca, cosa non ha ancora detto di sé. L'incontro precede sempre lo scatto.",
+      "Il bianco e nero non è un filtro: è una scelta etica. Toglie il colore e rimette al centro ciò che conta — la luce sul volto, la postura del corpo, il peso di un momento.",
+      "Nei workshop il processo è reciproco: chi fotografa e chi è fotografato imparano l'uno dall'altro. La macchina diventa uno specchio, non uno strumento di controllo."
+    ],
+    "en": [
+      "Before raising the camera, a conversation. Understanding who is there: what they are looking for, what they have not yet said about themselves. The encounter always precedes the photograph.",
+      "Black and white is not a filter: it is an ethical choice. It removes colour and recentres what matters — the light on a face, the posture of a body, the weight of a moment.",
+      "In workshops, the process is reciprocal: the one who photographs and the one being photographed learn from each other. The camera becomes a mirror, not a tool of control."
+    ]
+  },
+  "works": [],
+  "cover_text": "EMZ",
+  "accent_no": "03",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Sito web", "href": "http://www.ErmesMazzaliPhoto.it" },
+    { "label": "Facebook", "href": "https://www.facebook.com/ermes.mazzali.photography" },
+    { "label": "Instagram", "href": "https://www.instagram.com/ermes_mazzali_photo" }
+  ]
+}

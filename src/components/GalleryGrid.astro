@@ -1,24 +1,60 @@
 ---
 import ParallaxImage from '@components/ParallaxImage.astro';
 
+type Orientation = 'v' | 'h' | 's';
+
 interface Props {
-  letters?: string[]; // typographic plates
+  letters?: string[];
   startNo?: number;
+  photographerSlug?: string;
+  orientations?: [Orientation, Orientation, Orientation, Orientation];
 }
-const { letters = ['Ø', 'I', 'V'], startNo = 1 } = Astro.props;
+
+const {
+  letters = ['Ø', 'I', 'V'],
+  startNo = 1,
+  photographerSlug = '',
+  orientations,
+} = Astro.props;
+
+const photos = photographerSlug
+  ? [1, 2, 3, 4].map(n => `/photographers/${photographerSlug}/${n}.jpg`)
+  : ['', '', '', ''];
+
+// Default ratios when no orientation is specified
+const defaults: [string, string, string, string] = [
+  'aspect-[4/5]',
+  'aspect-[3/4]',
+  'aspect-[1/1]',
+  'aspect-[3/2]',
+];
+
+function ratio(o: Orientation | undefined, fallback: string): string {
+  if (!o) return fallback;
+  if (o === 'v') return 'aspect-[2/3]';
+  if (o === 'h') return 'aspect-[3/2]';
+  return 'aspect-[1/1]';
+}
+
+const r = [
+  ratio(orientations?.[0], defaults[0]),
+  ratio(orientations?.[1], defaults[1]),
+  ratio(orientations?.[2], defaults[2]),
+  ratio(orientations?.[3], defaults[3]),
+];
 ---
 
 <div class="grid grid-cols-12 gap-4 md:gap-6">
   <div class="col-span-12 md:col-span-7" data-reveal>
-    <ParallaxImage label={letters[0]} no={String(startNo).padStart(2,'0')} ratio="aspect-[4/5]" tone="dark" />
+    <ParallaxImage src={photos[0]} label={letters[0]} no={String(startNo).padStart(2,'0')} ratio={r[0]} tone="dark" />
   </div>
   <div class="col-span-12 md:col-span-5 md:mt-24" data-reveal>
-    <ParallaxImage label={letters[1]} no={String(startNo+1).padStart(2,'0')} ratio="aspect-[3/4]" tone="light" />
+    <ParallaxImage src={photos[1]} label={letters[1]} no={String(startNo+1).padStart(2,'0')} ratio={r[1]} tone="light" />
   </div>
   <div class="col-span-6 md:col-span-4 md:col-start-3 md:mt-12" data-reveal>
-    <ParallaxImage label={letters[2]} no={String(startNo+2).padStart(2,'0')} ratio="aspect-[1/1]" tone="dark" />
+    <ParallaxImage src={photos[2]} label={letters[2]} no={String(startNo+2).padStart(2,'0')} ratio={r[2]} tone="dark" />
   </div>
   <div class="col-span-6 md:col-span-6 md:col-start-7" data-reveal>
-    <ParallaxImage label="—" no={String(startNo+3).padStart(2,'0')} ratio="aspect-[3/2]" tone="light" depth={0.3} />
+    <ParallaxImage src={photos[3]} label="—" no={String(startNo+3).padStart(2,'0')} ratio={r[3]} tone="light" depth={0.3} />
   </div>
 </div>

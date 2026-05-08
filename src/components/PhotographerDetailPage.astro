@@ -57,6 +57,29 @@ const p = entry.data;
   </ul>
 </section>
 
+<!-- SOCIALS -->
+{p.socials && p.socials.length > 0 && (
+  <section class="px-6 md:px-10 py-16 grid grid-cols-12 gap-x-6 gap-y-4 border-t border-ink/15 bg-paper">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{lang === 'it' ? 'Online' : 'Online'}</p>
+    </div>
+    <ul class="col-span-12 md:col-span-9 flex flex-wrap gap-x-10 gap-y-3">
+      {p.socials.map(s => (
+        <li>
+          <a
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink"
+          >
+            {s.label} ↗
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
 <!-- SELECTED WORKS -->
 <section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
   <div class="col-span-12 md:col-span-3">
@@ -75,7 +98,12 @@ const p = entry.data;
 
 <!-- GALLERY -->
 <section class="px-6 md:px-10 py-24 bg-paper">
-  <GalleryGrid letters={[p.cover_text, '/', '·']} startNo={Number(p.accent_no) * 4 - 3} />
+  <GalleryGrid
+    letters={[p.cover_text, '/', '·']}
+    startNo={Number(p.accent_no) * 4 - 3}
+    photographerSlug={p.slug}
+    orientations={p.photo_orientations}
+  />
 </section>
 
 <!-- BACK -->

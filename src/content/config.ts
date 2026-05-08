@@ -27,6 +27,16 @@ const photographers = defineCollection({
     ),
     cover_text: z.string(), // typographic placeholder text
     accent_no: z.string(), // big editorial number
+    socials: z.array(z.object({
+      label: z.string(),
+      href: z.string(),
+    })).optional(),
+    photo_orientations: z.tuple([
+      z.enum(['v', 'h', 's']),
+      z.enum(['v', 'h', 's']),
+      z.enum(['v', 'h', 's']),
+      z.enum(['v', 'h', 's']),
+    ]).optional(),
   }),
 });
 

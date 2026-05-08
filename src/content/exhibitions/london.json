@@ -1,8 +1,14 @@
 {
   "slug_it": "london",
   "slug_en": "london",
-  "city": { "it": "Londra", "en": "London" },
-  "country": { "it": "Regno Unito", "en": "United Kingdom" },
+  "city": {
+    "it": "Londra",
+    "en": "London"
+  },
+  "country": {
+    "it": "Regno Unito",
+    "en": "United Kingdom"
+  },
   "venue": "University of London",
   "venue_note": {
     "it": "Mostra fotografica e stage sulla psicologia dell'immagine. Date in corso di definizione.",
@@ -21,18 +27,27 @@
   },
   "description": {
     "it": [
-      "Londra è la quarta e ultima tappa di Oltre il Visibile, e la più articolata: alla mostra fotografica si affianca uno stage dedicato alla psicologia dell'immagine, aperto a fotografi e a chiunque voglia approfondire il rapporto tra mente e fotografia.",
+      "Londra è la quarta tappa di Oltre il Visibile, e la più articolata: alla mostra fotografica si affianca uno stage dedicato alla psicologia dell'immagine, aperto a fotografi e a chiunque voglia approfondire il rapporto tra mente e fotografia.",
       "Lo stage è diretto da Marco Piemonte, stage master con esperienza nella formazione fotografica e nella relazione tra immagine e processi psicologici.",
       "Le date saranno comunicate non appena definite. Iscriviti alla newsletter per essere aggiornato."
     ],
     "en": [
-      "London is the fourth and final stop of Oltre il Visibile, and the most structured: alongside the photography exhibition, a workshop on the psychology of image is open to photographers and anyone interested in exploring the relationship between mind and photography.",
+      "London is the fourth stop of Oltre il Visibile, and the most structured: alongside the photography exhibition, a workshop on the psychology of image is open to photographers and anyone interested in exploring the relationship between mind and photography.",
       "The workshop is directed by Marco Piemonte, stage master with experience in photography education and the relationship between image and psychological processes.",
       "Dates will be announced as soon as confirmed. Subscribe to the newsletter to stay updated."
     ]
   },
-  "photographers": ["elena-marchetti", "thomas-keller"],
-  "models": ["aria-fontana", "nikolas-veit"],
+  "photographers": [
+    "elena-marchetti",
+    "thomas-keller"
+  ],
+  "models": [
+    "aria-fontana",
+    "nikolas-veit"
+  ],
   "accent_no": "04",
-  "coordinates": [51.522, -0.129]
+  "coordinates": [
+    51.522,
+    -0.129
+  ]
 }

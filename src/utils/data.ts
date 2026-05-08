@@ -101,8 +101,8 @@ export const PARTNERS: {
     city: 'London',
     href: 'https://www.google.com/maps/search/?api=1&query=University+of+London',
     note: {
-      it: 'Quarta e ultima tappa. Mostra fotografica e stage sulla psicologia dell\'immagine. Date in corso di definizione.',
-      en: 'Fourth and final stop. Photography exhibition and workshop on the psychology of image. Dates to be announced.',
+      it: 'Quarta tappa. Mostra fotografica e stage sulla psicologia dell\'immagine. Date in corso di definizione.',
+      en: 'Fourth stop. Photography exhibition and workshop on the psychology of image. Dates to be announced.',
     },
   },
 ];
