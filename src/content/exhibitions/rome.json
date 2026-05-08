@@ -1,8 +1,14 @@
 {
   "slug_it": "roma",
   "slug_en": "rome",
-  "city": { "it": "Roma", "en": "Rome" },
-  "country": { "it": "Italia", "en": "Italy" },
+  "city": {
+    "it": "Roma",
+    "en": "Rome"
+  },
+  "country": {
+    "it": "Italia",
+    "en": "Italy"
+  },
   "venue": "Aurelia Gallery",
   "venue_note": {
     "it": "Via Aurelia 477, zona Cornelia — raggiungibile con la metro A, fermata Cornelia.",
@@ -31,8 +37,17 @@
       "Entrance is free. Meetings with the participating photographers are planned."
     ]
   },
-  "photographers": ["elena-marchetti", "thomas-keller"],
-  "models": ["aria-fontana", "nikolas-veit"],
+  "photographers": [
+    "massimiliano-falso",
+    "ermes-mazzali"
+  ],
+  "models": [
+    "aria-fontana",
+    "nikolas-veit"
+  ],
   "accent_no": "01",
-  "coordinates": [41.897, 12.418]
+  "coordinates": [
+    41.897,
+    12.418
+  ]
 }

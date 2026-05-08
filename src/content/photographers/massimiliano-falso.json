@@ -1,0 +1,51 @@
+{
+  "slug": "massimiliano-falso",
+  "name": "Massimiliano Falso",
+  "based": "Italia",
+  "years": "Creatore del progetto",
+  "role": {
+    "it": "Fotografo · Ideatore di Oltre il Visibile",
+    "en": "Photographer · Creator of Oltre il Visibile"
+  },
+  "statement": {
+    "it": "Cerco la connessione tra la mia sensibilità e quella del soggetto: sguardi che rivelano le storie vere che si nascondono dietro le maschere della quotidianità.",
+    "en": "I seek the connection between my sensitivity and that of the subject: gazes that reveal the true stories hidden behind the masks of everyday life."
+  },
+  "bio": {
+    "it": [
+      "Raccontare chi fotografi e te stesso attraverso la fotografia è un processo profondo che unisce lo storytelling visivo all'espressione interiore. Questo approccio trasforma la fotografia da semplice tecnica a un mezzo per esternare sentimenti e narrare storie personali.",
+      "Cerco la connessione tra la mia sensibilità e quella del soggetto. Sguardi che raccontano storie di gioie, dolori, vittorie o sofferenze, rivelando le storie vere che si nascondono dietro le maschere della quotidianità."
+    ],
+    "en": [
+      "Telling the story of who you photograph — and of yourself — through photography is a deep process that unites visual storytelling with inner expression. This approach transforms photography from a simple technique into a means of externalising feelings and narrating personal stories.",
+      "I seek the connection between my own sensitivity and that of the subject. Gazes that tell stories of joy, pain, victory and suffering, revealing the true stories hidden behind the masks of everyday life."
+    ]
+  },
+  "practice": {
+    "it": [
+      "La fotografia come dialogo: prima di scattare, cerco il punto di contatto tra la mia visione e il mondo interiore di chi ho davanti.",
+      "Ogni sguardo è una storia. Il mio compito è creare le condizioni perché quella storia venga a galla da sola, senza forzature.",
+      "Narrare attraverso le immagini significa andare oltre la superficie — trovare ciò che si nasconde dietro le maschere che ognuno porta ogni giorno."
+    ],
+    "en": [
+      "Photography as dialogue: before pressing the shutter, I look for the point of contact between my vision and the inner world of the person in front of me.",
+      "Every gaze is a story. My task is to create the conditions for that story to surface on its own, without force.",
+      "Telling through images means going beyond the surface — finding what hides behind the masks everyone wears every day."
+    ]
+  },
+  "works": [],
+  "photo_orientations": [
+    "v",
+    "h",
+    "v",
+    "v"
+  ],
+  "cover_text": "MF",
+  "accent_no": "01",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/falso_massimiliano"
+    }
+  ]
+}

@@ -1,8 +1,14 @@
 {
   "slug_it": "milano",
   "slug_en": "milan",
-  "city": { "it": "Milano", "en": "Milan" },
-  "country": { "it": "Italia", "en": "Italy" },
+  "city": {
+    "it": "Milano",
+    "en": "Milan"
+  },
+  "country": {
+    "it": "Italia",
+    "en": "Italy"
+  },
   "venue": "Da annunciare",
   "venue_note": {
     "it": "La sede milanese è in corso di definizione. Aggiornamenti in arrivo.",
@@ -29,8 +35,17 @@
       "Subscribe to the newsletter to receive the update directly."
     ]
   },
-  "photographers": ["elena-marchetti", "thomas-keller"],
-  "models": ["aria-fontana", "nikolas-veit"],
+  "photographers": [
+    "massimiliano-falso",
+    "ermes-mazzali"
+  ],
+  "models": [
+    "aria-fontana",
+    "nikolas-veit"
+  ],
   "accent_no": "03",
-  "coordinates": [45.464, 9.189]
+  "coordinates": [
+    45.464,
+    9.189
+  ]
 }

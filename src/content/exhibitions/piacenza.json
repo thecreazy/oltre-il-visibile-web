@@ -1,8 +1,14 @@
 {
   "slug_it": "piacenza",
   "slug_en": "piacenza",
-  "city": { "it": "Piacenza", "en": "Piacenza" },
-  "country": { "it": "Italia", "en": "Italy" },
+  "city": {
+    "it": "Piacenza",
+    "en": "Piacenza"
+  },
+  "country": {
+    "it": "Italia",
+    "en": "Italy"
+  },
   "venue": "Salone Monumentale — Palazzo Gotico",
   "venue_note": {
     "it": "Palazzo Gotico, Piazza dei Cavalli — nel cuore del centro storico di Piacenza.",
@@ -31,10 +37,19 @@
       "Entrance is free during the event days."
     ]
   },
-  "photographers": ["elena-marchetti", "thomas-keller"],
-  "models": ["aria-fontana", "nikolas-veit"],
+  "photographers": [
+    "massimiliano-falso",
+    "ermes-mazzali"
+  ],
+  "models": [
+    "aria-fontana",
+    "nikolas-veit"
+  ],
   "accent_no": "02",
-  "coordinates": [44.999, 9.323],
+  "coordinates": [
+    44.999,
+    9.323
+  ],
   "press": [
     {
       "title": "Oltre il Visibile",
