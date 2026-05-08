@@ -94,7 +94,7 @@ const dictionaries = {
     photographers: {
       eyebrow: 'Fotografi',
       title: 'Sguardi',
-      lead: 'Due autori, due grammatiche del vedere e del sentire.',
+      lead: 'Grammatiche diverse del vedere e del sentire, per una sola domanda sulla percezione.',
       bio: 'Biografia',
       practice: 'Metodo',
       selected_works: 'Selezione',
@@ -237,7 +237,7 @@ const dictionaries = {
     photographers: {
       eyebrow: 'Photographers',
       title: 'Gazes',
-      lead: 'Two authors, two grammars for seeing and feeling.',
+      lead: 'Different grammars of seeing and feeling, for one single question about perception.',
       bio: 'Biography',
       practice: 'Method',
       selected_works: 'Selected works',
