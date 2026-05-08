@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import StaffPage from '@components/StaffPage.astro';
+import { t } from '@i18n/index';
+const dict = t('en');
+---
+<BaseLayout
+  lang="en"
+  title="Staff — Oltre il Visibile"
+  description="The team that organises and coordinates the travelling photography exhibition Oltre il Visibile."
+  keywords={['staff photography exhibition','team Oltre il Visibile','exhibition organisation']}
+>
+  <StaffPage lang="en" />
+</BaseLayout>

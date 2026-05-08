@@ -17,42 +17,45 @@ export const SOCIALS: { label: string; href: string }[] = [
 export const STAFF: {
   name: string;
   role: Bilingual;
-  bio: Bilingual;
+  bio?: Bilingual;
   city: string;
 }[] = [
   {
-    name: 'Sara Lamberti',
-    role: { it: 'Direzione artistica · Curatela', en: 'Artistic direction · Curation' },
-    bio: {
-      it: "Curatrice indipendente, dieci anni tra editoria fotografica e mostre istituzionali. Ha curato il programma fotografico di Triennale Milano 2022 — 2024 e si occupa di ricerca sui rapporti tra immagine e psicologia dell'osservazione. Lavora con fotografi, psicologi e ricercatori per costruire contesti espositivi che siano anche spazi di riflessione.",
-      en: "Independent curator, ten years across photography publishing and institutional exhibitions. She curated Triennale Milano's photography programme 2022 — 2024 and researches the relationships between image and the psychology of observation. She works with photographers, psychologists and researchers to build exhibition contexts that are also spaces for reflection.",
-    },
-    city: 'Milano',
+    name: 'Massimiliano Falso',
+    role: { it: 'Direzione artistica · Produzione · Allestimento', en: 'Artistic direction · Production · Installation' },
+    city: 'Italia',
   },
   {
-    name: 'Léa Dubois',
-    role: { it: 'Produzione · Allestimento', en: 'Production · Installation' },
-    bio: {
-      it: 'Production manager per progetti museali itineranti tra Parigi, Berlino e Milano. Si occupa di logistica, allestimento e protocolli per le persone ritratte.',
-      en: 'Production manager for travelling museum projects across Paris, Berlin and Milan. She handles logistics, installation, and protocols for sitters.',
-    },
-    city: 'Paris',
+    name: 'Valentina Pieri',
+    role: { it: 'Direzione artistica', en: 'Artistic direction' },
+    city: 'Italia',
   },
   {
-    name: 'Marco Iervolino',
-    role: { it: 'Editoria · Stampe', en: 'Publishing · Prints' },
-    bio: {
-      it: "Stampatore fine art e editore di libri d'artista. Si occupa della stampa di mostra, dell'edizione limitata e del libro finale del progetto. Collabora con archivi fotografici e istituzioni culturali per preservare e valorizzare opere fotografiche contemporanee.",
-      en: "Fine-art printer and artist-book publisher. Handles the exhibition prints, the limited edition, and the final project book. He collaborates with photography archives and cultural institutions to preserve and promote contemporary photographic works.",
-    },
-    city: 'Roma',
+    name: 'Luke Ketz',
+    role: { it: 'Direzione artistica · Responsabile Nord Italia', en: 'Artistic direction · North Italy coordinator' },
+    city: 'Nord Italia',
+  },
+  {
+    name: 'Paolo Salvadorini',
+    role: { it: 'Responsabile Toscana', en: 'Tuscany coordinator' },
+    city: 'Toscana',
+  },
+  {
+    name: 'Massimiliano Bacchi',
+    role: { it: 'Responsabile Umbria', en: 'Umbria coordinator' },
+    city: 'Umbria',
+  },
+  {
+    name: 'Riccardo Canella',
+    role: { it: 'Sviluppo digitale · Web', en: 'Digital development · Web' },
+    city: 'Italia',
   },
   {
     name: 'Marco Piemonte',
     role: { it: 'Stage Master — Londra', en: 'Stage Master — London' },
     bio: {
-      it: "Stage master con esperienza nella formazione fotografica e nella relazione tra immagine e processi psicologici. Dirige lo stage di Londra presso la University of London: un percorso pratico e riflessivo aperto a fotografi e a chiunque voglia esplorare il rapporto tra mente e fotografia.",
-      en: "Stage master with experience in photography education and the relationship between image and psychological processes. He directs the London workshop at the University of London: a practical and reflective programme open to photographers and anyone interested in exploring the relationship between mind and photography.",
+      it: "Stage master con esperienza nella formazione fotografica e nella relazione tra immagine e processi psicologici. Dirige lo stage di Londra presso la University of London.",
+      en: "Stage master with experience in photography education and the relationship between image and psychological processes. He directs the London workshop at the University of London.",
     },
     city: 'London',
   },
