@@ -39,8 +39,8 @@ function coverSrc(slug: string): string {
 
 <section class="px-6 md:px-10 pb-32">
   <div class="grid grid-cols-12 gap-x-6 gap-y-20">
-    {photographers.map((p, i) => (
-      <div class={`col-span-12 md:col-span-6 ${i === 1 ? 'md:pl-12' : 'md:pr-12'}`}>
+    {photographers.map((p) => (
+      <div class="col-span-12 md:col-span-4">
         <ArtistCard
           lang={lang}
           slug={p.slug}
@@ -51,7 +51,6 @@ function coverSrc(slug: string): string {
           cover_text={p.cover_text}
           cover_src={coverSrc(p.slug)}
           accent_no={p.accent_no}
-          align={i === 1 ? 'right' : 'left'}
         />
       </div>
     ))}

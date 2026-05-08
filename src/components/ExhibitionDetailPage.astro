@@ -2,6 +2,8 @@
 import type { Lang } from '@i18n/index';
 import { t, path } from '@i18n/index';
 import { getCollection, getEntry } from 'astro:content';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { pick } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
@@ -20,6 +22,9 @@ const dict = t(lang);
 const entry = await getEntry('exhibitions', entryId);
 if (!entry) throw new Error(`Exhibition not found: ${entryId}`);
 const ex = entry.data;
+
+const coverAbs = join(process.cwd(), 'public', 'exhibitions', `${entryId}.jpg`);
+const exhibitionCover = existsSync(coverAbs) ? `/exhibitions/${entryId}.jpg` : '';
 
 const photographers = await Promise.all(
   ex.photographers.map(async (s) => (await getEntry('photographers', s))!.data)
@@ -88,7 +93,7 @@ const models = await Promise.all(
 
 <!-- GALLERY -->
 <section class="px-6 md:px-10 pb-32 bg-paper">
-  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} />
+  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} coverSrc={exhibitionCover} />
 </section>
 
 <!-- ARTISTS -->
@@ -102,7 +107,7 @@ const models = await Promise.all(
   <ul class="grid grid-cols-12 gap-x-6 gap-y-8">
     {photographers.map((p, i) => (
       <li class="col-span-12 md:col-span-6 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
-        <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">N° {p.accent_no} · {p.based}</p>
+        <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">{p.based}</p>
         <h3 class="font-display italic text-4xl mt-3">{p.name}</h3>
         <p class="text-smoke mt-3 max-w-[40ch]">{pick(p.statement, lang)}</p>
         <AnimatedLink href={`${path(lang, 'photographers')}/${p.slug}`} class="mt-5 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase">
@@ -113,7 +118,7 @@ const models = await Promise.all(
   </ul>
 </section>
 
-<!-- MODELS -->
+{/* MODELS — hidden until ready
 <section class="px-6 md:px-10 py-24 border-t border-ink/15 bg-paper">
   <header class="grid grid-cols-12 gap-x-6 mb-10">
     <p class="col-span-12 md:col-span-3 eyebrow text-smoke">{dict.exhibitions.models_involved}</p>
@@ -134,6 +139,7 @@ const models = await Promise.all(
     ))}
   </ul>
 </section>
+*/}
 
 <!-- PRESS -->
 {ex.press && ex.press.length > 0 && (
