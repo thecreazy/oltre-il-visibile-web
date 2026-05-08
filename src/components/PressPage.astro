@@ -1,0 +1,93 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getCollection } from 'astro:content';
+import { pick } from '@utils/data';
+import AnimatedLink from '@components/AnimatedLink.astro';
+import RevealText from '@components/RevealText.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const dict = t(lang);
+
+const allExhibitions = await getCollection('exhibitions');
+const withPress = allExhibitions
+  .filter(e => e.data.press && e.data.press.length > 0)
+  .sort((a, b) => a.data.accent_no.localeCompare(b.data.accent_no));
+---
+
+<!-- HERO -->
+<section class="px-6 md:px-10 pt-40 md:pt-48 pb-24 bg-paper text-ink">
+  <p class="eyebrow text-smoke" data-reveal>{dict.press.eyebrow}</p>
+  <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+    <RevealText as="span" class="block" text={dict.press.title} />
+  </h1>
+  <p class="mt-12 font-display italic text-2xl md:text-3xl text-smoke max-w-[44ch]" data-reveal>
+    {dict.press.lead}
+  </p>
+</section>
+
+<!-- PRESS LIST -->
+<section class="px-6 md:px-10 py-24 bg-paper">
+  {withPress.length === 0 ? (
+    <p class="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-mist">{dict.press.empty}</p>
+  ) : (
+    <div class="space-y-20">
+      {withPress.map((ex) => (
+        <div>
+          <!-- Exhibition header -->
+          <div class="grid grid-cols-12 gap-x-6 mb-8">
+            <p class="col-span-12 md:col-span-3 eyebrow text-gold">
+              N° {ex.data.accent_no} — {ex.data.season}
+            </p>
+            <h2 class="col-span-12 md:col-span-9 font-display italic font-light text-editorial leading-[1.02]" data-reveal>
+              {pick(ex.data.city, lang)}
+            </h2>
+          </div>
+
+          <!-- Press items -->
+          <ul>
+            {ex.data.press!.map((item, i) => (
+              <li
+                class="grid grid-cols-12 gap-x-6 items-baseline border-t border-ink/15 py-6"
+                data-reveal
+                data-reveal-delay={(i * 0.06).toString()}
+              >
+                <span class="col-span-12 md:col-span-3 font-mono text-[0.65rem] tracking-[0.22em] uppercase text-smoke">
+                  {item.source}{item.date ? <><br />{item.date}</> : null}
+                </span>
+                <span class="col-span-12 md:col-span-7 font-display italic text-2xl mt-3 md:mt-0">
+                  {item.title}
+                </span>
+                <span class="col-span-12 md:col-span-2 md:text-right mt-4 md:mt-0">
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink"
+                  >
+                    {dict.press.read} ↗
+                  </a>
+                </span>
+              </li>
+            ))}
+            <li class="border-t border-ink/15" />
+          </ul>
+
+          <!-- Link to exhibition -->
+          <div class="mt-6">
+            <AnimatedLink
+              href={`${path(lang, 'exhibitions')}/${lang === 'it' ? ex.data.slug_it : ex.data.slug_en}`}
+              class="font-mono text-[0.7rem] tracking-[0.22em] uppercase"
+            >
+              {dict.cta.view_exhibition} →
+            </AnimatedLink>
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
+</section>

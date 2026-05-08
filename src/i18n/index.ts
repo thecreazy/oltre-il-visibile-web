@@ -29,6 +29,7 @@ const dictionaries = {
       photographers: 'Fotografi',
       models: 'Voci',
       partners: 'Partner',
+      press: 'Rassegna stampa',
       contact: 'Contatti',
     },
     cta: {
@@ -109,10 +110,19 @@ const dictionaries = {
       title: 'Istituzioni',
       lead: 'Le case che ci ospitano e le realtà che ci sostengono.',
     },
+    press: {
+      eyebrow: 'Rassegna stampa',
+      title: 'Comunicati',
+      lead: 'Articoli, comunicati e menzioni ufficiali legati alle tappe di Oltre il Visibile.',
+      read: 'Leggi',
+      empty: 'Nessun comunicato ancora disponibile.',
+      section_eyebrow: 'Rassegna stampa',
+    },
     contact: {
       eyebrow: 'Contatti',
       title: 'Scrivici',
       lead: 'Per partecipare, ospitare la mostra, collaborare agli stage o semplicemente capire.',
+      email: 'Email',
     },
     footer: {
       column_explore: 'Esplora',
@@ -147,6 +157,8 @@ const dictionaries = {
       partners_desc: 'Le istituzioni e le gallerie che sostengono la mostra.',
       contact_title: 'Contatti — Oltre il Visibile',
       contact_desc: 'Contatta la curatela di Oltre il Visibile. Per partecipare, collaborare o ospitare la mostra.',
+      press_title: 'Rassegna stampa — Oltre il Visibile',
+      press_desc: 'Comunicati stampa, articoli e menzioni ufficiali legati alle tappe della mostra fotografica Oltre il Visibile.',
     },
   },
   en: {
@@ -159,6 +171,7 @@ const dictionaries = {
       photographers: 'Photographers',
       models: 'Voices',
       partners: 'Partners',
+      press: 'Press',
       contact: 'Contact',
     },
     cta: {
@@ -239,10 +252,19 @@ const dictionaries = {
       title: 'Institutions',
       lead: 'The houses that host us and the partners that sustain the work.',
     },
+    press: {
+      eyebrow: 'Press coverage',
+      title: 'Press',
+      lead: 'Articles, press releases and official mentions related to the stops of Oltre il Visibile.',
+      read: 'Read',
+      empty: 'No press coverage available yet.',
+      section_eyebrow: 'Press coverage',
+    },
     contact: {
       eyebrow: 'Contact',
       title: 'Write to us',
       lead: 'To take part, host the show, collaborate on workshops, or simply understand.',
+      email: 'Email',
     },
     footer: {
       column_explore: 'Explore',
@@ -277,13 +299,15 @@ const dictionaries = {
       partners_desc: 'Institutions and galleries supporting the exhibition.',
       contact_title: 'Contact — Oltre il Visibile',
       contact_desc: 'Contact the Oltre il Visibile curatorial team. To take part, collaborate or host the show.',
+      press_title: 'Press — Oltre il Visibile',
+      press_desc: 'Press releases, articles and official mentions related to the stops of the Oltre il Visibile photography exhibition.',
     },
   },
 } as const;
 
 export type Dict = (typeof dictionaries)['it'];
 
-export const t = (lang: Lang): Dict => dictionaries[lang];
+export const t = (lang: Lang): Dict => dictionaries[lang] as unknown as Dict;
 
 /* ── routing helpers ───────────────────────────────────────────── */
 
@@ -291,6 +315,9 @@ export const home = (lang: Lang) => `/${lang}`;
 
 export const path = (lang: Lang, segment: string) =>
   segment ? `/${lang}/${segment.replace(/^\//, '')}` : `/${lang}`;
+
+export const pressPath = (lang: Lang) =>
+  lang === 'it' ? '/it/rassegna-stampa' : '/en/press';
 
 /**
  * For each route, return the equivalent path in the other language.
@@ -307,6 +334,16 @@ export const altLangUrl = (currentLang: Lang, currentPath: string): string => {
 
   // Replace the lang prefix
   const tail = parts.slice(1);
+
+  // Top-level route slug translation (IT ↔ EN)
+  const routeMap: Record<string, string> = {
+    'rassegna-stampa': 'press',
+    'press': 'rassegna-stampa',
+  };
+  if (tail[0] && routeMap[tail[0]]) {
+    tail[0] = routeMap[tail[0]];
+    return `/${other}/${tail.join('/')}`;
+  }
 
   // City slug translation for exhibition detail pages
   const cityMap: Record<string, string> = {

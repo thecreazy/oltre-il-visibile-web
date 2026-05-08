@@ -34,5 +34,12 @@
   "photographers": ["elena-marchetti", "thomas-keller"],
   "models": ["aria-fontana", "nikolas-veit"],
   "accent_no": "02",
-  "coordinates": [44.999, 9.323]
+  "coordinates": [44.999, 9.323],
+  "press": [
+    {
+      "title": "Oltre il Visibile",
+      "source": "Comune di Piacenza",
+      "url": "https://www.comune.piacenza.it/it/eventi/oltre-il-visibile"
+    }
+  ]
 }

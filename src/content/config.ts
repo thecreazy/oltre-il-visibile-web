@@ -64,6 +64,12 @@ const exhibitions = defineCollection({
     models: z.array(z.string()), // slugs
     accent_no: z.string(),
     coordinates: z.tuple([z.number(), z.number()]).optional(),
+    press: z.array(z.object({
+      title: z.string(),
+      source: z.string(),
+      url: z.string().url(),
+      date: z.string().optional(),
+    })).optional(),
   }),
 });
 

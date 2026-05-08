@@ -2,7 +2,7 @@
 import '@styles/global.css';
 import { ViewTransitions } from 'astro:transitions';
 import type { Lang } from '@i18n/index';
-import { HTML_LANG, t } from '@i18n/index';
+import { HTML_LANG } from '@i18n/index';
 import Seo from '@components/Seo.astro';
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
@@ -27,7 +27,6 @@ const {
   keywords = [],
   bodyClass = '',
 } = Astro.props;
-const dict = t(lang);
 ---
 
 <!doctype html>
