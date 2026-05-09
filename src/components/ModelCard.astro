@@ -9,24 +9,34 @@ interface Props {
   pronouns: string;
   based: string;
   cover_text: string;
+  cover_src?: string;
   accent_no: string;
   align?: 'left' | 'right';
 }
 
-const { lang, slug, name, pronouns, based, cover_text, accent_no, align = 'left' } = Astro.props;
+const { lang, slug, name, pronouns, based, cover_text, cover_src = '', accent_no, align = 'left' } = Astro.props;
 const dict = t(lang);
 const href = `${path(lang, 'models')}/${slug}`;
 ---
 
 <a href={href} class={`tilecard block group ${align === 'right' ? 'md:translate-y-24' : ''}`} data-reveal>
   <div class="frame aspect-[4/5] bg-bone text-ink relative overflow-hidden">
-    <div class="absolute inset-0 flex items-center justify-center tilecard-img">
-      <span class="font-display italic font-extralight text-[clamp(8rem,22vw,18rem)] leading-none">
-        {cover_text}
-      </span>
-    </div>
-    <span class="absolute top-4 left-4 font-mono text-[0.65rem] tracking-[0.28em] uppercase opacity-70">N°&nbsp;{accent_no}</span>
-    <span class="absolute top-4 right-4 font-mono text-[0.65rem] tracking-[0.28em] uppercase opacity-70">{pronouns}</span>
+    {cover_src ? (
+      <img
+        src={cover_src}
+        alt={name}
+        class="absolute inset-0 w-full h-full object-cover tilecard-img"
+        loading="lazy"
+        decoding="async"
+      />
+    ) : (
+      <div class="absolute inset-0 flex items-center justify-center tilecard-img">
+        <span class="font-display italic font-extralight text-[clamp(8rem,22vw,18rem)] leading-none">
+          {cover_text}
+        </span>
+      </div>
+    )}
+
   </div>
 
   <div class="tilecard-meta mt-5 flex items-baseline justify-between gap-6">

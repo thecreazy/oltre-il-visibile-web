@@ -1,0 +1,20 @@
+{
+  "slug": "eleana-silvestri",
+  "name": "Eleana Silvestri",
+  "based": "Jesolo",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": ["Ritratto", "Glamour", "Nudo artistico"],
+    "en": ["Portrait", "Glamour", "Artistic nude"]
+  },
+  "statement": {
+    "it": "Togliere gli strati significa togliere anche le maschere — quello che rimane nell'obiettivo è sempre più vicino al vero.",
+    "en": "Removing layers means removing masks too — what remains in the lens is always closer to the truth."
+  },
+  "cover_text": "ES",
+  "accent_no": "01",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/eleanasilvestri" }
+  ]
+}

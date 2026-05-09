@@ -103,8 +103,8 @@ const dictionaries = {
       eyebrow: 'Volti',
       title: 'Volti',
       lead: "Chi ha scelto di prendere parte a questo percorso tra fotografia e psicologia.",
-      statement: 'Riflessione',
-      practice: 'Percorso',
+      statement: 'Presenza',
+      genres: 'Generi',
     },
     partners: {
       eyebrow: 'Partner',
@@ -246,8 +246,8 @@ const dictionaries = {
       eyebrow: 'Faces',
       title: 'Faces',
       lead: 'Those who chose to take part in this journey through photography and psychology.',
-      statement: 'Reflection',
-      practice: 'Journey',
+      statement: 'Presence',
+      genres: 'Genres',
     },
     partners: {
       eyebrow: 'Partners',

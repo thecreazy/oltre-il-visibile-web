@@ -2,6 +2,8 @@
 import type { Lang } from '@i18n/index';
 import { t, path } from '@i18n/index';
 import { getEntry } from 'astro:content';
+import { existsSync } from 'fs';
+import { join } from 'path';
 import { pick } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
@@ -14,11 +16,20 @@ const dict = t(lang);
 const entry = await getEntry('models', slug);
 if (!entry) throw new Error(`Model not found: ${slug}`);
 const m = entry.data;
+
+function modelPhoto(n: number): string {
+  const abs = join(process.cwd(), 'public', 'models', slug, `${n}.jpg`);
+  return existsSync(abs) ? `/models/${slug}/${n}.jpg` : '';
+}
+
+const coverSrc = modelPhoto(0);
+const genres = pick(m.genres, lang);
 ---
 
+<!-- HERO -->
 <section class="relative px-6 md:px-10 pt-40 md:pt-48 pb-24 bg-paper">
   <p class="eyebrow text-smoke" data-reveal>
-    N° {m.accent_no} — {m.based} · {m.pronouns}
+    {m.based}
   </p>
   <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
     <RevealText as="span" class="block" text={m.name.split(' ')[0]} />
@@ -26,40 +37,63 @@ const m = entry.data;
   </h1>
 
   <p class="font-display italic text-2xl md:text-3xl text-smoke max-w-[44ch] mt-12" data-reveal>
-    “{pick(m.statement, lang)}”
+    "{pick(m.statement, lang)}"
   </p>
 </section>
 
-<!-- BIO -->
-<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15">
-  <div class="col-span-12 md:col-span-3">
-    <p class="eyebrow text-smoke">{dict.models.statement}</p>
-  </div>
-  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
-    {pick(m.bio, lang).map((para, i) => (
-      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i*0.08).toString()}>{para}</p>
-    ))}
-  </div>
-</section>
-
-<!-- PRACTICE -->
+<!-- GENERI -->
 <section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-bone">
   <div class="col-span-12 md:col-span-3">
-    <p class="eyebrow text-smoke">{dict.models.practice}</p>
+    <p class="eyebrow text-smoke">{dict.models.genres}</p>
   </div>
-  <ul class="col-span-12 md:col-span-9 space-y-2">
-    {pick(m.practice, lang).map((line, i) => (
-      <li class="grid grid-cols-12 items-baseline gap-4 py-4 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
-        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">·{(i+1).toString().padStart(2,'0')}</span>
-        <span class="col-span-10 md:col-span-11 font-display italic text-2xl md:text-3xl">{line}</span>
+  <ul class="col-span-12 md:col-span-9 space-y-0">
+    {genres.map((genre, i) => (
+      <li
+        class="py-5 border-t border-ink/15 flex items-baseline gap-4"
+        data-reveal
+        data-reveal-delay={(i * 0.07).toString()}
+      >
+        <span class="font-mono text-[0.6rem] tracking-[0.28em] uppercase text-smoke shrink-0">
+          {String(i + 1).padStart(2, '0')}
+        </span>
+        <span class="font-display italic text-3xl md:text-4xl leading-snug">{genre}</span>
       </li>
     ))}
+    <li class="border-t border-ink/15"></li>
   </ul>
 </section>
 
+<!-- SOCIALS -->
+{m.socials && m.socials.length > 0 && (
+  <section class="px-6 md:px-10 py-16 grid grid-cols-12 gap-x-6 gap-y-4 border-t border-ink/15 bg-paper">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">Online</p>
+    </div>
+    <ul class="col-span-12 md:col-span-9 flex flex-wrap gap-x-10 gap-y-3">
+      {m.socials.map(s => (
+        <li>
+          <a
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink"
+          >
+            {s.label} ↗
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
 <!-- GALLERY -->
 <section class="px-6 md:px-10 py-24 bg-paper">
-  <GalleryGrid letters={[m.cover_text, '·', '—']} startNo={Number(m.accent_no) * 4 - 3} />
+  <GalleryGrid
+    letters={[m.cover_text, '·', '—']}
+    modelSlug={slug}
+    coverSrc={coverSrc}
+    orientations={m.photo_orientations as ('v'|'h'|'s')[] | undefined}
+  />
 </section>
 
 <!-- BACK -->

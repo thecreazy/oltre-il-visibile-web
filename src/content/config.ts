@@ -42,11 +42,15 @@ const models = defineCollection({
     name: z.string(),
     based: z.string(),
     pronouns: z.string(),
+    genres: bilingualArr,
     statement: bilingual,
-    bio: bilingualArr,
-    practice: bilingualArr,
     cover_text: z.string(),
     accent_no: z.string(),
+    photo_orientations: z.array(z.enum(['v', 'h', 's'])).optional(),
+    socials: z.array(z.object({
+      label: z.string(),
+      href: z.string(),
+    })).optional(),
   }),
 });
 
