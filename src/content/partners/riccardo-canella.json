@@ -1,0 +1,12 @@
+{
+  "name": "Riccardo Canella",
+  "category": "photographer",
+  "order": 2,
+  "kind": { "it": "Fotografo · Web & Hosting", "en": "Photographer · Web & Hosting" },
+  "city": "Italia",
+  "href": "https://canellariccardo.it",
+  "note": {
+    "it": "Fotografo e sviluppatore, cura la produzione tecnica del progetto: hosting, sviluppo e gestione del sito web.",
+    "en": "Photographer and developer, handles the technical production of the project: hosting, development and website management."
+  }
+}

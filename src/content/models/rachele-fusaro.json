@@ -1,0 +1,39 @@
+{
+  "slug": "rachele-fusaro",
+  "name": "Rachele Fusaro",
+  "based": "Italia",
+  "pronouns": "she / her",
+  "genres": {
+    "it": [
+      "Fashion",
+      "Beauty",
+      "Intimo",
+      "Costume",
+      "Glamour"
+    ],
+    "en": [
+      "Fashion",
+      "Beauty",
+      "Lingerie",
+      "Swimwear",
+      "Glamour"
+    ]
+  },
+  "statement": {
+    "it": "Ogni scatto è un dialogo: tra luce e ombra, tra chi guarda e chi si lascia vedere.",
+    "en": "Every shot is a dialogue: between light and shadow, between those who look and those who allow themselves to be seen."
+  },
+  "cover_text": "RF",
+  "accent_no": "03",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/rrachel.model?igsh=ejRzbWY1YXR3MmU%3D&utm_source=qr"
+    }
+  ]
+}

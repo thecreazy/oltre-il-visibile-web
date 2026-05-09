@@ -20,7 +20,7 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
       },
       fontSize: {
-        'mega': ['clamp(4rem, 14vw, 18rem)', { lineHeight: '0.85', letterSpacing: '-0.04em' }],
+        'mega': ['clamp(1.5rem, 12vw, 18rem)', { lineHeight: '0.85', letterSpacing: '-0.04em' }],
         'colossal': ['clamp(3rem, 10vw, 12rem)', { lineHeight: '0.9', letterSpacing: '-0.03em' }],
         'editorial': ['clamp(2rem, 5vw, 4.5rem)', { lineHeight: '1.02', letterSpacing: '-0.02em' }],
         'eyebrow': ['0.7rem', { lineHeight: '1', letterSpacing: '0.22em' }],

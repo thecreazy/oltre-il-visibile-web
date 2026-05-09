@@ -201,7 +201,7 @@ function modelCoverSrc(slug: string): string {
   </header>
 
   <div class="grid grid-cols-12 gap-x-6 gap-y-16">
-    {models.map((m) => (
+    {models.slice(0, 3).map((m) => (
       <div class="col-span-12 md:col-span-4">
         <ModelCard
           lang={lang}

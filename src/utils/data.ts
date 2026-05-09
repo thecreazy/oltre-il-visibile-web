@@ -9,9 +9,7 @@ export type Bilingual = { it: string; en: string };
 export type BilingualArr = { it: string[]; en: string[] };
 
 export const SOCIALS: { label: string; href: string }[] = [
-  { label: 'Instagram', href: 'https://instagram.com/oltreilvisibile' },
-  { label: 'X / Twitter', href: 'https://x.com/oltreilvisibile' },
-  { label: 'Are.na', href: 'https://www.are.na/oltre-il-visibile' },
+  { label: 'Instagram', href: 'https://www.instagram.com/oltre_il_visibile_project?igsh=MWx1ZDk4OXo4eXBoZw==' },
 ];
 
 export const STAFF: {

@@ -93,7 +93,7 @@ const models = await Promise.all(
 
 <!-- GALLERY -->
 <section class="px-6 md:px-10 pb-32 bg-paper">
-  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} coverSrc={exhibitionCover} />
+  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} coverSrc={exhibitionCover} hideEmpty />
 </section>
 
 <!-- ARTISTS -->

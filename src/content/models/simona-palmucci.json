@@ -1,0 +1,33 @@
+{
+  "slug": "simona-palmucci",
+  "name": "Simona Palmucci",
+  "based": "Italia",
+  "genres": {
+    "it": [
+      "Glamour",
+      "Trasparenze"
+    ],
+    "en": [
+      "Glamour",
+      "Sheer & Transparencies"
+    ]
+  },
+  "statement": {
+    "it": "La fotografia mi permette di esplorare lati di me che nella vita quotidiana restano nascosti.",
+    "en": "Photography allows me to explore sides of myself that in everyday life remain hidden."
+  },
+  "cover_text": "SP",
+  "accent_no": "04",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/simona_pal87"
+    }
+  ],
+  "photo_orientations": [
+    "v",
+    "h",
+    "v",
+    "v"
+  ]
+}

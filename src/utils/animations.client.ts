@@ -233,6 +233,15 @@ export const initCursor = () => {
   }, { signal });
 };
 
+/* ── back to top ───────────────────────────────────────────────── */
+export const initBackToTop = () => {
+  document.querySelectorAll<HTMLElement>('[data-back-to-top]').forEach((btn) => {
+    if (btn.dataset.backBound) return;
+    btn.dataset.backBound = '1';
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  });
+};
+
 /* ── menu overlay ──────────────────────────────────────────────── */
 export const initMenu = () => {
   const trigger = document.querySelector<HTMLButtonElement>('[data-menu-trigger]');
@@ -266,6 +275,7 @@ export const initPageTransitions = () => {
     initParallax();
     initMagnetic();
     initMenu();
+    initBackToTop();
   };
   document.addEventListener('astro:page-load', reinit);
 };
@@ -279,6 +289,7 @@ export const boot = () => {
   initParallax();
   initMagnetic();
   initMenu();
+  initBackToTop();
   initCursor();
   initPageTransitions();
 };

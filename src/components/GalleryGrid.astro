@@ -8,6 +8,7 @@ interface Props {
   modelSlug?: string;
   orientations?: Orientation[];
   coverSrc?: string;
+  hideEmpty?: boolean;
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   modelSlug = '',
   orientations,
   coverSrc = '',
+  hideEmpty = false,
 } = Astro.props;
 
 const count = orientations?.length ?? 4;
@@ -35,7 +37,7 @@ function ratio(o: Orientation | undefined): string {
 ---
 
 <div class="columns-1 md:columns-2 gap-x-6">
-  {photos.map((src, i) => {
+  {photos.filter(src => !hideEmpty || src).map((src, i) => {
     const o = orientations?.[i];
     const label = letters[i % letters.length] ?? '·';
     const tone = i % 2 === 0 ? 'bg-graphite text-paper' : 'bg-bone text-ink';

@@ -1,0 +1,32 @@
+{
+  "slug": "giorgia-lo-iacono",
+  "name": "Giorgia Lo Iacono",
+  "based": "Italia",
+  "genres": {
+    "it": [
+      "Ritratto",
+      "Concettuale",
+      "Glamour"
+    ],
+    "en": [
+      "Portrait",
+      "Conceptual",
+      "Glamour"
+    ]
+  },
+  "statement": {
+    "it": "Mi interessa ciò che si trova tra l'espressione e il silenzio: quel momento sospeso in cui il volto dice tutto.",
+    "en": "I am drawn to what lies between expression and silence: that suspended moment when the face says everything."
+  },
+  "cover_text": "GL",
+  "accent_no": "05",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/meraki._.mood?igsh=ZTg5dTl6YmJlM3Y2&utm_source=qr"
+    }
+  ],
+  "photo_orientations": [
+    "v"
+  ]
+}

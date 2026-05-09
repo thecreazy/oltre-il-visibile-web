@@ -41,7 +41,7 @@ const models = defineCollection({
     slug: z.string(),
     name: z.string(),
     based: z.string(),
-    pronouns: z.string(),
+    pronouns: z.string().optional(),
     genres: bilingualArr,
     statement: bilingual,
     cover_text: z.string(),
