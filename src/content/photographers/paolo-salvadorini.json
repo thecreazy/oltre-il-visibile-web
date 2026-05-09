@@ -1,0 +1,42 @@
+{
+  "slug": "paolo-salvadorini",
+  "name": "Paolo Salvadorini",
+  "based": "Pistoia · Toscana",
+  "years": "Toscana",
+  "role": {
+    "it": "Fotografo di ritratto",
+    "en": "Portrait photographer"
+  },
+  "statement": {
+    "it": "Nella fotografia cerco quell'unico scatto in cui il soggetto mostra la sua anima.",
+    "en": "In photography I seek that one shot in which the subject shows their soul."
+  },
+  "bio": {
+    "it": [
+      "Nella fotografia cerco quell'unico scatto in cui il soggetto mostra la sua anima."
+    ],
+    "en": [
+      "In photography I seek that one shot in which the subject shows their soul."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Un solo scatto. Non cerco la serie, cerco il momento irripetibile in cui qualcosa di interiore affiora sulla superficie.",
+      "Il soggetto non viene diretto: viene ascoltato. La mia presenza è discreta, la macchina quasi invisibile.",
+      "L'anima non si vede con gli occhi: si percepisce. Il mio lavoro è creare le condizioni perché quella percezione si trasferisca nell'immagine."
+    ],
+    "en": [
+      "One shot. I do not seek the series, I seek the unrepeatable moment when something interior surfaces.",
+      "The subject is not directed: they are listened to. My presence is discreet, the camera almost invisible.",
+      "The soul cannot be seen with the eyes: it is perceived. My work is to create the conditions for that perception to transfer into the image."
+    ]
+  },
+  "works": [],
+  "cover_text": "PS",
+  "accent_no": "07",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/paolo_salvadoriniphotograpy/" },
+    { "label": "Website", "href": "https://www.paolosalvadoriniartphotograpy.com" }
+  ]
+}

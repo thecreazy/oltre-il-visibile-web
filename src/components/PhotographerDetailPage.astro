@@ -102,7 +102,7 @@ const p = entry.data;
     letters={[p.cover_text, '/', '·']}
     startNo={Number(p.accent_no) * 4 - 3}
     photographerSlug={p.slug}
-    orientations={p.photo_orientations}
+    orientations={p.photo_orientations as ('v'|'h'|'s')[] | undefined}
   />
 </section>
 

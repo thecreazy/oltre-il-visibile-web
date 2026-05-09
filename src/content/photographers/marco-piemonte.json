@@ -42,8 +42,31 @@
   "works": [],
   "cover_text": "MP",
   "accent_no": "02",
-  "photo_orientations": ["v", "v", "v", "v"],
+  "photo_orientations": [
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "h",
+    "v",
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "h",
+    "v",
+    "v"
+  ],
   "socials": [
-    { "label": "Sito web", "href": "https://www.marcopiemonte.it" }
+    {
+      "label": "Sito web",
+      "href": "https://www.marcopiemonte.it"
+    }
   ]
 }

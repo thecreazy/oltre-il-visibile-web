@@ -31,12 +31,7 @@ const photographers = defineCollection({
       label: z.string(),
       href: z.string(),
     })).optional(),
-    photo_orientations: z.tuple([
-      z.enum(['v', 'h', 's']),
-      z.enum(['v', 'h', 's']),
-      z.enum(['v', 'h', 's']),
-      z.enum(['v', 'h', 's']),
-    ]).optional(),
+    photo_orientations: z.array(z.enum(['v', 'h', 's'])).optional(),
   }),
 });
 

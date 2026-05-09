@@ -1,0 +1,43 @@
+{
+  "slug": "bruno-sauza",
+  "name": "Bruno Sauza",
+  "based": "Priolo Gargallo · Siracusa",
+  "years": "Sicilia",
+  "role": {
+    "it": "Fotografo di paesaggio, avifauna e ritratto",
+    "en": "Landscape, wildlife and portrait photographer"
+  },
+  "statement": {
+    "it": "Ogni scatto racchiude un'emozione: cerco il momento esatto in cui la natura e l'animo umano si rivelano nella loro verità più essenziale.",
+    "en": "Every shot contains an emotion: I seek the exact moment when nature and the human soul reveal themselves in their most essential truth."
+  },
+  "bio": {
+    "it": [
+      "La fotografia, le mie emozioni in un click."
+    ],
+    "en": [
+      "Photography, my emotions in a click."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Il paesaggio non è sfondo: è soggetto. Aspetto la luce giusta, il momento in cui una scena smette di essere un luogo e diventa un'emozione.",
+      "L'avifauna insegna la pazienza. Osservare, attendere, non disturbare: lo stesso rispetto che porto davanti a qualsiasi soggetto.",
+      "Nel ritratto cerco la stessa semplicità del paesaggio: togliere il superfluo, lasciare ciò che c'è."
+    ],
+    "en": [
+      "Landscape is not background: it is subject. I wait for the right light, the moment when a scene stops being a place and becomes an emotion.",
+      "Wildlife photography teaches patience. Observe, wait, do not disturb: the same respect I bring to any subject.",
+      "In portraiture I seek the same simplicity as landscape: remove the superfluous, leave what is there."
+    ]
+  },
+  "works": [],
+  "cover_text": "BS",
+  "accent_no": "06",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "h"
+  ]
+}

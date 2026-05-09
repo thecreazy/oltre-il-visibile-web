@@ -1,0 +1,43 @@
+{
+  "slug": "roberto-scalzone",
+  "name": "Roberto Scalzone",
+  "based": "Noto · Siracusa",
+  "years": "Sicilia",
+  "role": {
+    "it": "Fotografo di ritratto, street e reportage",
+    "en": "Portrait, street and reportage photographer"
+  },
+  "statement": {
+    "it": "Fotografare è un atto di ascolto: cerco la vibrazione invisibile che ogni persona porta dentro di sé e provo a restituirla in una traccia che respiri nel tempo.",
+    "en": "Photographing is an act of listening: I seek the invisible vibration that every person carries within, and try to return it as a trace that breathes through time."
+  },
+  "bio": {
+    "it": [
+      "La fotografia, per me, è il tentativo di trattenere ciò che normalmente sfugge: un gesto, uno sguardo, una vibrazione invisibile. Non mi interessa semplicemente creare immagini, ma ascoltare le storie silenziose che le persone portano dentro di sé. Fotografare è un atto istintivo e sensibile, un modo di entrare per un momento nell'animo umano e restituirne una traccia che continui a respirare nel tempo."
+    ],
+    "en": [
+      "Photography, for me, is the attempt to hold back what normally escapes: a gesture, a gaze, an invisible vibration. I am not simply interested in creating images, but in listening to the silent stories that people carry within themselves. Photographing is an instinctive and sensitive act, a way of entering for a moment into the human soul and returning a trace that continues to breathe through time."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Lo scatto non inizia con la macchina: inizia con il silenzio. Creo uno spazio di ascolto prima ancora di alzare l'obiettivo.",
+      "Ritratto, street, reportage — tre forme di un solo approccio: entrare nell'animo di chi ho davanti senza che se ne accorga.",
+      "Non mi interessa l'immagine perfetta, ma quella che continua a respirare. Quella che trattiene qualcosa che altrimenti sarebbe sfuggito."
+    ],
+    "en": [
+      "The shot does not begin with the camera: it begins with silence. I create a space of listening before I even raise the lens.",
+      "Portrait, street, reportage — three forms of a single approach: entering the soul of the person in front of me without them noticing.",
+      "I am not interested in the perfect image, but in the one that continues to breathe. The one that holds something that would otherwise have escaped."
+    ]
+  },
+  "works": [],
+  "cover_text": "RS",
+  "accent_no": "05",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "h"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "luca-consiglio",
+  "name": "Luca Consiglio",
+  "based": "Italia",
+  "years": "",
+  "role": {
+    "it": "Fotografo di fashion, glamour e boudoir",
+    "en": "Fashion, glamour and boudoir photographer"
+  },
+  "statement": {
+    "it": "Celebro l'universo femminile con ogni scatto: quella bellezza autentica, fatta di sguardi, luce e presenza, che non ha bisogno di essere spiegata.",
+    "en": "I celebrate the feminine universe with every shot: that authentic beauty, made of gazes, light and presence, that needs no explanation."
+  },
+  "bio": {
+    "it": [
+      "Per me la fotografia è molto più di una passione: è il modo in cui osservo, interpreto e celebro l'universo femminile.",
+      "Ogni donna racchiude eleganza, mistero, forza e sensualità, dettagli unici che attraverso i miei scatti cerco di trasformare in emozione pura.",
+      "Amo catturare quella bellezza autentica che non ha bisogno di essere spiegata, fatta di sguardi, luce, presenza e sicurezza.",
+      "La fotografia diventa così un racconto intimo e raffinato, dove ogni immagine esalta l'essenza di chi ho davanti.",
+      "Perché, come amo dire anche sul mio profilo Instagram, la donna è Queen: sofisticata, intensa e meravigliosamente unica."
+    ],
+    "en": [
+      "For me photography is much more than a passion: it is the way I observe, interpret and celebrate the feminine universe.",
+      "Every woman contains elegance, mystery, strength and sensuality — unique details that through my photographs I try to transform into pure emotion.",
+      "I love capturing that authentic beauty that needs no explanation, made of gazes, light, presence and confidence.",
+      "Photography thus becomes an intimate and refined narrative, where every image exalts the essence of whoever is in front of me.",
+      "Because, as I also love to say on my Instagram profile, la donna è Queen: sophisticated, intense and wonderfully unique."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Fashion, glamour, boudoir — tre registri di uno stesso racconto: l'eleganza e la forza della donna in tutta la sua complessità.",
+      "Non cerco la perfezione tecnica: cerco la presenza. Quello sguardo in cui la donna si rivela sicura, intensa, irreplicabile.",
+      "Ogni scatto è un racconto intimo. Il mio lavoro è creare lo spazio in cui quella intimità possa emergere liberamente."
+    ],
+    "en": [
+      "Fashion, glamour, boudoir — three registers of the same story: the elegance and strength of the woman in all her complexity.",
+      "I do not seek technical perfection: I seek presence. That gaze in which the woman reveals herself confident, intense, unrepeatable.",
+      "Every shot is an intimate story. My work is to create the space in which that intimacy can emerge freely."
+    ]
+  },
+  "works": [],
+  "cover_text": "LC",
+  "accent_no": "09",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mistiq.beauty/"
+    }
+  ]
+}
