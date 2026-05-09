@@ -1,0 +1,63 @@
+{
+  "slug": "riccardo-canella",
+  "name": "Riccardo Canella",
+  "based": "Italia",
+  "years": "b. —",
+  "role": {
+    "it": "Fotografo · Storyteller",
+    "en": "Photographer · Storyteller"
+  },
+  "statement": {
+    "it": "Fotografo ciò che sta per scomparire: il momento prima che una persona torni a essere solo sé stessa.",
+    "en": "I photograph what is about to vanish: the moment before a person returns to being simply themselves."
+  },
+  "bio": {
+    "it": [
+      "Riccardo Canella è un fotografo e storyteller italiano che lavora tra ritratto, reportage emotivo e ricerca estetica sul corpo umano.",
+      "Le sue immagini esplorano l'intimità, la vulnerabilità e la tensione tra presenza e distanza, mescolando sensibilità editoriale e approccio documentaristico.",
+      "Influenzato tanto dalla fotografia analogica quanto dalla cultura contemporanea digitale, costruisce immagini sospese tra realtà e memoria, dove il soggetto non viene mai semplicemente mostrato, ma raccontato.",
+      "Parallelamente al lavoro fotografico, lavora come software engineer: una doppia identità che influenza profondamente il suo sguardo, sempre in equilibrio tra precisione tecnica e ricerca emotiva."
+    ],
+    "en": [
+      "Riccardo Canella is an Italian photographer and storyteller working across portraiture, emotional reportage and aesthetic research into the human body.",
+      "His images explore intimacy, vulnerability and the tension between presence and distance, blending editorial sensibility with a documentary approach.",
+      "Influenced equally by analogue photography and contemporary digital culture, he builds images suspended between reality and memory — where the subject is never simply shown, but told.",
+      "Alongside his photographic practice, he works as a software engineer: a dual identity that profoundly shapes his gaze, always held in balance between technical precision and emotional inquiry."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Costruisco immagini sospese tra realtà e memoria, dove il soggetto non viene mai semplicemente mostrato, ma raccontato.",
+      "Mescolo sensibilità editoriale e approccio documentaristico: nessuno dei due prevale sull'altro.",
+      "La mia doppia formazione — fotografica e tecnica — orienta lo sguardo verso un equilibrio costante tra precisione e ricerca emotiva."
+    ],
+    "en": [
+      "I build images suspended between reality and memory, where the subject is never merely shown, but told.",
+      "I blend editorial sensibility with a documentary approach: neither ever dominates the other.",
+      "My dual background — photographic and technical — guides my eye toward a constant balance between precision and emotional inquiry."
+    ]
+  },
+  "works": [],
+  "cover_text": "RC",
+  "accent_no": "10",
+  "photo_orientations": [
+    "h",
+    "v",
+    "h",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/thecrz/"
+    },
+    {
+      "label": "Photography",
+      "href": "https://photos.canellariccardo.it"
+    },
+    {
+      "label": "Developer",
+      "href": "https://canellariccardo.it"
+    }
+  ]
+}
