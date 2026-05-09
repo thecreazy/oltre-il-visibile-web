@@ -41,15 +41,17 @@ function ratio(o: Orientation | undefined): string {
     const tone = i % 2 === 0 ? 'bg-graphite text-paper' : 'bg-bone text-ink';
 
     return (
-      <div class="break-inside-avoid mb-4 md:mb-6" data-reveal>
+      <div class="break-inside-avoid mb-4 md:mb-6">
         {src ? (
-          <img
-            src={src}
-            alt=""
-            class="w-full h-auto block"
-            loading="lazy"
-            decoding="async"
-          />
+          <div class="gallery-img-wrap" data-reveal-delay={(i * 0.1).toString()}>
+            <img
+              src={src}
+              alt=""
+              loading="lazy"
+              decoding="async"
+              data-parallax="0.12"
+            />
+          </div>
         ) : (
           <div class={`frame ${ratio(o)} ${tone} relative overflow-hidden`}>
             <div class="absolute inset-0 flex items-center justify-center">
