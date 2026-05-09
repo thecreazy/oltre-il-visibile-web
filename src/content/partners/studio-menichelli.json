@@ -1,0 +1,16 @@
+{
+  "name": "Studio Medico Menichelli",
+  "category": "partner",
+  "order": 2,
+  "kind": {
+    "it": "Partner medico",
+    "en": "Medical partner"
+  },
+  "city": "Italia",
+  "href": "https://www.instagram.com/dott_menichelli",
+  "note": {
+    "it": "Partner medico del progetto, a sostegno del benessere psicofisico che attraversa l'intera ricerca di Oltre il Visibile.",
+    "en": "Medical partner of the project, supporting the psychophysical wellbeing that runs through the entire research of Oltre il Visibile."
+  },
+  "logo": "/partners/studio-menichelli.jpg"
+}

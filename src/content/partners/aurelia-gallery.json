@@ -1,0 +1,12 @@
+{
+  "name": "Aurelia Gallery",
+  "category": "venue",
+  "order": 1,
+  "kind": { "it": "Sede ospitante — Roma", "en": "Host venue — Rome" },
+  "city": "Roma",
+  "href": "https://www.google.com/maps/search/?api=1&query=Via+Aurelia+477+Roma",
+  "note": {
+    "it": "Galleria fotografica in Via Aurelia 477, vicino alla metro Cornelia. Prima tappa di Oltre il Visibile, 6 — 7 giugno 2026.",
+    "en": "Photography gallery at Via Aurelia 477, near Cornelia metro. First stop of Oltre il Visibile, 6 — 7 June 2026."
+  }
+}

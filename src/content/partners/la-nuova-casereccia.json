@@ -1,0 +1,13 @@
+{
+  "name": "La Nuova Casereccia",
+  "category": "partner",
+  "order": 1,
+  "kind": { "it": "Partner locale — Rosolini", "en": "Local partner — Rosolini" },
+  "city": "Rosolini",
+  "href": "https://www.instagram.com/lanuovacasereccia_rosolini",
+  "note": {
+    "it": "Realtà locale che sostiene il progetto Oltre il Visibile con ospitalità e presenza nel territorio.",
+    "en": "A local establishment supporting the Oltre il Visibile project with hospitality and presence in the area."
+  },
+  "logo": "/partners/la-nuova-casereccia.jpg"
+}

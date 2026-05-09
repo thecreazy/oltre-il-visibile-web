@@ -1,0 +1,13 @@
+{
+  "name": "Ermes Mazzali",
+  "category": "photographer",
+  "order": 1,
+  "kind": { "it": "Fotografo · Partner", "en": "Photographer · Partner" },
+  "city": "Italia",
+  "href": "http://www.ErmesMazzaliPhoto.it",
+  "note": {
+    "it": "Fotografo partner del progetto. Partecipa alle tappe italiane con il proprio lavoro sul ritratto e sulla percezione emotiva.",
+    "en": "Partner photographer of the project. He participates in the Italian stops with his work on portraiture and emotional perception."
+  },
+  "logo": "/partners/ermes-mazzali.jpg"
+}

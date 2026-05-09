@@ -82,4 +82,18 @@ const exhibitions = defineCollection({
   }),
 });
 
-export const collections = { photographers, models, exhibitions };
+const partners = defineCollection({
+  type: 'data',
+  schema: z.object({
+    name: z.string(),
+    category: z.enum(['venue', 'photographer', 'partner', 'charity']),
+    kind: bilingual,
+    city: z.string(),
+    href: z.string().url(),
+    note: bilingual,
+    logo: z.string().optional(),
+    order: z.number(),
+  }),
+});
+
+export const collections = { photographers, models, exhibitions, partners };

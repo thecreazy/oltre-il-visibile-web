@@ -2,7 +2,7 @@
 import type { Lang } from '@i18n/index';
 import { t, path } from '@i18n/index';
 import { getCollection } from 'astro:content';
-import { STAFF, PARTNERS, pick } from '@utils/data';
+import { STAFF, pick } from '@utils/data';
 import { existsSync } from 'fs';
 import { join } from 'path';
 import RevealText from '@components/RevealText.astro';
@@ -25,6 +25,11 @@ const photographers = (await getCollection('photographers'))
 const models = (await getCollection('models'))
   .map((e) => e.data)
   .sort((a, b) => Number(a.accent_no) - Number(b.accent_no));
+
+const partners = (await getCollection('partners'))
+  .filter(p => p.data.category !== 'venue')
+  .sort((a, b) => a.data.order - b.data.order)
+  .map(p => p.data);
 
 function coverSrc(slug: string): string {
   const abs = join(process.cwd(), 'public', 'photographers', slug, '0.jpg');
@@ -261,15 +266,23 @@ function modelCoverSrc(slug: string): string {
   </header>
 
   <ul>
-    {PARTNERS.map((p, i) => (
-      <li class="border-t border-ink/15 py-8 grid grid-cols-12 gap-x-6 items-center" data-reveal>
-        <span class="col-span-2 md:col-span-1"></span>
-        <a href={p.href} target="_blank" rel="noopener" class="col-span-10 md:col-span-4 font-display italic font-light text-3xl md:text-4xl alink">{p.name}</a>
-        <span class="col-span-12 md:col-span-3 md:col-start-auto font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke">{pick(p.kind, lang)}</span>
-        <span class="col-span-12 md:col-span-4 text-smoke">{pick(p.note, lang)}</span>
+    {partners.map((p, i) => (
+      <li class="border-t border-ink/15 py-6 grid grid-cols-12 gap-x-6 items-baseline" data-reveal>
+        <span class="col-span-1 hidden md:block"></span>
+        <p class="col-span-8 md:col-span-5 font-display italic font-light text-xl md:text-3xl leading-tight">{p.name}</p>
+        <span class="col-span-4 md:col-span-3 font-mono text-[0.65rem] tracking-[0.22em] uppercase text-smoke text-right md:text-left">{pick(p.kind, lang)}</span>
+        <div class="col-span-12 md:col-span-3 mt-2 md:mt-0 flex md:justify-end">
+          <a href={p.href} target="_blank" rel="noopener" class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase">↗ {lang === 'it' ? 'Visita' : 'Visit'}</a>
+        </div>
       </li>
     ))}
     <li class="border-t border-ink/15"></li>
   </ul>
+
+  <div class="mt-12 flex justify-end">
+    <a href={path(lang, 'partners')} class="alink font-mono text-[0.75rem] tracking-[0.22em] uppercase">
+      {lang === 'it' ? 'Tutti i partner' : 'All partners'} →
+    </a>
+  </div>
 </section>
 

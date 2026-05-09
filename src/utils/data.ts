@@ -61,54 +61,6 @@ export const STAFF: {
   },
 ];
 
-export const PARTNERS: {
-  name: string;
-  kind: Bilingual;
-  city: string;
-  href: string;
-  note: Bilingual;
-}[] = [
-  {
-    name: 'Aurelia Gallery',
-    kind: { it: 'Sede ospitante — Roma', en: 'Host venue — Rome' },
-    city: 'Roma',
-    href: 'https://www.google.com/maps/search/?api=1&query=Via+Aurelia+477+Roma',
-    note: {
-      it: 'Galleria fotografica in Via Aurelia 477, vicino alla metro Cornelia. Prima tappa di Oltre il Visibile, 6 — 7 giugno 2026.',
-      en: 'Photography gallery at Via Aurelia 477, near Cornelia metro. First stop of Oltre il Visibile, 6 — 7 June 2026.',
-    },
-  },
-  {
-    name: 'Salone Monumentale — Palazzo Gotico',
-    kind: { it: 'Sede ospitante — Piacenza', en: 'Host venue — Piacenza' },
-    city: 'Piacenza',
-    href: 'https://www.google.com/maps/search/?api=1&query=Palazzo+Gotico+Piacenza',
-    note: {
-      it: 'Sala storica in Piazza dei Cavalli, nel cuore del centro storico di Piacenza. Seconda tappa, 11 — 12 luglio 2026.',
-      en: 'Historic hall in Piazza dei Cavalli, in the heart of Piacenza\'s old town. Second stop, 11 — 12 July 2026.',
-    },
-  },
-  {
-    name: 'Sede in definizione',
-    kind: { it: 'Sede ospitante — Milano', en: 'Host venue — Milan' },
-    city: 'Milano',
-    href: 'https://www.google.com/maps/search/?api=1&query=Milano',
-    note: {
-      it: 'La sede milanese è in corso di definizione. Aggiornamenti in arrivo. Terza tappa, 19 — 20 settembre 2026.',
-      en: 'The Milan venue is being finalised. Updates coming soon. Third stop, 19 — 20 September 2026.',
-    },
-  },
-  {
-    name: 'University of London',
-    kind: { it: 'Sede ospitante — Londra', en: 'Host venue — London' },
-    city: 'London',
-    href: 'https://www.google.com/maps/search/?api=1&query=University+of+London',
-    note: {
-      it: 'Quarta tappa. Mostra fotografica e stage sulla psicologia dell\'immagine. Date in corso di definizione.',
-      en: 'Fourth stop. Photography exhibition and workshop on the psychology of image. Dates to be announced.',
-    },
-  },
-];
 
 /* ── Manifesto — seven notes ─────────────────────────────────── */
 export const MANIFESTO: { it: { eyebrow: string; title: string; body: string[] }; en: { eyebrow: string; title: string; body: string[] } }[] = [

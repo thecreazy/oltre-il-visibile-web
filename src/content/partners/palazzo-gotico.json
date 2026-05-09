@@ -1,0 +1,12 @@
+{
+  "name": "Salone Monumentale — Palazzo Gotico",
+  "category": "venue",
+  "order": 2,
+  "kind": { "it": "Sede ospitante — Piacenza", "en": "Host venue — Piacenza" },
+  "city": "Piacenza",
+  "href": "https://www.google.com/maps/search/?api=1&query=Palazzo+Gotico+Piacenza",
+  "note": {
+    "it": "Sala storica in Piazza dei Cavalli, nel cuore del centro storico di Piacenza. Seconda tappa, 11 — 12 luglio 2026.",
+    "en": "Historic hall in Piazza dei Cavalli, in the heart of Piacenza's old town. Second stop, 11 — 12 July 2026."
+  }
+}

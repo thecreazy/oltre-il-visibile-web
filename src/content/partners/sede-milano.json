@@ -1,0 +1,12 @@
+{
+  "name": "Sede in definizione",
+  "category": "venue",
+  "order": 3,
+  "kind": { "it": "Sede ospitante — Milano", "en": "Host venue — Milan" },
+  "city": "Milano",
+  "href": "https://www.google.com/maps/search/?api=1&query=Milano",
+  "note": {
+    "it": "La sede milanese è in corso di definizione. Aggiornamenti in arrivo. Terza tappa, 19 — 20 settembre 2026.",
+    "en": "The Milan venue is being finalised. Updates coming soon. Third stop, 19 — 20 September 2026."
+  }
+}

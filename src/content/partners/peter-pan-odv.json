@@ -1,0 +1,13 @@
+{
+  "name": "Peter Pan ODV",
+  "category": "charity",
+  "order": 1,
+  "kind": { "it": "Partner solidale · ODV", "en": "Charity partner · ODV" },
+  "city": "Roma",
+  "href": "https://www.instagram.com/peterpan_odv",
+  "note": {
+    "it": "Nata a Roma nel 1994, Peter Pan ODV accoglie gratuitamente le famiglie di bambini e adolescenti malati di cancro che si trasferiscono nella capitale per le cure. Gestisce la Grande Casa di Peter Pan — vicino agli ospedali Bambino Gesù e Policlinico Umberto I — con oltre 30 nuclei familiari ospitati, 200 volontari attivi 24h su 24 e un supporto a 360°: accoglienza, trasporto, psicologia, normalità. Nel 2004 ha ricevuto la Medaglia d'Oro al Merito della Sanità Pubblica.",
+    "en": "Founded in Rome in 1994, Peter Pan ODV offers free accommodation and full support to families of children and teenagers with cancer who relocate to the capital for treatment. It runs the Grande Casa di Peter Pan — near the Bambino Gesù and Policlinico Umberto I hospitals — hosting over 30 families, with 200 volunteers active 24 hours a day and a complete range of services: housing, transport, psychological support and a sense of normality. In 2004 it received the Gold Medal for Merit in Public Health."
+  },
+  "logo": "/partners/peter-pan-odv.jpg"
+}
