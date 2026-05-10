@@ -3,8 +3,36 @@
   "name": "Simona Tortora",
   "based": "Italia",
   "genres": {
-    "it": ["Fashion", "Glamour", "Editoriale", "Beauty", "Ritratto artistico", "Lingerie", "Nude Art", "Boudoir", "Concettuale", "Emotional Photography", "Lifestyle", "Swimwear", "Progetti artistici"],
-    "en": ["Fashion", "Glamour", "Editorial", "Beauty", "Artistic Portrait", "Lingerie", "Nude Art", "Boudoir", "Conceptual", "Emotional Photography", "Lifestyle", "Swimwear", "Artistic Projects"]
+    "it": [
+      "Fashion",
+      "Glamour",
+      "Editoriale",
+      "Beauty",
+      "Ritratto artistico",
+      "Lingerie",
+      "Nude Art",
+      "Boudoir",
+      "Concettuale",
+      "Emotional Photography",
+      "Lifestyle",
+      "Swimwear",
+      "Progetti artistici"
+    ],
+    "en": [
+      "Fashion",
+      "Glamour",
+      "Editorial",
+      "Beauty",
+      "Artistic Portrait",
+      "Lingerie",
+      "Nude Art",
+      "Boudoir",
+      "Conceptual",
+      "Emotional Photography",
+      "Lifestyle",
+      "Swimwear",
+      "Artistic Projects"
+    ]
   },
   "statement": {
     "it": "Cinque anni di fronte all'obiettivo mi hanno insegnato che ogni genere racconta una verità diversa. Non mi limito a uno stile: cerco l'emozione autentica, qualunque forma abbia.",
@@ -13,6 +41,15 @@
   "cover_text": "ST",
   "accent_no": "06",
   "socials": [
-    { "label": "Instagram", "href": "https://www.instagram.com/simonat_model_official?igsh=MWh5YTlyMHg3eDl5OQ==" }
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/simonat_model_official?igsh=MWh5YTlyMHg3eDl5OQ=="
+    }
+  ],
+  "photo_orientations": [
+    "v",
+    "h",
+    "h",
+    "v"
   ]
 }
