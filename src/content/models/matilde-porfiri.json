@@ -1,0 +1,17 @@
+{
+  "slug": "matilde-porfiri",
+  "name": "Matilde Porfiri",
+  "based": "Spoleto",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": ["Ritratto"],
+    "en": ["Portrait"]
+  },
+  "statement": {
+    "it": "Nel ritratto c'è un momento preciso in cui smetto di sapere cosa l'altro sta vedendo — ed è lì che l'immagine diventa vera.",
+    "en": "In a portrait there is a precise moment when I stop knowing what the other sees — and that is where the image becomes real."
+  },
+  "cover_text": "MP",
+  "accent_no": "08",
+  "photo_orientations": ["v", "v", "v", "v"]
+}

@@ -4,7 +4,7 @@ import { t, path } from '@i18n/index';
 import { getEntry } from 'astro:content';
 import { existsSync } from 'fs';
 import { join } from 'path';
-import { pick } from '@utils/data';
+import { pick, pickOpt } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
 import MagneticButton from '@components/MagneticButton.astro';
@@ -37,7 +37,7 @@ const genres = pick(m.genres, lang);
   </h1>
 
   <p class="font-display italic text-xl md:text-3xl text-smoke max-w-[44ch]" style="margin-top: 6rem" data-reveal>
-    "{pick(m.statement, lang)}"
+    "{pickOpt(m.statement, lang)}"
   </p>
 </section>
 
@@ -53,9 +53,7 @@ const genres = pick(m.genres, lang);
         data-reveal
         data-reveal-delay={(i * 0.07).toString()}
       >
-        <span class="font-mono text-[0.6rem] tracking-[0.28em] uppercase text-smoke shrink-0">
-          {String(i + 1).padStart(2, '0')}
-        </span>
+        <span class="font-mono text-[0.65rem] tracking-[0.28em] text-smoke shrink-0">—</span>
         <span class="font-display italic text-3xl md:text-4xl leading-snug">{genre}</span>
       </li>
     ))}

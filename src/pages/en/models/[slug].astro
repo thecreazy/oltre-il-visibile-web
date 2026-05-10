@@ -2,7 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import ModelDetailPage from '@components/ModelDetailPage.astro';
-import { pick } from '@utils/data';
+import { pick, pickOpt } from '@utils/data';
 
 export async function getStaticPaths() {
   const items = await getCollection('models');
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props as { entry: CollectionEntry<'models'> };
 const m = entry.data;
 const title = `${m.name} — Oltre il Visibile`;
-const desc = pick(m.statement, 'en');
+const desc = pickOpt(m.statement, 'en');
 ---
 <BaseLayout
   lang="en"

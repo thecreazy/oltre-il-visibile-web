@@ -1,0 +1,18 @@
+{
+  "slug": "anna-savoja",
+  "name": "Anna Savoja",
+  "based": "Italia",
+  "genres": {
+    "it": ["Fashion", "Glamour", "Ritratto"],
+    "en": ["Fashion", "Glamour", "Portrait"]
+  },
+  "statement": {
+    "it": "La fotografia è il modo in cui racconto chi sono, senza filtri e senza maschere.",
+    "en": "Photography is the way I tell who I am, without filters and without masks."
+  },
+  "cover_text": "AS",
+  "accent_no": "07",
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/anna__savoja" }
+  ]
+}

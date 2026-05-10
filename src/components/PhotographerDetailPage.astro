@@ -2,7 +2,7 @@
 import type { Lang } from '@i18n/index';
 import { t, path } from '@i18n/index';
 import { getEntry } from 'astro:content';
-import { pick } from '@utils/data';
+import { pick, pickOpt } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
 import MagneticButton from '@components/MagneticButton.astro';
@@ -25,37 +25,43 @@ const p = entry.data;
     <RevealText as="span" class="block pl-[10vw]" text={p.name.split(' ').slice(1).join(' ')} />
   </h1>
 
-  <p class="font-display italic text-xl md:text-3xl text-smoke max-w-[44ch] mt-8"  data-reveal>
-    “{pick(p.statement, lang)}”
-  </p>
+  {p.statement && (
+    <p class="font-display italic text-xl md:text-3xl text-smoke max-w-[44ch] mt-8" data-reveal>
+      “{pickOpt(p.statement, lang)}”
+    </p>
+  )}
 </section>
 
 <!-- BIO -->
-<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
-  <div class="col-span-12 md:col-span-3">
-    <p class="eyebrow text-smoke">{dict.photographers.bio}</p>
-  </div>
-  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
-    {pick(p.bio, lang).map((para, i) => (
-      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i*0.08).toString()}>{para}</p>
-    ))}
-  </div>
-</section>
+{p.bio && (pickOpt(p.bio, lang)?.length ?? 0) > 0 && (
+  <section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.photographers.bio}</p>
+    </div>
+    <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
+      {(pickOpt(p.bio, lang) ?? []).map((para, i) => (
+        <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i*0.08).toString()}>{para}</p>
+      ))}
+    </div>
+  </section>
+)}
 
 <!-- PRACTICE -->
-<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-bone">
-  <div class="col-span-12 md:col-span-3">
-    <p class="eyebrow text-smoke">{dict.photographers.practice}</p>
-  </div>
-  <ul class="col-span-12 md:col-span-9 space-y-2">
-    {pick(p.practice, lang).map((line, i) => (
-      <li class="grid grid-cols-12 items-baseline gap-4 py-4 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
-        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">·{(i+1).toString().padStart(2,'0')}</span>
-        <span class="col-span-10 md:col-span-11 font-display italic text-2xl md:text-3xl">{line}</span>
-      </li>
-    ))}
-  </ul>
-</section>
+{p.practice && (pickOpt(p.practice, lang)?.length ?? 0) > 0 && (
+  <section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-bone">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.photographers.practice}</p>
+    </div>
+    <ul class="col-span-12 md:col-span-9 space-y-2">
+      {(pickOpt(p.practice, lang) ?? []).map((line, i) => (
+        <li class="grid grid-cols-12 items-baseline gap-4 py-4 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
+          <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] text-smoke">—</span>
+          <span class="col-span-10 md:col-span-11 font-display italic text-2xl md:text-3xl">{line}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
 
 <!-- SOCIALS -->
 {p.socials && p.socials.length > 0 && (
@@ -66,12 +72,7 @@ const p = entry.data;
     <ul class="col-span-12 md:col-span-9 flex flex-wrap gap-x-10 gap-y-3">
       {p.socials.map(s => (
         <li>
-          <a
-            href={s.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink"
-          >
+          <a href={s.href} target="_blank" rel="noopener noreferrer" class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink">
             {s.label} ↗
           </a>
         </li>
@@ -81,20 +82,22 @@ const p = entry.data;
 )}
 
 <!-- SELECTED WORKS -->
-<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
-  <div class="col-span-12 md:col-span-3">
-    <p class="eyebrow text-smoke">{dict.photographers.selected_works}</p>
-  </div>
-  <ul class="col-span-12 md:col-span-9">
-    {p.works.map((w, i) => (
-      <li class="grid grid-cols-12 items-baseline gap-4 py-6 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
-        <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">{w.year}</span>
-        <span class="col-span-10 md:col-span-7 font-display italic text-3xl md:text-4xl">{pick(w.title, lang)}</span>
-        <span class="col-span-12 md:col-span-4 font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke md:text-right">{w.place}</span>
-      </li>
-    ))}
-  </ul>
-</section>
+{p.works && p.works.length > 0 && (
+  <section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">{dict.photographers.selected_works}</p>
+    </div>
+    <ul class="col-span-12 md:col-span-9">
+      {p.works.map((w, i) => (
+        <li class="grid grid-cols-12 items-baseline gap-4 py-6 border-t border-ink/15" data-reveal data-reveal-delay={(i*0.06).toString()}>
+          <span class="col-span-2 md:col-span-1 font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">{w.year}</span>
+          <span class="col-span-10 md:col-span-7 font-display italic text-3xl md:text-4xl">{pick(w.title, lang)}</span>
+          <span class="col-span-12 md:col-span-4 font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke md:text-right">{w.place}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
 
 <!-- GALLERY -->
 <section class="px-6 md:px-10 py-24 bg-paper">

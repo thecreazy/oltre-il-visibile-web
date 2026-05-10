@@ -14,9 +14,9 @@ const photographers = defineCollection({
     based: z.string(),
     years: z.string(),
     role: bilingual,
-    statement: bilingual,
-    bio: bilingualArr,
-    practice: bilingualArr,
+    statement: bilingual.optional(),
+    bio: bilingualArr.optional(),
+    practice: bilingualArr.optional(),
     works: z.array(
       z.object({
         title: bilingual,
@@ -24,7 +24,7 @@ const photographers = defineCollection({
         place: z.string(),
         notes: bilingual.optional(),
       })
-    ),
+    ).optional(),
     cover_text: z.string(), // typographic placeholder text
     accent_no: z.string(), // big editorial number
     socials: z.array(z.object({

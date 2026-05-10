@@ -4,7 +4,7 @@ import { t, path } from '@i18n/index';
 import { getCollection, getEntry } from 'astro:content';
 import { existsSync } from 'fs';
 import { join } from 'path';
-import { pick } from '@utils/data';
+import { pick, pickOpt } from '@utils/data';
 import RevealText from '@components/RevealText.astro';
 import GalleryGrid from '@components/GalleryGrid.astro';
 import MagneticButton from '@components/MagneticButton.astro';
@@ -109,7 +109,7 @@ const models = await Promise.all(
       <li class="col-span-12 md:col-span-6 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
         <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">{p.based}</p>
         <h3 class="font-display italic text-4xl mt-3">{p.name}</h3>
-        <p class="text-smoke mt-3 max-w-[40ch]">{pick(p.statement, lang)}</p>
+        {p.statement && <p class="text-smoke mt-3 max-w-[40ch]">{pickOpt(p.statement, lang)}</p>}
         <AnimatedLink href={`${path(lang, 'photographers')}/${p.slug}`} class="mt-5 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase">
           {dict.cta.view_profile} →
         </AnimatedLink>
@@ -130,7 +130,7 @@ const models = await Promise.all(
       <li class="col-span-12 md:col-span-6 border-t border-ink/15 pt-6" data-reveal data-reveal-delay={(i*0.1).toString()}>
         <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-smoke">{m.based}</p>
         <h3 class="font-display italic text-4xl mt-3">{m.name}</h3>
-        <p class="text-smoke mt-3 max-w-[40ch]">{pick(m.statement, lang)}</p>
+        {m.statement && <p class="text-smoke mt-3 max-w-[40ch]">{pickOpt(m.statement, lang)}</p>}
         <AnimatedLink href={`${path(lang, 'models')}/${m.slug}`} class="mt-5 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase">
           {dict.cta.view_profile} →
         </AnimatedLink>

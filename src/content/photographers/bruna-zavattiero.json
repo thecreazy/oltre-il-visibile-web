@@ -1,0 +1,38 @@
+{
+  "slug": "bruna-zavattiero",
+  "name": "Bruna Zavattiero",
+  "based": "Verona · Veneto",
+  "years": "b. —",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Non seguo le regole. Seguo ciò che sento e amo.",
+    "en": "I don't follow rules. I follow what I feel and love."
+  },
+  "bio": {
+    "it": [
+      "La macchina fotografica non è solo uno strumento, ma il prolungamento della mia mano — e soprattutto del mio cuore. Amo la fotografia in tutte le sue forme: dal ritratto alla natura, dal paesaggio alla macro."
+    ],
+    "en": [
+      "The camera is not just a tool, but an extension of my hand — and above all of my heart. I love photography in all its forms: from portrait to nature, from landscape to macro."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Ritratto, natura, paesaggio, macro: non mi fermo a un solo genere. Fotografo tutto ciò che mi colpisce.",
+      "La fotografia per me è un atto emotivo prima ancora che tecnico. Seguo la luce, seguo l'istinto, seguo il cuore."
+    ],
+    "en": [
+      "Portrait, nature, landscape, macro: I don't stop at one genre. I photograph everything that strikes me.",
+      "Photography for me is an emotional act before a technical one. I follow the light, I follow instinct, I follow my heart."
+    ]
+  },
+  "works": [],
+  "cover_text": "BZ",
+  "accent_no": "11",
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/brunazavattiero/" }
+  ]
+}

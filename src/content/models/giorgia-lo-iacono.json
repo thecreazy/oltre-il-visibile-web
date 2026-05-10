@@ -27,6 +27,9 @@
     }
   ],
   "photo_orientations": [
-    "v"
+    "v",
+    "v",
+    "h",
+    "h"
   ]
 }

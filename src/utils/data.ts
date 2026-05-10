@@ -182,3 +182,4 @@ export const CONTACT_EMAIL = 'oltreilvisibileart@gmail.com';
 
 /* ── small helpers ───────────────────────────────────────────── */
 export const pick = <T>(b: { it: T; en: T }, lang: Lang): T => b[lang];
+export const pickOpt = <T>(b: { it: T; en: T } | undefined, lang: Lang): T | undefined => b?.[lang];
