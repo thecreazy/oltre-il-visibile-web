@@ -75,6 +75,118 @@ const reasons = lang === 'it'
   </div>
 </section>
 
+<!-- Form -->
+<section class="px-6 md:px-10 py-24 bg-ink text-paper">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-12">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-paper/50">{lang === 'it' ? 'Scrivici' : 'Get in touch'}</p>
+    </div>
+    <div class="col-span-12 md:col-span-8">
+
+      <form id="contact-form" class="space-y-12" novalidate>
+        <input type="hidden" name="access_key" value="36a29c57-3793-40f4-a539-a0ceebc9f8cc" />
+        <input type="hidden" name="cc" value="kmartproject.photo@gmail.com" />
+        <input type="hidden" name="subject" value={lang === 'it' ? 'Oltre il Visibile — Nuovo messaggio' : 'Oltre il Visibile — New message'} />
+        <input type="hidden" name="from_name" value="Oltre il Visibile Website" />
+
+        <!-- Reason -->
+        <div class="space-y-5">
+          <p class="eyebrow text-paper/50">{lang === 'it' ? 'Motivo del contatto' : 'Reason for contact'}</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-paper/10">
+            {reasons.map((r, i) => (
+              <label class="group cursor-pointer flex gap-4 items-start bg-ink px-5 py-5 hover:bg-paper/5 transition-colors has-[:checked]:bg-paper has-[:checked]:text-ink">
+                <input type="radio" name="reason" value={r.label} class="sr-only" required={i === 0} />
+                <span class="mt-1.5 shrink-0 w-3.5 h-3.5 rounded-full border border-paper/40 group-[&:has(:checked)]:border-ink group-[&:has(:checked)]:bg-ink transition-all flex-none relative after:absolute after:inset-[2px] after:rounded-full group-[&:has(:checked)]:after:bg-paper"></span>
+                <span class="font-display italic text-xl leading-tight">{r.label}</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <!-- Name + Email -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-paper/10">
+          <div class="bg-ink px-5 py-5 space-y-3">
+            <label for="cf-name" class="eyebrow text-paper/50 block">
+              {lang === 'it' ? 'Nome' : 'Name'}
+            </label>
+            <input
+              id="cf-name"
+              type="text"
+              name="name"
+              required
+              autocomplete="name"
+              class="w-full bg-transparent outline-none font-display italic text-2xl text-paper placeholder:text-paper/20 caret-paper"
+              placeholder={lang === 'it' ? 'Il tuo nome' : 'Your name'}
+            />
+          </div>
+          <div class="bg-ink px-5 py-5 space-y-3">
+            <label for="cf-email" class="eyebrow text-paper/50 block">Email</label>
+            <input
+              id="cf-email"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              class="w-full bg-transparent outline-none font-display italic text-2xl text-paper placeholder:text-paper/20 caret-paper"
+              placeholder={lang === 'it' ? 'La tua email' : 'Your email'}
+            />
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="bg-ink border border-paper/10 px-5 py-5 space-y-3 focus-within:border-paper/30 transition-colors">
+          <label for="cf-message" class="eyebrow text-paper/50 block">
+            {lang === 'it' ? 'Messaggio' : 'Message'}
+          </label>
+          <textarea
+            id="cf-message"
+            name="message"
+            required
+            rows={6}
+            class="w-full bg-transparent outline-none font-display italic text-2xl text-paper placeholder:text-paper/20 caret-paper resize-none"
+            placeholder={lang === 'it' ? 'Raccontaci…' : 'Tell us…'}
+          ></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="flex items-center gap-8">
+          <button
+            type="submit"
+            id="cf-submit"
+            class="font-mono text-[0.7rem] tracking-[0.22em] uppercase border border-paper/40 text-paper px-8 py-4 hover:bg-paper hover:text-ink transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            {lang === 'it' ? 'Invia messaggio' : 'Send message'}
+          </button>
+          <p id="cf-sending" class="hidden font-mono text-[0.7rem] tracking-[0.18em] text-paper/40">
+            {lang === 'it' ? 'Invio in corso…' : 'Sending…'}
+          </p>
+        </div>
+      </form>
+
+      <!-- Feedback -->
+      <div id="cf-success" class="hidden mt-10 border border-paper/20 px-6 py-8">
+        <p class="font-display italic text-2xl mb-2 text-paper">
+          {lang === 'it' ? 'Messaggio inviato.' : 'Message sent.'}
+        </p>
+        <p class="font-mono text-[0.75rem] tracking-[0.14em] text-paper/50">
+          {lang === 'it' ? 'Ti risponderemo il prima possibile.' : 'We will get back to you as soon as possible.'}
+        </p>
+      </div>
+      <div id="cf-error" class="hidden mt-10 border border-paper/20 px-6 py-8">
+        <p class="font-display italic text-2xl mb-2 text-paper">
+          {lang === 'it' ? 'Qualcosa è andato storto.' : 'Something went wrong.'}
+        </p>
+        <p class="font-mono text-[0.75rem] tracking-[0.14em] text-paper/50">
+          {lang === 'it'
+            ? `Riprova o scrivici direttamente a ${CONTACT_EMAIL}`
+            : `Try again or write directly to ${CONTACT_EMAIL}`}
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Team -->
 <section class="px-6 md:px-10 py-24 border-t border-ink/15">
   <p class="eyebrow text-smoke mb-14">
@@ -95,6 +207,44 @@ const reasons = lang === 'it'
     ))}
   </div>
 </section>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const submit = document.getElementById('cf-submit') as HTMLButtonElement | null;
+  const sending = document.getElementById('cf-sending');
+  const success = document.getElementById('cf-success');
+  const error = document.getElementById('cf-error');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    submit!.disabled = true;
+    sending?.classList.remove('hidden');
+    success?.classList.add('hidden');
+    error?.classList.add('hidden');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.reset();
+        success?.classList.remove('hidden');
+      } else {
+        throw new Error(data.message);
+      }
+    } catch {
+      error?.classList.remove('hidden');
+    } finally {
+      submit!.disabled = false;
+      sending?.classList.add('hidden');
+    }
+  });
+</script>
 
 <!-- Socials -->
 <section class="px-6 md:px-10 py-16 border-t border-ink/15">
