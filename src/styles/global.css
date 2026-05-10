@@ -110,6 +110,8 @@ html.has-js [data-reveal] {
 html.has-js [data-reveal-line] > span {
   display: inline-block;
   overflow: hidden;
+  padding-bottom: 0.2em;
+  margin-bottom: -0.2em;
 }
 html.has-js [data-reveal-line] > span > span {
   display: inline-block;

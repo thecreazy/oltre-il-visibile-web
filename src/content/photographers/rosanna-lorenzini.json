@@ -1,0 +1,50 @@
+{
+  "slug": "rosanna-lorenzini",
+  "name": "Rosanna Lorenzini",
+  "based": "Verona",
+  "years": "–",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Fotografare è cercare: ogni attimo che scatto è un frammento del mondo che non voglio lasciare andare.",
+    "en": "Photography is searching: every frame I capture is a fragment of the world I refuse to let go."
+  },
+  "bio": {
+    "it": [
+      "Sono Rosanna Lorenzini, appassionata di fotografia, mi piace raccontare tutto ciò che mi circonda attraverso le immagini. Osservo il mondo tramite un obiettivo alla ricerca di attimi che meritano di essere ricordati."
+    ],
+    "en": [
+      "I am Rosanna Lorenzini, a photography enthusiast. I like to tell stories about everything that surrounds me through images. I observe the world through a lens in search of moments that deserve to be remembered."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Osservo il mondo con attenzione prima di scattare — l'obiettivo è il filtro attraverso cui decido cosa merita di essere ricordato.",
+      "Racconto ciò che mi circonda: il quotidiano, i paesaggi, le persone — tutto è degno di uno scatto.",
+      "Cerco attimi: quei momenti fuggevoli che rivelano qualcosa di vero sul mondo."
+    ],
+    "en": [
+      "I observe the world carefully before shooting — the lens is the filter through which I decide what deserves to be remembered.",
+      "I tell stories about what surrounds me: the everyday, the landscape, the people — everything is worthy of a frame.",
+      "I seek moments: those fleeting instants that reveal something true about the world."
+    ]
+  },
+  "works": [],
+  "cover_text": "RL",
+  "accent_no": "16",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "h",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/rosannalorenzini"
+    }
+  ]
+}

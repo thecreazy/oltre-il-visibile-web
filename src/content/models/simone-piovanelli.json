@@ -1,0 +1,20 @@
+{
+  "slug": "simone-piovanelli",
+  "name": "Simone Piovanelli",
+  "based": "–",
+  "pronouns": "he / him — lui",
+  "genres": {
+    "it": ["Ritratto", "Fashion", "Glamour"],
+    "en": ["Portrait", "Fashion", "Glamour"]
+  },
+  "statement": {
+    "it": "Davanti all'obiettivo imparo ogni volta qualcosa che non sapevo di me — il ritratto è il momento in cui la maschera smette di servire.",
+    "en": "In front of the lens I learn something I didn't know about myself each time — the portrait is the moment when the mask stops being useful."
+  },
+  "cover_text": "SPI",
+  "accent_no": "10",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/thereal_pionci" }
+  ]
+}

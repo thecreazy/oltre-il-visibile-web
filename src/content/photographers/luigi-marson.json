@@ -1,0 +1,51 @@
+{
+  "slug": "luigi-marson",
+  "name": "Luigi Marson",
+  "based": "Latina · Lazio",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Fotografare è aprire la mente verso significati nascosti che la luce da sola non riesce a svelare.",
+    "en": "Photography is opening the mind towards hidden meanings that light alone cannot reveal."
+  },
+  "bio": {
+    "it": [
+      "Penso alla fotografia come la possibilità raccontare il mondo come lo vediamo, ma con la possibilità di aprire la mente verso significati nascosti che la luce da sola non riesce a svelare."
+    ],
+    "en": [
+      "I think of photography as the possibility of telling the world as we see it, but with the possibility of opening the mind towards hidden meanings that light alone cannot reveal."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Esploro generi diversi — dal ritratto al paesaggio, dall'architettura ai viaggi — cercando in ognuno un significato oltre la superficie.",
+      "Racconto il mondo come lo vedo, ma sempre con l'intenzione di rivelare ciò che la luce da sola non basta a mostrare.",
+      "Nel glamour e nel nudo cerco la stessa autenticità che inseguo in un paesaggio: la verità nascosta nell'immagine."
+    ],
+    "en": [
+      "I explore diverse genres — from portrait to landscape, from architecture to travel — seeking in each one a meaning beyond the surface.",
+      "I tell the world as I see it, but always with the intention of revealing what light alone is not enough to show.",
+      "In glamour and nude I seek the same authenticity I pursue in a landscape: the truth hidden within the image."
+    ]
+  },
+  "works": [],
+  "cover_text": "LM",
+  "accent_no": "17",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "h",
+    "h",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/lu.on_images"
+    }
+  ]
+}
