@@ -42,6 +42,15 @@ const {
 
     <Seo lang={lang} title={title} description={description} image={image} type={type} keywords={keywords} />
     <ViewTransitions />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NJYE0R11VG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NJYE0R11VG');
+    </script>
   </head>
 
   <body class={`bg-paper text-ink antialiased ${bodyClass}`}>
