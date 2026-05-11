@@ -1,0 +1,44 @@
+{
+  "slug": "alessandro-marino",
+  "name": "Alessandro Marino",
+  "based": "–",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Una foto rimane solo una foto finché non la condividi — nel momento in cui raggiunge qualcuno, diventa emozione.",
+    "en": "A photograph remains just a photograph until you share it — the moment it reaches someone, it becomes emotion."
+  },
+  "bio": {
+    "it": [
+      "una foto rimane solo una foto sino a quando non la condividi, la foto è condivisione, espressione, stupore e sdegno... quindi emozioni."
+    ],
+    "en": [
+      "A photograph remains just a photograph until you share it — a photo is sharing, expression, wonder and indignation... in other words, emotions."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Per me fotografare è un atto incompleto senza la condivisione: è nello scambio con l'altro che l'immagine prende vita.",
+      "Cerco lo stupore e lo sdegno — le due facce dell'emozione autentica che una foto sa evocare.",
+      "La fotografia è espressione: un linguaggio che parla prima agli occhi, poi al cuore."
+    ],
+    "en": [
+      "For me, photographing is an incomplete act without sharing: it is in the exchange with others that the image comes alive.",
+      "I seek wonder and indignation — the two faces of authentic emotion that a photograph can evoke.",
+      "Photography is expression: a language that speaks first to the eyes, then to the heart."
+    ]
+  },
+  "works": [],
+  "cover_text": "ALM",
+  "accent_no": "26",
+  "photo_orientations": [
+    "v",
+    "v",
+    "h",
+    "v"
+  ],
+  "socials": []
+}

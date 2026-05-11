@@ -1,0 +1,50 @@
+{
+  "slug": "elena-carolei",
+  "name": "Elena Carolei",
+  "based": "Genova",
+  "years": "–",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "La fotografia è il mio linguaggio: esprimo emozioni per incastonarle nel tempo.",
+    "en": "Photography is my language: I express emotions to set them in time, like stones in a ring."
+  },
+  "bio": {
+    "it": [
+      "La fotografia è il mio linguaggio esprimo emozioni per incastonarle nel tempo."
+    ],
+    "en": [
+      "Photography is my language: I express emotions to set them in time."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Lavoro principalmente sul ritratto, esplorando la macro e il paesaggio come estensioni dello sguardo interiore.",
+      "Ogni immagine è un'emozione che cerca forma — la fotografia mi permette di fissarla nel tempo senza perderla.",
+      "Cerco il dettaglio che rivela l'essenza: nel volto come nel paesaggio, nell'infinitamente piccolo come nel grande."
+    ],
+    "en": [
+      "I work primarily in portrait, exploring macro and landscape as extensions of the inner gaze.",
+      "Every image is an emotion seeking form — photography allows me to fix it in time without losing it.",
+      "I seek the detail that reveals the essence: in a face as in a landscape, in the infinitely small as in the vast."
+    ]
+  },
+  "works": [],
+  "cover_text": "EC",
+  "accent_no": "25",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/caraele67_portrait/"
+    }
+  ]
+}

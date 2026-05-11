@@ -1,0 +1,41 @@
+{
+  "slug": "roberta-fiorelli",
+  "name": "Roberta Fiorelli",
+  "based": "Roma",
+  "years": "–",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Fotografo la scena e la moda per fermare la magia irripetibile del presente — ogni scatto è un piccolo atto di eternità.",
+    "en": "I photograph scene and fashion to hold the unrepeatable magic of the present — every shot is a small act of eternity."
+  },
+  "bio": {
+    "it": [
+      "La fotografia è la possibilità di catturare la magia del presente rendendola eterna."
+    ],
+    "en": [
+      "Photography is the possibility of capturing the magic of the present and making it eternal."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Lavoro tra fotografia di scena e di moda, documentando eventi e raccontando storie attraverso l'immagine.",
+      "Cerco la magia del presente: ogni situazione porta in sé un momento irripetibile da fissare per sempre.",
+      "Mi muovo tra set e palcoscenici con un occhio aperto sulle manifestazioni della bellezza contemporanea."
+    ],
+    "en": [
+      "I work between scene and fashion photography, documenting events and telling stories through images.",
+      "I seek the magic of the present: every situation carries an unrepeatable moment worth capturing forever.",
+      "I move between sets and stages with an eye always open to expressions of contemporary beauty."
+    ]
+  },
+  "works": [],
+  "cover_text": "RF",
+  "accent_no": "23",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/leuconoes/" }
+  ]
+}

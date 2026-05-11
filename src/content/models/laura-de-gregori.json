@@ -1,0 +1,34 @@
+{
+  "slug": "laura-de-gregori",
+  "name": "Laura De Gregori",
+  "based": "Roma",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": [
+      "Glamour",
+      "Fashion",
+      "Ritratto",
+      "Street"
+    ],
+    "en": [
+      "Glamour",
+      "Fashion",
+      "Portrait",
+      "Street"
+    ]
+  },
+  "statement": {
+    "it": "Posare è il mio modo di raccontare storie senza parole — ogni scatto è trasformazione, carattere e un'emozione che resta.",
+    "en": "Posing is my way of telling stories without words — every shot is transformation, character and an emotion that stays."
+  },
+  "cover_text": "LDG",
+  "accent_no": "12",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": []
+}
