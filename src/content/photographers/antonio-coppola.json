@@ -1,0 +1,24 @@
+{
+  "slug": "antonio-coppola",
+  "name": "Antonio Coppola",
+  "based": "Padova",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "cover_text": "AC",
+  "accent_no": "20",
+  "photo_orientations": [
+    "v",
+    "v",
+    "h",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/antoniocoppolanuovprofilo?igsh=MTRpZjM2b3F5OW5xeQ=="
+    }
+  ]
+}

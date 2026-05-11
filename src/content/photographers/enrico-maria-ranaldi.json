@@ -1,0 +1,58 @@
+{
+  "slug": "enrico-maria-ranaldi",
+  "name": "Enrico Maria Ranaldi",
+  "based": "Montefiascone",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Il mio viaggio nella fotografia nasce dalla meraviglia per i piccoli dettagli — trasformo momenti ordinari in ricordi straordinari con uno stile personale e distintivo.",
+    "en": "My journey in photography was born from wonder at small details — I transform ordinary moments into extraordinary memories with a personal and distinctive style."
+  },
+  "bio": {
+    "it": [
+      "Mi chiamo Enrico Maria Ranaldi, fotografo freelance con la passione di catturare storie ed emozioni attraverso l'obiettivo.",
+      "Il mio viaggio nella fotografia è iniziato dalla meraviglia per i piccoli dettagli e la bellezza che ci circonda, e oggi si traduce in immagini che raccontano il mondo in modo unico e autentico.",
+      "Ogni scatto è una combinazione di tecnica e sensibilità artistica. Che si tratti di un paesaggio, di un ritratto o di un evento speciale, il mio obiettivo è quello di trasformare momenti ordinari in ricordi straordinari, mantenendo sempre uno stile personale e distintivo."
+    ],
+    "en": [
+      "My name is Enrico Maria Ranaldi, a freelance photographer with a passion for capturing stories and emotions through the lens.",
+      "My journey in photography began with a sense of wonder at the small details and the beauty that surrounds us, and today it translates into images that tell the world in a unique and authentic way.",
+      "Every shot is a combination of technique and artistic sensitivity. Whether it is a landscape, a portrait or a special event, my aim is to transform ordinary moments into extraordinary memories, always maintaining a personal and distinctive style."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Combino tecnica e sensibilità artistica in ogni scatto — che si tratti di paesaggio, ritratto o evento speciale.",
+      "Cerco la meraviglia nei piccoli dettagli e nella bellezza quotidiana che spesso passa inosservata.",
+      "Racconto il mondo in modo unico e autentico, trasformando momenti ordinari in ricordi straordinari."
+    ],
+    "en": [
+      "I combine technique and artistic sensitivity in every shot — whether landscape, portrait or special event.",
+      "I seek wonder in small details and in the everyday beauty that often goes unnoticed.",
+      "I tell the world in a unique and authentic way, transforming ordinary moments into extraordinary memories."
+    ]
+  },
+  "works": [],
+  "cover_text": "EMR",
+  "accent_no": "21",
+  "photo_orientations": [
+    "h",
+    "h",
+    "h",
+    "v",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Website",
+      "href": "https://enricomranaldi.eu"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/enricomranaldiimmagini/"
+    }
+  ]
+}

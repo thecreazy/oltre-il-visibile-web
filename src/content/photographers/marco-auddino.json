@@ -7,7 +7,41 @@
     "it": "Fotografo · Espositore",
     "en": "Photographer · Exhibitor"
   },
+  "statement": {
+    "it": "Una foto rende eterno un momento del tuo presente — è questo che mi affascina della fotografia, la sua capacità di cristallizzare gli attimi dell'esistenza.",
+    "en": "A photograph makes a moment of your present eternal — that is what fascinates me about photography, its ability to crystallise the instants of existence."
+  },
+  "bio": {
+    "it": [
+      "Nessun passato, nessun futuro, solo un eterno presente! Una foto rende eterno un momento del tuo presente…",
+      "È questo che mi affascina della fotografia, la sua capacità di cristallizzare gli attimi dell'esistenza e farli durare per sempre.",
+      "La macchina fotografica è sempre con me, ogni occasione può essere quella giusta. Natura, paesaggi, luoghi, persone: frammenti di un presente che non smette mai di sorprendermi."
+    ],
+    "en": [
+      "No past, no future, only an eternal present! A photograph makes a moment of your present eternal…",
+      "That is what fascinates me about photography — its ability to crystallise the instants of existence and make them last forever.",
+      "The camera is always with me; every occasion could be the right one. Nature, landscapes, places, people: fragments of a present that never stops surprising me."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Porto sempre con me la macchina fotografica — ogni momento, ogni luogo, ogni incontro è un'occasione potenziale.",
+      "Fotografo il presente: natura, paesaggi, luoghi e persone come frammenti di un'esistenza che merita di essere cristallizzata.",
+      "Non cerco il momento perfetto, lo aspetto — la fotografia è per me un atto di attenzione continua al mondo che mi circonda."
+    ],
+    "en": [
+      "I always carry my camera — every moment, every place, every encounter is a potential occasion.",
+      "I photograph the present: nature, landscapes, places and people as fragments of an existence that deserves to be crystallised.",
+      "I don't look for the perfect moment, I wait for it — photography is for me an act of continuous attention to the world around me."
+    ]
+  },
+  "works": [],
   "cover_text": "MA",
   "accent_no": "14",
-  "photo_orientations": ["v", "v", "v", "v"]
+  "photo_orientations": [
+    "h",
+    "h",
+    "h",
+    "h"
+  ]
 }

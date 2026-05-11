@@ -1,0 +1,20 @@
+{
+  "slug": "alissa-nottoli",
+  "name": "Alissa Nottoli",
+  "based": "Lucca",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": ["Glamour", "Fashion · Editoriale", "Ritratto", "Nudo artistico"],
+    "en": ["Glamour", "Fashion · Editorial", "Portrait", "Artistic nude"]
+  },
+  "statement": {
+    "it": "Ogni genere che esploro è un modo diverso di abitare il mio corpo davanti all'obiettivo — dal glamour al ritratto, cerco sempre il momento in cui smetto di posare e comincio a esserci.",
+    "en": "Every genre I explore is a different way of inhabiting my body in front of the lens — from glamour to portrait, I always seek the moment when I stop posing and start being present."
+  },
+  "cover_text": "AN",
+  "accent_no": "11",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "socials": [
+    { "label": "Instagram", "href": "https://www.instagram.com/alissanottoli.pm?igsh=eHhwZ3dsMGZ1bHlr&utm_source=qr" }
+  ]
+}

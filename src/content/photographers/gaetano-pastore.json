@@ -1,0 +1,50 @@
+{
+  "slug": "gaetano-pastore",
+  "name": "Gaetano Pastore",
+  "based": "Potenza · Roma",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Mi piace prendere in prestito, irrispettosamente, la frase di Dostoevskij: «la bellezza salverà il mondo» — e aggiungo che la bellezza merita sempre di essere documentata in tutte le sue espressioni.",
+    "en": "I like to borrow, irreverently, Dostoevsky's phrase: «beauty will save the world» — and I add that beauty always deserves to be documented in all its expressions."
+  },
+  "bio": {
+    "it": [
+      "gaetano pastore, @frppas, fotoamatore, Basilicata, Lazio, Potenza, Roma...mi piace prendere in prestito, irrispettosamente la frase di Dostoevskij: \"la bellezza salverà il mondo\", aggiungo, la bellezza merita sempre di essere di essere documentata in tutte le espressioni e manifestazioni..."
+    ],
+    "en": [
+      "Gaetano Pastore, @frppas, amateur photographer, Basilicata, Lazio, Potenza, Rome... I like to borrow, irreverently, Dostoevsky's phrase: \"beauty will save the world\", and I add that beauty always deserves to be documented in all its expressions and manifestations..."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Fotografo la bellezza in tutte le sue manifestazioni — dalla natura ai luoghi, dalle persone agli attimi quotidiani.",
+      "Seguo l'istinto del fotoamatore: non cerco la perfezione tecnica, ma l'autenticità del momento.",
+      "Mi muovo tra Basilicata e Lazio, tra Potenza e Roma — il territorio come fonte inesauribile di bellezza da documentare."
+    ],
+    "en": [
+      "I photograph beauty in all its manifestations — from nature to places, from people to everyday moments.",
+      "I follow the instinct of the amateur photographer: I don't seek technical perfection, but the authenticity of the moment.",
+      "I move between Basilicata and Lazio, between Potenza and Rome — the territory as an inexhaustible source of beauty to document."
+    ]
+  },
+  "works": [],
+  "cover_text": "GP",
+  "accent_no": "22",
+  "photo_orientations": [
+    "h",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/frppas"
+    }
+  ]
+}
