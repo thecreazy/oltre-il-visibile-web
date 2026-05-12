@@ -32,6 +32,7 @@ const dictionaries = {
       press: 'Rassegna stampa',
       staff: 'Staff',
       contact: 'Contatti',
+      guests: 'Ospiti',
     },
     cta: {
       discover: 'Scopri',
@@ -46,6 +47,7 @@ const dictionaries = {
       all_photographers: 'Tutti i fotografi',
       all_models: 'Tutti i volti',
       all_exhibitions: 'Tutte le mostre',
+      all_guests: 'Tutti gli ospiti',
     },
     home: {
       eyebrow: 'Mostra itinerante 2026 — 2027',
@@ -106,6 +108,18 @@ const dictionaries = {
       statement: 'Presenza',
       genres: 'Generi',
     },
+    guests: {
+      eyebrow: 'Ospiti Speciali',
+      title: 'Ospiti',
+      lead: 'Personalità del mondo della moda, dell\'arte e della cultura che accompagnano la mostra.',
+      bio_artistic: 'Biografia artistica',
+      bio_vision: 'Visione artistica',
+      guests_involved: 'Ospiti speciali',
+      work_info: 'Informazioni sull\'opera',
+      work_type: 'Tipo opera',
+      work_year: 'Anno creazione',
+      work_description: 'Descrizione opera',
+    },
     partners: {
       eyebrow: 'Partner',
       title: 'Istituzioni',
@@ -160,6 +174,8 @@ const dictionaries = {
       contact_desc: 'Contatta lo staff di Oltre il Visibile. Per partecipare, collaborare o ospitare la mostra.',
       press_title: 'Rassegna stampa — Oltre il Visibile',
       press_desc: 'Comunicati stampa, articoli e menzioni ufficiali legati alle tappe della mostra fotografica Oltre il Visibile.',
+      guests_title: 'Ospiti Speciali — Oltre il Visibile',
+      guests_desc: 'Gli ospiti speciali della mostra fotografica Oltre il Visibile: personalità del mondo della moda, dell\'arte e della cultura.',
     },
   },
   en: {
@@ -175,6 +191,7 @@ const dictionaries = {
       press: 'Press',
       staff: 'Staff',
       contact: 'Contact',
+      guests: 'Guests',
     },
     cta: {
       discover: 'Discover',
@@ -189,6 +206,7 @@ const dictionaries = {
       all_photographers: 'All photographers',
       all_models: 'All faces',
       all_exhibitions: 'All exhibitions',
+      all_guests: 'All guests',
     },
     home: {
       eyebrow: 'Travelling exhibition 2026 — 2027',
@@ -249,6 +267,18 @@ const dictionaries = {
       statement: 'Presence',
       genres: 'Genres',
     },
+    guests: {
+      eyebrow: 'Special Guests',
+      title: 'Guests',
+      lead: 'Personalities from the worlds of fashion, art and culture accompanying the exhibition.',
+      bio_artistic: 'Artistic biography',
+      bio_vision: 'Artistic vision',
+      guests_involved: 'Special guests',
+      work_info: 'About the work',
+      work_type: 'Type',
+      work_year: 'Year',
+      work_description: 'Description',
+    },
     partners: {
       eyebrow: 'Partners',
       title: 'Institutions',
@@ -303,6 +333,8 @@ const dictionaries = {
       contact_desc: 'Contact the Oltre il Visibile curatorial team. To take part, collaborate or host the show.',
       press_title: 'Press — Oltre il Visibile',
       press_desc: 'Press releases, articles and official mentions related to the stops of the Oltre il Visibile photography exhibition.',
+      guests_title: 'Special Guests — Oltre il Visibile',
+      guests_desc: 'Special guests of the Oltre il Visibile photography exhibition: personalities from the worlds of fashion, art and culture.',
     },
   },
 } as const;

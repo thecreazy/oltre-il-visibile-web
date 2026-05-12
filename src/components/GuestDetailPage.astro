@@ -1,0 +1,193 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getEntry } from 'astro:content';
+import { pick } from '@utils/data';
+import RevealText from '@components/RevealText.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+import { existsSync } from 'fs';
+import { join } from 'path';
+
+interface Props { lang: Lang; slug: string; }
+const { lang, slug } = Astro.props;
+const dict = t(lang);
+
+const entry = await getEntry('guests', slug);
+if (!entry) throw new Error(`Guest not found: ${slug}`);
+const g = entry.data;
+
+function guestImg(filename: string): string {
+  const abs = join(process.cwd(), 'public', 'guests', g.slug, filename);
+  return existsSync(abs) ? `/guests/${g.slug}/${filename}` : '';
+}
+
+const profileSrc = guestImg('0.jpg');
+const featureSrc = guestImg('1.jpg');
+const orientations = g.photo_orientations ?? ['v', 'v', 'v', 'v'];
+---
+
+<!-- HERO -->
+<section class="relative px-6 md:px-10 pt-40 md:pt-48 pb-16 bg-paper overflow-hidden">
+  <div class="grid grid-cols-12 gap-x-6 gap-y-10 items-end">
+    <div class="col-span-12 md:col-span-7 relative z-10">
+      <p class="eyebrow text-gold" data-reveal>
+        {pick(g.title, lang)} · {g.based}
+      </p>
+      <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+        <RevealText as="span" class="block" text={g.name.split(' ')[0]} />
+        <RevealText as="span" class="block pl-[8vw]" text={g.name.split(' ').slice(1).join(' ')} />
+      </h1>
+      <p class="font-mono text-[0.65rem] tracking-[0.28em] uppercase text-gold mt-10" data-reveal>
+        {dict.guests.eyebrow}
+      </p>
+    </div>
+
+    <div class="col-span-12 md:col-span-4 md:col-start-9">
+      {profileSrc ? (
+        <div class="frame aspect-[3/4] bg-graphite relative overflow-hidden">
+          <img
+            src={profileSrc}
+            alt={g.name}
+            class="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+        </div>
+      ) : (
+        <div class="frame aspect-[3/4] bg-graphite text-paper relative overflow-hidden">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="font-display italic font-extralight text-[clamp(6rem,16vw,12rem)] leading-none opacity-50 select-none">
+              {g.cover_text}
+            </span>
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<!-- BIO ARTISTICA -->
+<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-paper">
+  <div class="col-span-12 md:col-span-3">
+    <p class="eyebrow text-smoke">{dict.guests.bio_artistic}</p>
+  </div>
+  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
+    {pick(g.bio_artistic, lang).map((para, i) => (
+      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i * 0.08).toString()}>{para}</p>
+    ))}
+  </div>
+</section>
+
+<!-- BIO VISIONE -->
+<section class="px-6 md:px-10 py-24 grid grid-cols-12 gap-x-6 gap-y-6 border-t border-ink/15 bg-bone">
+  <div class="col-span-12 md:col-span-3">
+    <p class="eyebrow text-smoke">{dict.guests.bio_vision}</p>
+  </div>
+  <div class="col-span-12 md:col-span-9 max-w-reading space-y-6">
+    {pick(g.bio_vision, lang).map((para, i) => (
+      <p class="text-lg md:text-xl leading-relaxed" data-reveal data-reveal-delay={(i * 0.08).toString()}>{para}</p>
+    ))}
+  </div>
+</section>
+
+<!-- FEATURE IMAGE -->
+{featureSrc && (
+  <div class="w-full overflow-hidden border-t border-ink/15">
+    <div class="gallery-img-wrap">
+      <img
+        src={featureSrc}
+        alt=""
+        class="w-full h-auto block"
+        loading="lazy"
+        decoding="async"
+        data-parallax="0.1"
+      />
+    </div>
+  </div>
+)}
+
+<!-- OPERA -->
+{g.work && (
+  <section class="px-6 md:px-10 py-24 border-t border-ink/15 bg-paper">
+    <div class="grid grid-cols-12 gap-x-6 gap-y-8">
+      <div class="col-span-12 md:col-span-3">
+        <p class="eyebrow text-smoke">{dict.guests.work_info}</p>
+      </div>
+      <div class="col-span-12 md:col-span-9">
+        <h3 class="font-display italic font-light text-3xl md:text-4xl leading-tight" data-reveal>
+          "{g.work.title}"
+        </h3>
+        <dl class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-ink/15 pt-6">
+          <div>
+            <dt class="eyebrow text-smoke mb-1">{dict.guests.work_type}</dt>
+            <dd class="font-mono text-sm tracking-[0.12em] uppercase">{pick(g.work.type, lang)}</dd>
+          </div>
+          <div>
+            <dt class="eyebrow text-smoke mb-1">{dict.guests.work_year}</dt>
+            <dd class="font-mono text-sm tracking-[0.12em] uppercase">{g.work.year}</dd>
+          </div>
+        </dl>
+        <div class="mt-8 border-t border-ink/15 pt-6">
+          <p class="eyebrow text-smoke mb-4">{dict.guests.work_description}</p>
+          <p class="text-lg md:text-xl leading-relaxed max-w-reading text-smoke" data-reveal>
+            {pick(g.work.description, lang)}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- GALLERY -->
+<section class="px-6 md:px-10 py-24 border-t border-ink/15 bg-paper">
+  <div class="columns-1 md:columns-2 gap-x-6">
+    {orientations.map((o, i) => {
+      const src = guestImg(`${i + 2}.jpg`);
+      const ratioClass = o === 'h' ? 'aspect-[3/2]' : o === 's' ? 'aspect-[1/1]' : 'aspect-[2/3]';
+      const tone = i % 2 === 0 ? 'bg-graphite text-paper' : 'bg-bone text-ink';
+      return (
+        <div class="break-inside-avoid mb-4 md:mb-6">
+          {src ? (
+            <div class="gallery-img-wrap" data-reveal-delay={(i * 0.1).toString()}>
+              <img src={src} alt="" loading="lazy" decoding="async" data-parallax="0.12" />
+            </div>
+          ) : (
+            <div class={`frame ${ratioClass} ${tone} relative overflow-hidden`}>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span class="font-display italic font-extralight text-[min(48vw,28rem)] leading-none opacity-60 select-none">
+                  {g.cover_text}
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</section>
+
+<!-- SOCIALS -->
+{g.socials && g.socials.length > 0 && (
+  <section class="px-6 md:px-10 py-16 grid grid-cols-12 gap-x-6 gap-y-4 border-t border-ink/15 bg-paper">
+    <div class="col-span-12 md:col-span-3">
+      <p class="eyebrow text-smoke">Online</p>
+    </div>
+    <ul class="col-span-12 md:col-span-9 flex flex-wrap gap-x-10 gap-y-3">
+      {g.socials.map(s => (
+        <li>
+          <a href={s.href} target="_blank" rel="noopener noreferrer" class="font-mono text-[0.7rem] tracking-[0.22em] uppercase alink">
+            {s.label} ↗
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<!-- BACK -->
+<section class="px-6 md:px-10 py-32 border-t border-ink/15">
+  <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <a href={path(lang, 'guests')} class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase">← {dict.cta.all_guests}</a>
+    <MagneticButton href={path(lang, 'exhibitions')}>{dict.cta.all_exhibitions}</MagneticButton>
+  </div>
+</section>

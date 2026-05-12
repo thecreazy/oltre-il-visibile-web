@@ -1,0 +1,16 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import GuestsListPage from '@components/GuestsListPage.astro';
+import { t } from '@i18n/index';
+
+const lang = 'en';
+const dict = t(lang);
+---
+
+<BaseLayout
+  lang={lang}
+  title={dict.seo.guests_title}
+  description={dict.seo.guests_desc}
+>
+  <GuestsListPage lang={lang} />
+</BaseLayout>

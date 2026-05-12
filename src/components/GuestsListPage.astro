@@ -1,0 +1,94 @@
+---
+import type { Lang } from '@i18n/index';
+import { t, path } from '@i18n/index';
+import { getCollection } from 'astro:content';
+import { pick } from '@utils/data';
+import RevealText from '@components/RevealText.astro';
+import { existsSync } from 'fs';
+import { join } from 'path';
+
+interface Props { lang: Lang; }
+const { lang } = Astro.props;
+const dict = t(lang);
+
+const guests = await getCollection('guests');
+
+function coverSrc(slug: string): string {
+  const abs = join(process.cwd(), 'public', 'guests', slug, '0.jpg');
+  return existsSync(abs) ? `/guests/${slug}/0.jpg` : '';
+}
+---
+
+<section class="px-6 md:px-10 pt-40 md:pt-48 pb-24">
+  <div class="grid grid-cols-12 gap-x-6 items-end">
+    <div class="col-span-12 md:col-span-7">
+      <p class="eyebrow text-smoke" data-reveal>{dict.guests.eyebrow}</p>
+      <h1 class="font-display italic font-extralight text-mega leading-[0.85] tracking-tight mt-8">
+        <RevealText as="span" class="block" text={dict.guests.title} />
+      </h1>
+    </div>
+    <div class="col-span-12 md:col-span-4 md:col-start-9 mt-10 md:mt-0">
+      <p class="font-display italic text-2xl md:text-3xl text-smoke max-w-[28ch]" data-reveal>
+        {dict.guests.lead}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-10 pb-40">
+  <ul>
+    {guests.map((entry, i) => {
+      const g = entry.data;
+      const src = coverSrc(g.slug);
+      const href = `${path(lang, 'guests')}/${g.slug}`;
+      const bioExcerpt = pick(g.bio_artistic, lang)[0] ?? '';
+
+      return (
+        <li class="border-t border-ink/15 py-16 md:py-20 grid grid-cols-12 gap-x-6 gap-y-10 items-start" data-reveal data-reveal-delay={(i * 0.12).toString()}>
+
+          {/* Photo */}
+          <div class="col-span-12 md:col-span-4">
+            <a href={href} class="group block">
+              <div class="frame aspect-[3/4] bg-graphite text-paper relative overflow-hidden">
+                {src ? (
+                  <img
+                    src={src}
+                    alt={g.name}
+                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="font-display italic font-extralight text-[clamp(8rem,18vw,14rem)] leading-none opacity-50 select-none">
+                      {g.cover_text}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </a>
+          </div>
+
+          {/* Content */}
+          <div class="col-span-12 md:col-span-7 md:col-start-6 md:pt-4">
+            <p class="eyebrow text-gold">
+              {pick(g.title, lang)} · {g.based}
+            </p>
+            <h2 class="font-display italic font-extralight text-[clamp(2.8rem,6vw,5rem)] leading-[0.95] tracking-tight mt-4">
+              <a href={href} class="hover:text-smoke transition-colors duration-300">{g.name}</a>
+            </h2>
+            <p class="text-smoke mt-6 text-base md:text-lg leading-relaxed max-w-[55ch] line-clamp-4">
+              {bioExcerpt}
+            </p>
+            <a
+              href={href}
+              class="alink mt-8 inline-block font-mono text-[0.7rem] tracking-[0.22em] uppercase"
+            >
+              {dict.cta.view_profile} →
+            </a>
+          </div>
+        </li>
+      );
+    })}
+  </ul>
+</section>

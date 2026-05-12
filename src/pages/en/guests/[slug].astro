@@ -1,0 +1,27 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import GuestDetailPage from '@components/GuestDetailPage.astro';
+import { getCollection } from 'astro:content';
+import { t, path } from '@i18n/index';
+
+export async function getStaticPaths() {
+  const guests = await getCollection('guests');
+  return guests.map((entry) => ({ params: { slug: entry.data.slug } }));
+}
+
+const lang = 'en';
+const dict = t(lang);
+const { slug } = Astro.params;
+
+const { getEntry } = await import('astro:content');
+const entry = await getEntry('guests', slug!);
+if (!entry) return Astro.redirect(path(lang, 'guests'));
+
+const g = entry.data;
+const title = `${g.name} — ${dict.guests.eyebrow} — Oltre il Visibile`;
+const description = `${g.name}, ${g.based}. ${g.title.en}.`;
+---
+
+<BaseLayout lang={lang} title={title} description={description}>
+  <GuestDetailPage lang={lang} slug={slug!} />
+</BaseLayout>

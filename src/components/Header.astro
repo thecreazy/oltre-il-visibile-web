@@ -8,14 +8,15 @@ const { lang } = Astro.props;
 const dict = t(lang);
 
 const navItems = [
-  { label: dict.nav.manifesto, href: path(lang, 'manifesto') },
-  { label: dict.nav.exhibitions, href: path(lang, 'exhibitions') },
+  { label: dict.nav.manifesto,     href: path(lang, 'manifesto') },
+  { label: dict.nav.exhibitions,   href: path(lang, 'exhibitions') },
   { label: dict.nav.photographers, href: path(lang, 'photographers') },
-  { label: dict.nav.models, href: path(lang, 'models') },
-  { label: dict.nav.partners, href: path(lang, 'partners') },
-  { label: dict.nav.press, href: pressPath(lang) },
-  { label: dict.nav.staff, href: path(lang, 'staff') },
-  { label: dict.nav.contact, href: path(lang, 'contact') },
+  { label: dict.nav.models,        href: path(lang, 'models') },
+  { label: dict.nav.guests,        href: path(lang, 'guests') },
+  { label: dict.nav.partners,      href: path(lang, 'partners'),  lgHidden: true },
+  { label: dict.nav.press,         href: pressPath(lang) },
+  { label: dict.nav.staff,         href: path(lang, 'staff'),     lgHidden: true },
+  { label: dict.nav.contact,       href: path(lang, 'contact'),   lgHidden: true },
 ];
 ---
 
@@ -36,7 +37,7 @@ const navItems = [
   <div class="px-6 md:px-10 py-5 flex items-center justify-end gap-8">
     <nav class="hidden lg:flex items-center gap-8 font-mono text-[0.7rem] tracking-[0.22em] uppercase" aria-label="primary">
       {navItems.map(it => (
-        <a href={it.href} class="alink">{it.label}</a>
+        <a href={it.href} class={`alink${it.lgHidden ? ' nav-xl-only' : ''}`}>{it.label}</a>
       ))}
     </nav>
 

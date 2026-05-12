@@ -71,6 +71,7 @@ const exhibitions = defineCollection({
     description: bilingualArr,
     photographers: z.array(z.string()), // slugs
     models: z.array(z.string()), // slugs
+    guests: z.array(z.string()).optional(), // slugs
     accent_no: z.string(),
     coordinates: z.tuple([z.number(), z.number()]).optional(),
     press: z.array(z.object({
@@ -96,4 +97,28 @@ const partners = defineCollection({
   }),
 });
 
-export const collections = { photographers, models, exhibitions, partners };
+const guests = defineCollection({
+  type: 'data',
+  schema: z.object({
+    slug: z.string(),
+    name: z.string(),
+    title: bilingual,
+    based: z.string(),
+    bio_artistic: bilingualArr,
+    bio_vision: bilingualArr,
+    cover_text: z.string(),
+    photo_orientations: z.array(z.enum(['v', 'h', 's'])).optional(),
+    work: z.object({
+      title: z.string(),
+      type: bilingual,
+      year: z.string(),
+      description: bilingual,
+    }).optional(),
+    socials: z.array(z.object({
+      label: z.string(),
+      href: z.string(),
+    })).optional(),
+  }),
+});
+
+export const collections = { photographers, models, exhibitions, partners, guests };
