@@ -1,0 +1,40 @@
+{
+  "slug": "annia-koroleva",
+  "name": "Annia Koroleva",
+  "based": "Montecatini",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": [
+      "ritratto",
+      "fotografia artistica",
+      "moda"
+    ],
+    "en": [
+      "portrait",
+      "artistic photography",
+      "fashion"
+    ]
+  },
+  "statement": {
+    "it": "Vivere come si vuole, restare umani — è questo che cerco ogni volta che qualcuno punta un obiettivo verso di me: non un'immagine, ma una verità che non so ancora di portare.",
+    "en": "To live as you wish, to remain human — that is what I look for every time a lens turns my way: not an image, but a truth I didn't know I was carrying."
+  },
+  "cover_text": "AK",
+  "accent_no": "14",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/aann_inna"
+    }
+  ]
+}

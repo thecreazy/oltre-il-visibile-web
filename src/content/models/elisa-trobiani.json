@@ -4,8 +4,14 @@
   "based": "Roma",
   "pronouns": "she / her — lei",
   "genres": {
-    "it": ["Ritratto", "Glamour"],
-    "en": ["Portrait", "Glamour"]
+    "it": [
+      "Ritratto",
+      "Glamour"
+    ],
+    "en": [
+      "Portrait",
+      "Glamour"
+    ]
   },
   "statement": {
     "it": "Davanti all'obiettivo imparo ogni volta dove finisco io e dove comincia l'immagine che gli altri si fanno di me.",
@@ -13,8 +19,17 @@
   },
   "cover_text": "ET",
   "accent_no": "02",
-  "photo_orientations": ["v", "v", "v", "v"],
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
   "socials": [
-    { "label": "Instagram", "href": "https://www.instagram.com/elisa.trobianii" }
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/elisa.trobianii"
+    }
   ]
 }
