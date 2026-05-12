@@ -1,0 +1,51 @@
+{
+  "slug": "thomas-muzzone",
+  "name": "Thomas Muzzone",
+  "based": "Catania",
+  "years": "b. 1973",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Esploro il corpo come paesaggio e la luce come linguaggio — ogni immagine è un equilibrio tra estetica e narrazione profonda.",
+    "en": "I explore the body as landscape and light as language — every image is a balance between aesthetics and deep narrative."
+  },
+  "bio": {
+    "it": [
+      "fotografo classe '73, la mia ricerca artistica si concentra sull'indagine della figura umana, muovendosi in un equilibrio costante tra il ritratto introspettivo e il nudo artistico. Il mio lavoro esplora la luce, il corpo come paesaggio o l'emozione pura, con l'obiettivo di restituire un'immagine che sia al contempo estetica e profondamente narrativa.",
+      "Ho maturato un'esperienza consolidata nella gestione della composizione e della luce, finalizzata alla creazione di opere destinate a percorsi espositivi di alto profilo"
+    ],
+    "en": [
+      "A photographer born in 1973, my artistic research focuses on the investigation of the human figure, moving in a constant balance between introspective portraiture and artistic nude. My work explores light, the body as landscape or pure emotion, with the aim of producing an image that is simultaneously aesthetic and deeply narrative.",
+      "I have developed solid experience in the management of composition and light, aimed at creating works destined for high-profile exhibition contexts."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Lavoro sulla figura umana come soggetto privilegiato, oscillando tra il ritratto introspettivo e il nudo artistico.",
+      "Utilizzo la luce come strumento narrativo per trasformare il corpo in paesaggio ed emozione.",
+      "Progetto ogni scatto in funzione di percorsi espositivi, curando composizione e impatto visivo con rigore."
+    ],
+    "en": [
+      "I work on the human figure as a privileged subject, alternating between introspective portraiture and artistic nude.",
+      "I use light as a narrative tool to transform the body into landscape and emotion.",
+      "I plan each shot for exhibition contexts, attending to composition and visual impact with rigour."
+    ]
+  },
+  "works": [],
+  "cover_text": "TM",
+  "accent_no": "31",
+  "photo_orientations": [
+    "v",
+    "h",
+    "h",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/tommylucieombre_morningstar?igsh=bW12MHJ5eHFtYXBt"
+    }
+  ]
+}

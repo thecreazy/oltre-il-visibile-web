@@ -1,0 +1,62 @@
+{
+  "slug": "stefania-pocchi",
+  "name": "Stefania Pocchi",
+  "based": "Rovereto",
+  "years": "–",
+  "role": {
+    "it": "Fotografa",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "La mia macchina fotografica è il mezzo speciale con cui racconto ciò che mi colpisce — ogni scatto è un frammento di ciò che sento, prima ancora di ciò che vedo.",
+    "en": "My camera is the special means through which I tell what strikes me — every shot is a fragment of what I feel, even before what I see."
+  },
+  "bio": {
+    "it": [
+      "Sono Stefania Pocchi",
+      "Nata a Siracusa ma trentina di adozione, abito a Rovereto dove faccio l'infermiera.",
+      "Ho iniziato a fotografare un po' per gioco, un po' per amore di mia figlia che faceva danza.",
+      "Spazio su diversi generi fotografici e da poco ho scoperto il piacere della fotografia in studio, frequentando i workshop.",
+      "Ognuno di noi ha diversi modi di esprimersi, la mia macchina fotografica e' il mio mezzo speciale per raccontare e catturare ciò che mi colpisce."
+    ],
+    "en": [
+      "I am Stefania Pocchi.",
+      "Born in Syracuse but Trentino by adoption, I live in Rovereto where I work as a nurse.",
+      "I started photographing partly for fun, partly out of love for my daughter who danced.",
+      "I range across different photographic genres and have recently discovered the pleasure of studio photography, attending workshops.",
+      "Each of us has different ways of expressing ourselves — my camera is my special means of telling and capturing what strikes me."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Spazio tra generi diversi — dal reportage allo studio — senza vincolarmi a un'unica direzione.",
+      "Frequento workshop per scoprire nuove tecniche, in particolare la fotografia in studio.",
+      "Scatto ciò che mi colpisce emotivamente, lasciando che l'impulso guidi l'inquadratura prima della tecnica."
+    ],
+    "en": [
+      "I range across different genres — from reportage to studio — without binding myself to a single direction.",
+      "I attend workshops to discover new techniques, particularly studio photography.",
+      "I shoot what strikes me emotionally, letting the impulse guide the frame before technique."
+    ]
+  },
+  "works": [],
+  "cover_text": "SP",
+  "accent_no": "29",
+  "photo_orientations": [
+    "v",
+    "h",
+    "h",
+    "v",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/share/1F1AnRQoVe/?mibextid=wwXIfr"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/stefaniapocchi?igsh=MWc2M20wNTg3MzAwNA=="
+    }
+  ]
+}

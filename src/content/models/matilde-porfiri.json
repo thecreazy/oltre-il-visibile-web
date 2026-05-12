@@ -4,8 +4,12 @@
   "based": "Spoleto",
   "pronouns": "she / her — lei",
   "genres": {
-    "it": ["Ritratto"],
-    "en": ["Portrait"]
+    "it": [
+      "Ritratto"
+    ],
+    "en": [
+      "Portrait"
+    ]
   },
   "statement": {
     "it": "Nel ritratto c'è un momento preciso in cui smetto di sapere cosa l'altro sta vedendo — ed è lì che l'immagine diventa vera.",
@@ -13,5 +17,10 @@
   },
   "cover_text": "MP",
   "accent_no": "08",
-  "photo_orientations": ["v", "v", "v", "v"]
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v"
+  ]
 }
