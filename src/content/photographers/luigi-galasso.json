@@ -1,26 +1,42 @@
 {
   "slug": "luigi-galasso",
   "name": "Luigi Galasso",
-  "based": "–",
+  "based": "Roma",
   "years": "–",
   "role": {
     "it": "Fotografo",
     "en": "Photographer"
   },
   "statement": {
-    "it": "",
-    "en": ""
+    "it": "Ogni scatto è per me un'impronta sensoriale — la luce, i contrasti e le forme quotidiane tradotte in emozione visiva.",
+    "en": "Every shot is for me a sensory imprint — light, contrasts and everyday forms translated into visual emotion."
   },
   "bio": {
-    "it": [],
-    "en": []
+    "it": [
+      "Mi chiamo Luigi, sono romano, appassionato di fotografia sin da bambino. Amo catturare l'essenza del mondo attraverso l'obiettivo.",
+      "La mia ricerca fotografica nasce da impressioni tradotte in immagini che esplorano l'espressività della luce, dei contrasti e delle forme quotidiane. Amo sperimentare combinando macchine e ottiche diverse, per trasformare emozioni personali in composizioni visive.",
+      "Nelle mie fotografie ogni scatto è per me un'impronta sensoriale. Scoprite le mie immagini e lasciatevi trasportare dalle sensazioni che evocano."
+    ],
+    "en": [
+      "My name is Luigi, I am Roman, and I have been passionate about photography since childhood. I love capturing the essence of the world through the lens.",
+      "My photographic research stems from impressions translated into images that explore the expressiveness of light, contrasts and everyday forms. I love to experiment by combining different cameras and lenses, to transform personal emotions into visual compositions.",
+      "In my photographs every shot is for me a sensory imprint. Discover my images and let yourself be carried away by the sensations they evoke."
+    ]
   },
   "practice": {
-    "it": [],
-    "en": []
+    "it": [
+      "Esploro luce e contrasti come materia espressiva, cercando nelle forme quotidiane ciò che sfugge allo sguardo distratto.",
+      "Sperimento combinando macchine e ottiche diverse, ampliando il vocabolario visivo di ogni soggetto.",
+      "Traduco impressioni personali in composizioni: ogni scatto non documenta, ma imprime una sensazione."
+    ],
+    "en": [
+      "I explore light and contrasts as expressive material, searching in everyday forms for what escapes the distracted eye.",
+      "I experiment by combining different cameras and lenses, expanding the visual vocabulary of each subject.",
+      "I translate personal impressions into compositions: each shot does not document, but imprints a sensation."
+    ]
   },
   "works": [],
   "cover_text": "LG",
-  "accent_no": "32",
+  "accent_no": "33",
   "photo_orientations": ["v", "v", "v", "v"]
 }
