@@ -62,7 +62,9 @@ function inCategory(cat: Category) {
                   <img src={p.logo} alt={p.name} class="h-12 w-auto object-contain mb-4" loading="lazy" />
                 )}
                 <p class="font-display italic font-light text-[clamp(2rem,4.5vw,3.5rem)] leading-[0.95]">{p.name}</p>
-                <a href={p.href} target="_blank" rel="noopener" class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase mt-2 inline-block">↗ {cat === 'venue' ? (lang === 'it' ? 'Mappa' : 'Map') : (lang === 'it' ? 'Visita' : 'Visit')}</a>
+                {p.href && (
+                  <a href={p.href} target="_blank" rel="noopener" class="alink font-mono text-[0.7rem] tracking-[0.22em] uppercase mt-2 inline-block">↗ {cat === 'venue' ? (lang === 'it' ? 'Mappa' : 'Map') : (lang === 'it' ? 'Visita' : 'Visit')}</a>
+                )}
               </div>
               <div class="col-span-12 md:col-span-3 mt-10 md:mt-0">
                 <p class="font-mono text-[0.7rem] tracking-[0.22em] uppercase text-smoke">{pick(p.kind, lang)}</p>

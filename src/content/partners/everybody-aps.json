@@ -1,0 +1,15 @@
+{
+  "name": "Everybody APS",
+  "category": "charity",
+  "order": 2,
+  "kind": {
+    "it": "Partner associativo · APS",
+    "en": "Association partner · APS"
+  },
+  "city": "Italia",
+  "note": {
+    "it": "L'associazione \"Everybody APS\" (Associazione di Promozione Sociale) ha come obiettivo quello di promuovere il benessere collettivo, favorendo la partecipazione attiva e inclusiva di tutti i membri della comunità, attraverso attività sociali, culturali, educative e di supporto. In qualità di associazione di promozione sociale, essa si impegna in una serie di attività, rispettando i principi e gli scopi stabiliti dallo statuto e dalla legislazione vigente in tutta Italia.",
+    "en": "The association \"Everybody APS\" (Social Promotion Association) aims to promote collective wellbeing by fostering the active and inclusive participation of all members of the community through social, cultural, educational and support activities. As a social promotion association, it is committed to a range of activities in accordance with the principles and objectives set out in its statute and current legislation throughout Italy."
+  },
+  "logo": "/partners/everybody-aps.jpg"
+}

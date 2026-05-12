@@ -90,7 +90,7 @@ const partners = defineCollection({
     category: z.enum(['venue', 'photographer', 'partner', 'charity']),
     kind: bilingual,
     city: z.string(),
-    href: z.string().url(),
+    href: z.string().url().optional(),
     note: bilingual,
     logo: z.string().optional(),
     order: z.number(),
