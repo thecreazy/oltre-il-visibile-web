@@ -3,6 +3,36 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
+function formatXml(xml) {
+  const INDENT = '  ';
+  let depth = 0;
+  const lines = xml.replace(/>\s*</g, '>\n<').split('\n');
+  return lines.map(line => {
+    line = line.trim();
+    if (!line) return null;
+    if (line.startsWith('</')) depth--;
+    const out = INDENT.repeat(Math.max(0, depth)) + line;
+    if (line.startsWith('<') && !line.startsWith('</') && !line.startsWith('<?') && !line.endsWith('/>') && !line.includes('</')) depth++;
+    return out;
+  }).filter(Boolean).join('\n') + '\n';
+}
+
+const formatSitemapsIntegration = {
+  name: 'format-sitemaps',
+  hooks: {
+    'astro:build:done': async ({ dir }) => {
+      const { readdir, readFile, writeFile } = await import('node:fs/promises');
+      const { fileURLToPath } = await import('node:url');
+      const distPath = fileURLToPath(dir);
+      const entries = await readdir(distPath);
+      for (const file of entries.filter(f => f.endsWith('.xml'))) {
+        const path = `${distPath}/${file}`;
+        await writeFile(path, formatXml(await readFile(path, 'utf-8')), 'utf-8');
+      }
+    },
+  },
+};
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://oltreilvisibile.art',
@@ -54,6 +84,7 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
     }),
+    formatSitemapsIntegration,
   ],
   vite: {
     ssr: {
