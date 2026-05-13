@@ -1,0 +1,48 @@
+{
+  "slug": "giuseppe-bruni",
+  "name": "Giuseppe Bruni",
+  "based": "Sairano · Pavia",
+  "years": "",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "La fotografia è per me la forma più sincera di curiosità: uno sguardo diretto sulla realtà, capace di comunicare quello che le parole non riescono a contenere.",
+    "en": "Photography is for me the most sincere form of curiosity: a direct gaze upon reality, capable of communicating what words cannot contain."
+  },
+  "bio": {
+    "it": [
+      "Nella mia idea e nelle mie attività fotografiche, la fotografia è un mezzo comunicativo piacevole, una rappresentazione realistica degli eventi della vita ed è anche l'immagine della curiosità."
+    ],
+    "en": [
+      "In my vision and in my photographic work, photography is a pleasant means of communication, a realistic representation of life's events and also the image of curiosity itself."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Un approccio versatile che spazia dal paesaggio al ritratto, dalla cronaca ai concerti, dalla fotografia industriale all'archeologia industriale e agli eventi.",
+      "La fotografia come mezzo comunicativo: ogni scatto è una rappresentazione realistica di un momento della vita, non una sua reinterpretazione.",
+      "La curiosità come motore: osservare il mondo con interesse genuino è il punto di partenza di ogni immagine."
+    ],
+    "en": [
+      "A versatile approach ranging from landscape to portrait, from news reportage to concerts, from industrial photography to industrial archaeology and events.",
+      "Photography as a communicative medium: every shot is a realistic representation of a life moment, not a reinterpretation of it.",
+      "Curiosity as the driving force: observing the world with genuine interest is the starting point of every image."
+    ]
+  },
+  "works": [],
+  "cover_text": "GB",
+  "accent_no": "37",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/giusebruni/"
+    }
+  ]
+}

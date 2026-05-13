@@ -1,0 +1,40 @@
+{
+  "slug": "elisabetta-maria-sarra",
+  "name": "Elisabetta Maria Sarra",
+  "based": "Roma",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": [
+      "ritratto",
+      "beauty",
+      "fashion",
+      "fine art"
+    ],
+    "en": [
+      "portrait",
+      "beauty",
+      "fashion",
+      "fine art"
+    ]
+  },
+  "statement": {
+    "it": "Dal ritratto al fine art, ogni scatto traccia un confine sottile: da un lato quello che scelgo di mostrare, dall'altro quello che l'obiettivo rivela prima che io lo riconosca.",
+    "en": "From portrait to fine art, every shot draws a thin line: on one side what I choose to show, on the other what the lens reveals before I even recognise it."
+  },
+  "cover_text": "EMS",
+  "accent_no": "16",
+  "photo_orientations": [
+    "v",
+    "v",
+    "v",
+    "v",
+    "v",
+    "v"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/elisabetta.maria.sarra_model"
+    }
+  ]
+}

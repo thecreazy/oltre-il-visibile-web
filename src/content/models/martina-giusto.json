@@ -1,0 +1,17 @@
+{
+  "slug": "martina-giusto",
+  "name": "Martina Giusto",
+  "based": "Roma · Milano",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": ["ritratto", "fashion", "beauty", "glamour", "intimo"],
+    "en": ["portrait", "fashion", "beauty", "glamour", "intimate"]
+  },
+  "statement": {
+    "it": "Tra la moda e l'intimo c'è una soglia sottile — è lì che mi trovo ogni volta che qualcuno mi fotografa: visibile nella forma, ma irraggiungibile in ciò che resto davvero.",
+    "en": "Between fashion and intimacy there is a thin threshold — that is where I find myself every time someone photographs me: visible in form, but unreachable in what I truly am."
+  },
+  "cover_text": "MG",
+  "accent_no": "15",
+  "photo_orientations": ["v", "v", "v", "v"]
+}

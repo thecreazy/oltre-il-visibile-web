@@ -1,0 +1,51 @@
+{
+  "slug": "giorgio-di-mento",
+  "name": "Giorgio Di Mento",
+  "based": "",
+  "years": "",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Porto con me la stessa curiosità dei quindici anni: ogni soggetto è un pretesto per fermare l'essenza del momento prima che svanisca.",
+    "en": "I carry with me the same curiosity I had at fifteen: every subject is a pretext for capturing the essence of a moment before it disappears."
+  },
+  "bio": {
+    "it": [
+      "Scatto fotografie da quando avevo 15 anni, e ancora oggi porto con me lo stesso entusiasmo di allora.",
+      "La fotografia per me è passione, curiosità e continua scoperta: mi piace osservare, sperimentare e migliorare, progetto dopo progetto.",
+      "Mi interessano quasi tutti i generi fotografici: dal ritratto al paesaggio, dall'avifauna allo sport, dallo street agli eventi. Ogni ambito rappresenta un'occasione per raccontare qualcosa di diverso e per mettermi alla prova, cercando sempre di cogliere l'essenza del momento.",
+      "Attraverso i miei scatti cerco di unire sensibilità artistica e attenzione tecnica, per creare immagini autentiche, naturali e capaci di trasmettere emozioni."
+    ],
+    "en": [
+      "I have been taking photographs since I was 15 years old, and to this day I carry with me the same enthusiasm I had back then.",
+      "Photography for me is passion, curiosity and continuous discovery: I enjoy observing, experimenting and improving, project after project.",
+      "I am interested in almost every photographic genre: from portrait to landscape, from birds to sport, from street to events. Each field is an opportunity to tell something different and to challenge myself, always striving to capture the essence of the moment.",
+      "Through my shots I try to combine artistic sensibility and technical attention, to create authentic, natural images capable of conveying emotions."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Spaziare tra generi diversi — ritratto, paesaggio, avifauna, sport, street, eventi — come modo di restare in ascolto del mondo e di affinare continuamente lo sguardo.",
+      "Bilanciare sensibilità artistica e rigore tecnico in ogni progetto, migliorando progetto dopo progetto senza mai accontentarsi.",
+      "Cercare l'essenza del momento: quell'istante autentico e naturale in cui l'immagine trasmette un'emozione senza forzature."
+    ],
+    "en": [
+      "Ranging across different genres — portrait, landscape, birds, sport, street, events — as a way of staying attuned to the world and continuously refining my eye.",
+      "Balancing artistic sensibility and technical rigour in every project, improving step by step without ever settling.",
+      "Searching for the essence of the moment: that authentic, natural instant in which an image conveys emotion without artifice."
+    ]
+  },
+  "works": [],
+  "cover_text": "GDM",
+  "accent_no": "36",
+  "photo_orientations": [
+    "v",
+    "v",
+    "h",
+    "v",
+    "v",
+    "v"
+  ]
+}
