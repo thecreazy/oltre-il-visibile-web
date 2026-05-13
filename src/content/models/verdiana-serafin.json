@@ -1,0 +1,30 @@
+{
+  "slug": "verdiana-serafin",
+  "name": "Verdiana Serafin",
+  "based": "Roma",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": [
+      "Ritratto",
+      "Fashion"
+    ],
+    "en": [
+      "Portrait",
+      "Fashion"
+    ]
+  },
+  "statement": {
+    "it": "Nel ritratto ho capito che il volto racconta ciò che il corpo non osa dire — la moda è il confine tra ciò che mostro e ciò che tengo nascosto.",
+    "en": "In portraiture I understood that the face tells what the body dares not say — fashion is the boundary between what I show and what I keep hidden."
+  },
+  "cover_text": "VS",
+  "accent_no": "17",
+  "photo_orientations": [
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "v"
+  ]
+}
