@@ -31,6 +31,26 @@ export default defineConfig({
           en: 'en-GB',
         },
       },
+      serialize(item) {
+        // URL pairs that differ between locales — auto-linking via i18n won't match them.
+        const base = 'https://oltreilvisibile.art';
+        const asymmetric = {
+          [`${base}/en/exhibitions/milan`]:    { en: `${base}/en/exhibitions/milan`,    it: `${base}/it/exhibitions/milano` },
+          [`${base}/it/exhibitions/milano`]:   { en: `${base}/en/exhibitions/milan`,    it: `${base}/it/exhibitions/milano` },
+          [`${base}/en/exhibitions/rome`]:     { en: `${base}/en/exhibitions/rome`,     it: `${base}/it/exhibitions/roma` },
+          [`${base}/it/exhibitions/roma`]:     { en: `${base}/en/exhibitions/rome`,     it: `${base}/it/exhibitions/roma` },
+          [`${base}/en/press`]:                { en: `${base}/en/press`,                it: `${base}/it/rassegna-stampa` },
+          [`${base}/it/rassegna-stampa`]:      { en: `${base}/en/press`,                it: `${base}/it/rassegna-stampa` },
+        };
+        const pair = asymmetric[item.url];
+        if (pair) {
+          item.links = [
+            { lang: 'en-GB', url: pair.en },
+            { lang: 'it-IT', url: pair.it },
+          ];
+        }
+        return item;
+      },
       changefreq: 'weekly',
       priority: 0.7,
     }),
