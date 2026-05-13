@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F5F3EE"/>
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="#0A0A0A" stroke-width="0.5"/>
+  <text x="80" y="100" font-family="Courier New, monospace" font-size="13" fill="#5A5752" letter-spacing="0.22em">OLTRE IL VISIBILE — PROGETTO SPECIALE</text>
+  <text x="80" y="280" font-family="Garamond, Georgia, serif" font-size="148" font-style="italic" fill="#0A0A0A" letter-spacing="-0.03em">The People</text>
+  <text x="80" y="340" font-family="Courier New, monospace" font-size="16" fill="#BF9930" letter-spacing="0.18em">RITRATTI APERTI A TUTTI — NESSUN CANONE</text>
+  <text x="80" y="390" font-family="Garamond, Georgia, serif" font-size="22" font-style="italic" fill="#5A5752">Chiunque può essere fotografato. Basta volerlo.</text>
+  <line x1="80" y1="510" x2="1120" y2="510" stroke="#0A0A0A" stroke-width="0.5"/>
+  <text x="80" y="545" font-family="Courier New, monospace" font-size="13" fill="#0A0A0A" letter-spacing="0.18em">ROMA 6–7 GIUGNO · PIACENZA 11–12 LUGLIO 2026</text>
+  <text x="1120" y="545" font-family="Courier New, monospace" font-size="13" text-anchor="end" fill="#BF9930" letter-spacing="0.18em">ISCRIVITI IN LISTA</text>
+</svg>

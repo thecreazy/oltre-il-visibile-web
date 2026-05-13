@@ -1,0 +1,159 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import RevealText from '@components/RevealText.astro';
+import MagneticButton from '@components/MagneticButton.astro';
+import { t, path, pressPath } from '@i18n/index';
+const dict = t('it');
+---
+
+<BaseLayout
+  lang="it"
+  title="The People — Oltre il Visibile"
+  description="Un progetto aperto a tutti: 10 ritratti per chiunque voglia essere fotografato alle tappe di Roma e Piacenza di Oltre il Visibile. Nessun canone, nessun requisito."
+  type="article"
+  image="/og/the-people.svg"
+  keywords={[
+    'the people ritratto aperto',
+    'mostra fotografica Roma Piacenza',
+    'sessione fotografica gratuita',
+    'Oltre il Visibile partecipa',
+  ]}
+>
+  <!-- ── HEADER ──────────────────────────────────────────── -->
+  <section class="px-6 pb-12 pt-40 md:px-10 md:pt-48">
+    <p class="eyebrow text-smoke" data-reveal>Progetto speciale · Giugno – Luglio 2026</p>
+    <h1 class="mt-8 font-display text-mega font-extralight italic leading-[0.85] tracking-tight">
+      <RevealText as="span" class="block" text="The" />
+      <RevealText as="span" class="block pl-[10vw]" text="People" />
+    </h1>
+  </section>
+
+
+  <!-- ── CORPO ARTICOLO ─────────────────────────────────── -->
+  <section class="border-t border-ink/15 px-6 pb-24 md:px-10">
+    <div class="grid grid-cols-12 gap-x-6 gap-y-16 pt-20">
+      <!-- testo principale -->
+      <div class="col-span-12 space-y-10 lg:col-span-8">
+        <p class="eyebrow text-smoke" data-reveal>Il progetto</p>
+        <p
+          class="max-w-[60ch] font-sans text-lg leading-relaxed text-ink/90 md:text-xl"
+          data-reveal
+        >
+          <em class="font-display text-2xl italic not-italic">The People</em> è un progetto nato all'interno
+          di
+          <em>Oltre il Visibile</em> per aprire la mostra a chiunque voglia farne parte — non come spettatore,
+          ma come soggetto.
+        </p>
+        <p
+          class="max-w-[60ch] font-sans text-base leading-relaxed text-smoke md:text-lg"
+          data-reveal
+        >
+          Alle tappe di <strong class="text-ink">Roma</strong> e <strong class="text-ink"
+            >Piacenza</strong
+          >
+          allestiremo un piccolo set fotografico aperto al pubblico. Uomini, donne, senza limiti di età,
+          misure o altezza — nessun canone, nessuna selezione. Solo dieci fotografie, e il piacere di
+          essere guardati davvero.
+        </p>
+
+        <div class="border-l-2 border-gold py-1 pl-6" data-reveal>
+          <p class="font-display text-2xl font-light italic leading-snug text-ink md:text-3xl">
+            "Dieci ritratti per ognuno di voi. Perché coinvolgere più persone possibile è il cuore
+            stesso della mostra."
+          </p>
+        </div>
+
+        <p class="eyebrow mt-16 text-smoke" data-reveal>Come funziona</p>
+        <ul class="max-w-[55ch] space-y-3 pl-5 font-sans text-base text-ink/90 md:text-lg" style="list-style-type: '— ';" data-reveal>
+          <li>Iscriviti in lista contattando Massimiliano o Valentina su Instagram (vedi sotto).</li>
+          <li>Presentati alla tappa nella data indicata — niente requisiti, niente trucchi obbligatori.</li>
+          <li>Ti scattiamo 10 fotografie in un piccolo set allestito nella sede della mostra.</li>
+          <li>Le immagini fanno parte del progetto <em>The People</em> di Oltre il Visibile.</li>
+        </ul>
+      </div>
+
+      <!-- sidebar: date + contatti -->
+      <aside class="col-span-12 space-y-12 lg:col-span-4">
+        <div class="space-y-6 border border-ink/15 p-6">
+          <p class="eyebrow text-smoke">Date e luoghi</p>
+
+          <div class="space-y-2">
+            <p class="font-mono text-xs tracking-widest text-gold">Roma</p>
+            <p class="font-display text-xl font-light italic">Aurelia Gallery</p>
+            <p class="font-sans text-sm text-smoke">6 – 7 Giugno 2026</p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="font-mono text-xs tracking-widest text-gold">Piacenza</p>
+            <p class="font-display text-xl font-light italic">Palazzo Gotico</p>
+            <p class="font-sans text-sm text-smoke">11 – 12 Luglio 2026</p>
+          </div>
+        </div>
+
+        <div class="space-y-6 border border-ink/15 p-6">
+          <p class="eyebrow text-smoke">Iscriviti in lista</p>
+          <p class="font-sans text-sm leading-relaxed text-smoke">
+            Contatta uno dei nostri referenti su Instagram per riservare il tuo posto.
+          </p>
+
+          <div class="space-y-3">
+            <a
+              href="https://www.instagram.com/falso_massimiliano?igsh=cTUzYm8zd3FlZHdz"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-3"
+            >
+              <span class="font-mono text-xs text-gold">IG</span>
+              <span
+                class="alink font-sans text-sm text-ink transition-colors group-hover:text-gold"
+              >
+                @falso_massimiliano
+              </span>
+            </a>
+            <a
+              href="https://www.instagram.com/vpieri28?igsh=NTgyajY4dTVuY2V6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center gap-3"
+            >
+              <span class="font-mono text-xs text-gold">IG</span>
+              <span
+                class="alink font-sans text-sm text-ink transition-colors group-hover:text-gold"
+              >
+                @vpieri28
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="/the-people/hero.jpg"
+          alt="The People — Oltre il Visibile"
+          class="w-full"
+          loading="lazy"
+        />
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── CTA FOOTER ─────────────────────────────────────── -->
+  <section class="border-t border-ink/15 px-6 py-32 md:px-10">
+    <div class="grid grid-cols-12 items-end gap-x-6">
+      <div class="col-span-12 md:col-span-6">
+        <p class="eyebrow text-smoke">— La mostra</p>
+        <p
+          class="mt-6 max-w-[26ch] font-display text-editorial font-light italic leading-[1.05]"
+          data-reveal
+        >
+          Scopri tutte le tappe di Oltre il Visibile.
+        </p>
+      </div>
+      <div class="col-span-12 mt-10 flex flex-wrap gap-4 md:col-span-6 md:mt-0 md:justify-end">
+        <MagneticButton href={path('it', 'exhibitions')}>
+          {dict.cta.all_exhibitions}
+        </MagneticButton>
+        <MagneticButton href={pressPath('it')}> Rassegna stampa </MagneticButton>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
