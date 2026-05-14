@@ -1,0 +1,28 @@
+{
+  "slug": "agatha-model",
+  "name": "Agatha Model",
+  "title": {
+    "it": "Modella · Artista Visiva",
+    "en": "Model · Visual Artist"
+  },
+  "based": "London · Milano · Parigi · Los Angeles",
+  "bio_artistic": {
+    "it": [
+      "Agatha Model è una modella internazionale con base tra London, Milano, Parigi e Los Angeles. Il suo lavoro spazia tra il fashion, il glamour, il boudoir, lo steampunk e il nudo artistico."
+    ],
+    "en": [
+      "Agatha Model is an international model based between London, Milan, Paris and Los Angeles. Her work spans fashion, glamour, boudoir, steampunk and artistic nude."
+    ]
+  },
+  "bio_vision": {
+    "it": [
+      "Attraverso generi diversi — dalla moda al nudo artistico, dal glamour allo steampunk — esplora le molteplici identità del corpo come superficie narrativa e strumento di espressione visiva."
+    ],
+    "en": [
+      "Through diverse genres — from fashion to artistic nude, from glamour to steampunk — she explores the multiple identities of the body as a narrative surface and instrument of visual expression."
+    ]
+  },
+  "order": 2,
+  "cover_text": "AG",
+  "photo_orientations": ["v", "v"]
+}

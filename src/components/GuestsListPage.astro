@@ -11,7 +11,7 @@ interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const dict = t(lang);
 
-const guests = await getCollection('guests');
+const guests = (await getCollection('guests')).sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
 
 function coverSrc(slug: string): string {
   const abs = join(process.cwd(), 'public', 'guests', slug, '0.jpg');

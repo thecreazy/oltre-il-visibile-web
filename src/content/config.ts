@@ -106,6 +106,7 @@ const guests = defineCollection({
     based: z.string(),
     bio_artistic: bilingualArr,
     bio_vision: bilingualArr,
+    order: z.number().optional(),
     cover_text: z.string(),
     photo_orientations: z.array(z.enum(['v', 'h', 's'])).optional(),
     work: z.object({

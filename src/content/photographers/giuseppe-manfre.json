@@ -1,0 +1,42 @@
+{
+  "slug": "giuseppe-manfre",
+  "name": "Giuseppe Manfrè",
+  "based": "Roma",
+  "years": "—",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Fotografare è l'atto di rivelare ciò che si nasconde — le emozioni, le storie, la bellezza che sfugge allo sguardo distratto.",
+    "en": "Photography is the act of revealing what hides — emotions, stories, the beauty that escapes the distracted eye."
+  },
+  "bio": {
+    "it": [
+      "catturare emozioni e storie che si celano, è l'arte di rivelare ciò che gli occhi non vedono, svelando la bellezza nascosta del mondo."
+    ],
+    "en": [
+      "Capturing emotions and hidden stories is the art of revealing what eyes cannot see, unveiling the hidden beauty of the world."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Cerco le emozioni nascoste dietro la superficie delle cose.",
+      "Racconto storie che si celano alla vista comune.",
+      "Svelo la bellezza invisibile che l'occhio quotidiano non coglie."
+    ],
+    "en": [
+      "I seek the emotions hidden beneath the surface of things.",
+      "I tell stories that conceal themselves from ordinary sight.",
+      "I unveil the invisible beauty that the everyday eye fails to notice."
+    ]
+  },
+  "works": [],
+  "cover_text": "GM",
+  "accent_no": "38",
+  "photo_orientations": [
+    "v",
+    "v",
+    "h"
+  ]
+}
