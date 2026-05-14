@@ -15,6 +15,11 @@
       "source": "/",
       "destination": "/it",
       "permanent": true
+    },
+    {
+      "source": "/:lang/models/giorgia-lo-iacono",
+      "destination": "/:lang/models/giorgia-meraki",
+      "permanent": true
     }
   ]
 }
