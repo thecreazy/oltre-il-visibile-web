@@ -13,10 +13,12 @@
   },
   "bio": {
     "it": [
-      "catturare emozioni e storie che si celano, è l'arte di rivelare ciò che gli occhi non vedono, svelando la bellezza nascosta del mondo."
+      "catturare emozioni e storie che si celano, è l'arte di rivelare ciò che gli occhi non vedono, svelando la bellezza nascosta del mondo.",
+      "la fotografia rappresenta per me quel viaggio iniziato da ragazzo attraverso l'obbiettivo di una vecchia Nikon EM, un viaggio ricco di tappe nelle quali bloccavo il tempo, stimolando ad esplorare le sfumature che oggi ancor di più sfuggono alla nostra attenzione."
     ],
     "en": [
-      "Capturing emotions and hidden stories is the art of revealing what eyes cannot see, unveiling the hidden beauty of the world."
+      "Capturing emotions and hidden stories is the art of revealing what eyes cannot see, unveiling the hidden beauty of the world.",
+      "Photography represents for me that journey begun as a boy through the lens of an old Nikon EM, a journey rich with stops in which I froze time, driven to explore the nuances that today, more than ever, slip past our attention."
     ]
   },
   "practice": {
@@ -37,6 +39,7 @@
   "photo_orientations": [
     "v",
     "v",
-    "h"
+    "h",
+    "v"
   ]
 }
