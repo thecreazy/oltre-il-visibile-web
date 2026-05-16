@@ -1,0 +1,73 @@
+{
+  "slug": "jennifer-cavalletti",
+  "name": "Jennifer Cavalletti",
+  "based": "Spoleto",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": ["Moda", "Ritratto editoriale", "Danza", "Bellezza e concorsi"],
+    "en": ["Fashion", "Editorial portrait", "Dance", "Beauty and pageants"]
+  },
+  "statement": {
+    "it": "Essere vista non mi spaventa più — ogni scatto è la prova che esisto in un modo che il mondo ancora non sa leggere del tutto.",
+    "en": "Being seen no longer frightens me — every photograph is proof that I exist in a way the world is still learning to read."
+  },
+  "cover_text": "JC",
+  "accent_no": "19",
+  "photo_orientations": ["v", "v", "v", "v"],
+  "personal_intro": {
+    "it": "Mi chiamo Jennifer Cavalletti e la mia storia è fatta di determinazione, talento e passione. Sono nata a Spoleto il 12 gennaio 2004 e ho imparato presto che i limiti possono trasformarsi in forza. Essere autistici non significa essere malati: è semplicemente un modo di essere, che mi porta a pensare in modo più lento del normale. Gli autistici non sono stupidi, ma intelligenti come tutti gli altri — si esprimono e si atteggiano in modo del tutto personale.",
+    "en": "My name is Jennifer Cavalletti and my story is made of determination, talent and passion. I was born in Spoleto on 12 January 2004 and I learned early that limits can become strengths. Being autistic does not mean being ill: it is simply a way of being, one that leads me to think more slowly than average. Autistic people are not stupid — they are as intelligent as anyone else, they simply express themselves and carry themselves in an entirely personal way."
+  },
+  "story_sections": [
+    {
+      "title": {
+        "it": "La danza",
+        "en": "The dance"
+      },
+      "body": {
+        "it": "Tutto è cominciato nel 2019, quando ho partecipato per la prima volta al Campionato Italiano FIDS di Danze Sportive a Rimini. È lì che ho conquistato il gradino più alto del podio, diventando Campionessa Italiana nelle discipline Standard e Latine. Nel 2021 ho riconfermato i titoli ai Campionati Italiani e al Campionato Regionale dell'Umbria, portando a casa quattro medaglie d'oro. Il 2022 è stato l'anno della consacrazione definitiva, con il bis al Campionato Nazionale di Cinecittà World.",
+        "en": "It all began in 2019, when I took part for the first time in the Italian FIDS Dance Sport Championship in Rimini. That is where I reached the top of the podium, becoming Italian Champion in both Standard and Latin disciplines. In 2021 I reconfirmed my titles at the Italian Championships and at the Umbria Regional Championship, bringing home four gold medals. 2022 was the year of definitive consecration, with a repeat victory at the National Championship at Cinecittà World."
+      }
+    },
+    {
+      "title": {
+        "it": "Dalla danza alla moda",
+        "en": "From dance to fashion"
+      },
+      "body": {
+        "it": "Dopo aver conseguito il diploma al Liceo Artistico con 100/100, nel 2023 ho intrapreso il percorso universitario in Stilismo e Moda. Quello stesso anno ho partecipato a Miss Italia 2023, conquistando il titolo di Miss Coraggio — non solo un premio, ma il riconoscimento di un percorso fatto di forza d'animo. Da Miss Italia si sono aperte le porte del mondo della moda e dello spettacolo: shooting fotografici con fotografi di fama nazionale, collaborazioni con brand come Salvatore Migale e Leonardo Valentini, ospitate televisive su Rai International e VIP TV, e collaborazioni con agenzie come Identity Booking Management.",
+        "en": "After graduating from Art School with top marks (100/100), in 2023 I began my university studies in Fashion and Styling. That same year I took part in Miss Italia 2023, earning the title of Miss Courage — not just an award, but a recognition of a journey built on strength of spirit. Miss Italia opened the doors of the fashion and entertainment world: photoshoots with nationally acclaimed photographers, collaborations with brands such as Salvatore Migale and Leonardo Valentini, television appearances on Rai International and VIP TV, and partnerships with agencies like Identity Booking Management."
+      }
+    },
+    {
+      "title": {
+        "it": "Il presente",
+        "en": "The present"
+      },
+      "body": {
+        "it": "Nel 2025 ho calcato la scena del motorsport come ombrellina ufficiale Honda a Vallelunga e Mugello, e ho partecipato a Miss Universo arrivando in finale nella mia regione. Ogni passo, ogni sorriso e ogni vittoria sono la prova che nulla è impossibile.",
+        "en": "In 2025 I stepped into the motorsport scene as official Honda umbrella girl at Vallelunga and Mugello, and took part in Miss Universe, reaching the regional final. Every step, every smile and every victory is proof that nothing is impossible."
+      }
+    }
+  ],
+  "highlights": {
+    "it": [
+      "Campionessa Italiana FIDS 2019 — Danze Standard e Latine",
+      "4 medaglie d'oro ai Campionati Italiani 2021",
+      "Campionessa Nazionale FIDS 2022 a Cinecittà World",
+      "Diploma Liceo Artistico con 100/100",
+      "Miss Coraggio — Miss Italia 2023",
+      "Ombrellina ufficiale Honda a Vallelunga e Mugello 2025",
+      "Finalista regionale Miss Universo 2025"
+    ],
+    "en": [
+      "Italian FIDS Champion 2019 — Standard and Latin Dances",
+      "4 gold medals at the Italian Championships 2021",
+      "National FIDS Champion 2022 at Cinecittà World",
+      "Art School diploma with full marks 100/100",
+      "Miss Courage — Miss Italia 2023",
+      "Official Honda umbrella girl at Vallelunga and Mugello 2025",
+      "Regional finalist Miss Universe 2025"
+    ]
+  }
+}

@@ -51,6 +51,12 @@ const models = defineCollection({
       label: z.string(),
       href: z.string(),
     })).optional(),
+    personal_intro: bilingual.optional(),
+    story_sections: z.array(z.object({
+      title: bilingual,
+      body: bilingual,
+    })).optional(),
+    highlights: bilingualArr.optional(),
   }),
 });
 
