@@ -1,0 +1,45 @@
+{
+  "slug": "roberto-litta",
+  "name": "Roberto Litta",
+  "title": {
+    "it": "Scrittore · Drammaturgo · Critico d'Arte",
+    "en": "Writer · Playwright · Art Critic"
+  },
+  "based": "Roma",
+  "bio_artistic": {
+    "it": [
+      "Scrittore, drammaturgo e critico d'arte, Roberto Litta ha coltivato fin dai tempi del liceo una profonda passione per la storia e l'arte italiana. Autore di opere teatrali — Racconti di Tango (2009), Storia d'Italia in Disordine Perfetto (2010), La giusta violenza (2017) — ha raggiunto il grande pubblico con il romanzo storico L'uomo che vive due volte, giunto alla terza edizione.",
+      "Con Dieci Racconti, raccolta di fiabe illustrate, ha avviato un progetto itinerante per promuovere la letteratura e l'arte tra i giovani, affrontando tematiche come il bullismo e l'emergenza educativa.",
+      "Ha curato numerose mostre a livello nazionale e internazionale ed è autore e conduttore di Arte Italia, trasmissione televisiva dedicata al patrimonio artistico italiano. Firma la serie di documentari Rai Memorie Italiane, ha condotto Italia viaggio nella bellezza per Rai Storia e ha presentato Artista d'Europa a Venezia. Nel 2024 ha realizzato il catalogo ragionato sulle opere di Nelvis Fornasin e ha presieduto la Biennale di Vigevano. A gennaio 2026 il Ministro della Cultura lo ha nominato nel CDA dei Musei e Parchi Archeologici Praeneste e Gabii."
+    ],
+    "en": [
+      "Writer, playwright and art critic, Roberto Litta has nurtured since his school years a deep passion for Italian history and art. Author of theatrical works — Racconti di Tango (2009), Storia d'Italia in Disordine Perfetto (2010), La giusta violenza (2017) — he reached the wider public with the historical novel L'uomo che vive due volte, now in its third edition.",
+      "With Dieci Racconti, a collection of illustrated fables, he launched an itinerant project to promote literature and art among young people, addressing themes such as bullying and the educational emergency.",
+      "He has curated numerous exhibitions at national and international level and is the author and presenter of Arte Italia, a television programme dedicated to Italian artistic heritage. He signs the Rai documentary series Memorie Italiane, hosted Italia viaggio nella bellezza for Rai Storia and presented Artista d'Europa in Venice. In 2024 he produced the critical catalogue of works by Nelvis Fornasin and chaired the Biennale di Vigevano. In January 2026 the Minister of Culture appointed him to the Board of Directors of the Praeneste and Gabii Museums and Archaeological Parks."
+    ]
+  },
+  "bio_vision": {
+    "it": [
+      "Come critico d'arte, Roberto Litta si distingue per un approccio innovativo che lega le opere alla storia, alle condizioni sociologiche e alle correnti filosofiche del loro tempo. Per lui, guardare un'opera d'arte significa leggere il tempo che l'ha generata: un atto di percezione che va oltre la superficie visibile per raggiungere le forze culturali e psicologiche che l'hanno resa possibile."
+    ],
+    "en": [
+      "As an art critic, Roberto Litta is distinguished by an innovative approach that connects artworks to the history, sociological conditions and philosophical currents of their time. For him, looking at a work of art means reading the era that generated it: an act of perception that goes beyond the visible surface to reach the cultural and psychological forces that made it possible."
+    ]
+  },
+  "work": {
+    "title": "L'uomo che vive due volte",
+    "type": {
+      "it": "Romanzo storico",
+      "en": "Historical Novel"
+    },
+    "year": "2012",
+    "description": {
+      "it": "Il romanzo storico più amato di Roberto Litta, oggi alla sua terza edizione. Un'opera che ha saputo raggiungere il grande pubblico intrecciando storia collettiva e destino individuale.",
+      "en": "Roberto Litta's most beloved historical novel, now in its third edition. A work that has reached the wider public by interweaving collective history and individual destiny."
+    }
+  },
+  "order": 3,
+  "cover_text": "RL",
+  "photo_orientations": [],
+  "socials": []
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "ilenia-borrelli",
+  "name": "Ilenia Borrelli",
+  "based": "Roma",
+  "pronouns": "she / her — lei",
+  "genres": {
+    "it": [
+      "Ritratto",
+      "Glamour",
+      "Fitness"
+    ],
+    "en": [
+      "Portrait",
+      "Glamour",
+      "Fitness"
+    ]
+  },
+  "statement": {
+    "it": "Attraverso il fitness ho imparato ad abitare il mio corpo; il ritratto mi insegna a lasciarlo guardare.",
+    "en": "Through fitness I learned to inhabit my body; portrait photography teaches me to let it be seen."
+  },
+  "cover_text": "IB",
+  "accent_no": "20",
+  "photo_orientations": [
+    "v",
+    "v",
+    "h",
+    "v"
+  ],
+  "socials": []
+}
