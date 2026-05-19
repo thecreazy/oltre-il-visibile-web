@@ -1,0 +1,25 @@
+{
+  "slug": "massimo-paolini",
+  "name": "Massimo Paolini",
+  "based": "–",
+  "years": "–",
+  "role": {
+    "it": "Fotografo",
+    "en": "Photographer"
+  },
+  "statement": {
+    "it": "Nel bianco e nero cerco la verità che il colore a volte nasconde: ciò che rimane quando si toglie tutto è il cuore dell'immagine.",
+    "en": "In black and white I search for the truth that colour sometimes conceals: what remains when everything is stripped away is the heart of the image."
+  },
+  "works": [],
+  "cover_text": "MPA",
+  "accent_no": "40",
+  "photo_orientations": [
+    "v",
+    "h",
+    "h",
+    "v",
+    "s",
+    "s"
+  ]
+}
