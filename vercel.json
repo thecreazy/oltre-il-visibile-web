@@ -20,6 +20,11 @@
       "source": "/:lang/models/giorgia-lo-iacono",
       "destination": "/:lang/models/giorgia-meraki",
       "permanent": true
+    },
+    {
+      "source": "/:lang/models/rachele-fusaro",
+      "destination": "/:lang",
+      "permanent": false
     }
   ]
 }
