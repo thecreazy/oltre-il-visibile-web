@@ -1,0 +1,53 @@
+{
+  "slug": "carlo-leggieri",
+  "name": "Carlo Leggieri",
+  "based": "Milano · Lombardia",
+  "years": "–",
+  "role": {
+    "it": "Fotografo di ritratto, fashion e glamour",
+    "en": "Portrait, fashion and glamour photographer"
+  },
+  "statement": {
+    "it": "La mia fotografia è un atto d'amore: rendere visibile la bellezza che ogni persona porta con sé, combinando il linguaggio della moda con l'unicità di chi ho davanti.",
+    "en": "My photography is an act of love: making visible the beauty each person carries within, combining the language of fashion with the uniqueness of whoever stands before me."
+  },
+  "bio": {
+    "it": [
+      "La Bellezza. La capacità di rendere le persone belle, di farle sentire bene, di farle sentire persone speciali. Mi piace la possibilità di combinare il \"bel vestito\" con le caratteristiche delle persone. Amo lavorare con le persone per le persone.",
+      "Questa è la mia fotografia."
+    ],
+    "en": [
+      "Beauty. The ability to make people beautiful, to make them feel good, to make them feel special. I love the possibility of combining the \"beautiful outfit\" with the characteristics of people. I love working with people for people.",
+      "This is my photography."
+    ]
+  },
+  "practice": {
+    "it": [
+      "Combinare il linguaggio della moda con le caratteristiche individuali di ogni soggetto.",
+      "Creare un'atmosfera in cui le persone si sentano speciali e a proprio agio davanti all'obiettivo.",
+      "Lavorare con le persone per valorizzare la loro unicità attraverso l'immagine."
+    ],
+    "en": [
+      "Combining the language of fashion with each subject's individual characteristics.",
+      "Creating an atmosphere where people feel special and at ease in front of the lens.",
+      "Working with people to bring out their uniqueness through the image."
+    ]
+  },
+  "works": [],
+  "cover_text": "CL",
+  "accent_no": "41",
+  "photo_orientations": [
+    "v",
+    "h",
+    "v",
+    "v",
+    "v",
+    "h"
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/petusky"
+    }
+  ]
+}
