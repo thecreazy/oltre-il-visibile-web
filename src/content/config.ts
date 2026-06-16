@@ -86,6 +86,7 @@ const exhibitions = defineCollection({
       url: z.string().url(),
       date: z.string().optional(),
     })).optional(),
+    photo_orientations: z.array(z.enum(['v', 'h', 's'])).optional(),
   }),
 });
 

@@ -48,6 +48,7 @@
     "eleana-silvestri",
     "elisa-trobiani"
   ],
+  "photo_orientations": ["v", "v", "v", "v", "v", "v", "v", "v", "v", "v"],
   "accent_no": "01",
   "coordinates": [
     41.897,

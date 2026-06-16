@@ -6,6 +6,7 @@ interface Props {
   startNo?: number;
   photographerSlug?: string;
   modelSlug?: string;
+  exhibitionSlug?: string;
   orientations?: Orientation[];
   coverSrc?: string;
   hideEmpty?: boolean;
@@ -15,6 +16,7 @@ const {
   letters = ['Ø', 'I', 'V'],
   photographerSlug = '',
   modelSlug = '',
+  exhibitionSlug = '',
   orientations,
   coverSrc = '',
   hideEmpty = false,
@@ -22,11 +24,11 @@ const {
 
 const count = orientations?.length ?? 4;
 
-const subjectSlug = photographerSlug || modelSlug;
-const subjectBase = photographerSlug ? 'photographers' : 'models';
+const subjectSlug = photographerSlug || modelSlug || exhibitionSlug;
+const subjectBase = photographerSlug ? 'photographers' : modelSlug ? 'models' : 'exhibitions';
 
 const photos = subjectSlug
-  ? Array.from({ length: count }, (_, i) => `/${subjectBase}/${subjectSlug}/${i + 1}.jpg`)
+  ? Array.from({ length: count }, (_, i) => `/${subjectBase}/${subjectSlug}/${exhibitionSlug ? i : i + 1}.jpg`)
   : Array.from({ length: count }, (_, i) => (i === 0 ? coverSrc : ''));
 
 function ratio(o: Orientation | undefined): string {

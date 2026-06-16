@@ -96,7 +96,15 @@ const guestEntries = ex.guests
 
 <!-- GALLERY -->
 <section class="px-6 md:px-10 pb-32 bg-paper">
-  <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} coverSrc={exhibitionCover} hideEmpty />
+  {ex.photo_orientations && ex.photo_orientations.length > 0 ? (
+    <GalleryGrid
+      letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]}
+      exhibitionSlug={entryId}
+      orientations={ex.photo_orientations}
+    />
+  ) : (
+    <GalleryGrid letters={[ pick(ex.city, lang).slice(0,1).toUpperCase(), 'O', 'V' ]} startNo={Number(ex.accent_no) * 4 - 3} coverSrc={exhibitionCover} hideEmpty />
+  )}
 </section>
 
 <!-- ARTISTS -->

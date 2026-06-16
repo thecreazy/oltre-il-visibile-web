@@ -25,6 +25,16 @@
       "source": "/:lang/models/rachele-fusaro",
       "destination": "/:lang",
       "permanent": false
+    },
+    {
+      "source": "/:lang/models/roberta-contino",
+      "destination": "/:lang",
+      "permanent": false
+    },
+    {
+      "source": "/:lang/models/martina-zicchetti",
+      "destination": "/:lang",
+      "permanent": false
     }
   ]
 }
